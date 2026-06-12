@@ -119,3 +119,48 @@ if (hwTable) {
 
   applyFilters();
 }
+
+const noteGrid = document.getElementById("note-grid");
+
+if (noteGrid) {
+  const cards = Array.from(noteGrid.querySelectorAll(".intelligence-card"));
+  const searchInput = document.getElementById("note-search");
+  const filterButtons = Array.from(
+    document.querySelectorAll("[data-note-filter]"),
+  );
+  const countLabel = document.getElementById("note-count");
+  const emptyState = document.getElementById("library-empty");
+  let activeFilter = "all";
+
+  const applyNoteFilters = () => {
+    const term = searchInput.value.trim().toLowerCase();
+    let visible = 0;
+
+    cards.forEach((card) => {
+      const topics = card.dataset.noteTopics.split(" ");
+      const matchesFilter =
+        activeFilter === "all" || topics.includes(activeFilter);
+      const matchesSearch =
+        !term || card.dataset.noteSearch.toLowerCase().includes(term);
+      card.hidden = !(matchesFilter && matchesSearch);
+      if (!card.hidden) visible += 1;
+    });
+
+    countLabel.textContent = `${String(visible).padStart(2, "0")} / ${String(cards.length).padStart(2, "0")}`;
+    emptyState.hidden = visible !== 0;
+  };
+
+  searchInput.addEventListener("input", applyNoteFilters);
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      activeFilter = button.dataset.noteFilter;
+      filterButtons.forEach((other) => {
+        other.classList.toggle("active", other === button);
+      });
+      applyNoteFilters();
+    });
+  });
+
+  applyNoteFilters();
+}

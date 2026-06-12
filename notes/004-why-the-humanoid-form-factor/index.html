@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="../../" />
+    <meta name="description" content="The humanoid body as an interface to human environments, tools, and training data." />
+    <meta name="theme-color" content="#f1f0e9" />
+    <meta property="og:title" content="Why robots shaped like us? | Robotics Intelligence" />
+    <meta property="og:description" content="The humanoid body as an interface to human environments, tools, and training data." />
+    <meta property="og:type" content="article" />
+    <link rel="canonical" href="https://robotics.ai-mvp.com/notes/004-why-the-humanoid-form-factor/" />
+    <title>Why robots shaped like us? | Robotics Intelligence</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css?v=11" />
+    <script src="./main.js?v=11" defer></script>
+
+  </head>
+  <body class="note-site">
+    <div class="progress" aria-hidden="true"><span></span></div>
+
+    <header class="site-header note-site-header">
+      <a class="wordmark" href="./" aria-label="Robotics Intelligence, home">
+        <span class="wordmark-mark" aria-hidden="true"></span>
+        <span>ROBOTICS / INTELLIGENCE</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="./#library">Intelligence index</a>
+        <a href="./#about">About</a>
+      </nav>
+    </header>
+
+    <main id="top" class="note-page">
+      <section class="note-context" aria-label="Note context">
+        <a href="./#library"><span aria-hidden="true">←</span> Intelligence index</a>
+        <div>
+          <span>Field note 004 / 008</span>
+          <span>5 min</span>
+          <span>12 Jun 2026</span>
+        </div>
+      </section>
+
+<article id="note-004" class="learning-note standalone-note">
+        <header class="article-header">
+          <div class="article-id">
+            <span>FIELD NOTE</span>
+            <strong>004</strong>
+          </div>
+          <div class="article-title">
+            <p class="eyebrow">From Jim Fan · NVIDIA GEAR</p>
+            <h2>Why robots<br />shaped like us?</h2>
+            <p class="dek">
+              Not romance, not sci-fi. The humanoid form factor is an
+              interface decision — a body compatible with a world we built for
+              ourselves, and with the video we already filmed of it.
+            </p>
+          </div>
+        </header>
+
+        <section class="thesis">
+          <p class="section-label">The thesis</p>
+          <blockquote>
+            The world is built around the human form. Tools, spaces, and
+            workflows assume our body and our hands.
+          </blockquote>
+          <p class="body-copy">
+            Jim Fan's case for humanoids rests on compatibility: restaurants,
+            factories, hospitals — and all the equipment and tools inside them
+            — are designed for the human form and the human hands. A robot
+            that shares the form factor inherits that world as-is. This is why
+            Project GR00T focuses on humanoid robots.
+          </p>
+        </section>
+
+        <section class="data-cards" aria-label="Three arguments for the humanoid form factor">
+          <article class="data-card web-card reveal">
+            <header>
+              <span class="card-number">01</span>
+              <span class="card-tag">ENVIRONMENT</span>
+            </header>
+            <div class="card-icon" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <h3>A world pre-fitted</h3>
+            <p class="card-lead">Zero retrofit required.</p>
+            <p>
+              Door handles, stairs, shelves at human height, tools with human
+              grips: the built environment is one giant assumption about the
+              human body. A humanoid steps into it unchanged, while every
+              other form factor ships with an implicit demand to modify the
+              environment instead.
+            </p>
+            <dl>
+              <div>
+                <dt>Superpower</dt>
+                <dd>Drop-in compatibility</dd>
+              </div>
+              <div>
+                <dt>Blind spot</dt>
+                <dd>Hardest hardware problem</dd>
+              </div>
+            </dl>
+            <p class="card-footnote">
+              Generality of the body is bought with difficulty of the control
+              problem.
+            </p>
+          </article>
+
+          <article class="data-card sim-card reveal">
+            <header>
+              <span class="card-number">02</span>
+              <span class="card-tag">BODY</span>
+            </header>
+            <div class="card-icon orbit" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <h3>Two arms, two legs</h3>
+            <p class="card-lead">Redundancy is capability.</p>
+            <p>
+              Two arms beat one for manipulation: hold-and-act, handovers,
+              large or awkward objects. Two legs with enough degrees of
+              freedom let the robot balance in different ways, traverse
+              complex terrain, and brace its whole body to move objects in
+              ways a wheeled base cannot.
+            </p>
+            <dl>
+              <div>
+                <dt>Superpower</dt>
+                <dd>Bimanual + whole-body</dd>
+              </div>
+              <div>
+                <dt>Blind spot</dt>
+                <dd>Balance is expensive</dd>
+              </div>
+            </dl>
+            <p class="card-footnote">
+              The same degrees of freedom that make control hard are what make
+              the body general.
+            </p>
+          </article>
+
+          <article class="data-card real-card reveal">
+            <header>
+              <span class="card-number">03</span>
+              <span class="card-tag">DATA</span>
+            </header>
+            <div class="card-icon crosshair" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <h3>The video dividend</h3>
+            <p class="card-lead">The internet already filmed your training set.</p>
+            <p>
+              Most video online shows human bodies and five-fingered hands at
+              work. That footage can be used — partially — for robot training
+              only when the embodiment matches. The closer the body is to
+              human, the more of the internet becomes usable pretraining
+              signal.
+            </p>
+            <dl>
+              <div>
+                <dt>Superpower</dt>
+                <dd>Web-scale priors</dd>
+              </div>
+              <div>
+                <dt>Blind spot</dt>
+                <dd>Transfer is partial</dd>
+              </div>
+            </dl>
+            <p class="card-footnote">
+              Per note 001: web data supplies common sense, not motor
+              commands. Matching embodiment widens that pipe.
+            </p>
+          </article>
+        </section>
+
+        <section class="comparison" aria-labelledby="comparison-004-title">
+          <div class="comparison-heading">
+            <p class="section-label">The trade space</p>
+            <h3 id="comparison-004-title">Every body is a trade-off.</h3>
+          </div>
+          <div class="matrix-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Form factor</th>
+                  <th scope="col">Built-world fit</th>
+                  <th scope="col">Manipulation</th>
+                  <th scope="col">Video transfer</th>
+                  <th scope="col">Economics today</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Humanoid</th>
+                  <td><span class="rating high">High</span></td>
+                  <td><span class="rating high">Bimanual</span></td>
+                  <td><span class="rating high">Highest</span></td>
+                  <td><span class="rating low">Immature</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Wheeled + arm</th>
+                  <td><span class="rating mid">Flat floors</span></td>
+                  <td><span class="rating mid">One arm</span></td>
+                  <td><span class="rating low">Low</span></td>
+                  <td><span class="rating high">Proven</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Quadruped</th>
+                  <td><span class="rating mid">No hands</span></td>
+                  <td><span class="rating low">Minimal</span></td>
+                  <td><span class="rating low">Low</span></td>
+                  <td><span class="rating mid">Niches</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Aerial</th>
+                  <td><span class="rating low">Reach only</span></td>
+                  <td><span class="rating low">Minimal</span></td>
+                  <td><span class="rating low">Low</span></td>
+                  <td><span class="rating mid">Niches</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="synthesis" aria-labelledby="synthesis-004-title">
+          <div class="synthesis-copy">
+            <p class="section-label">My synthesis</p>
+            <h3 id="synthesis-004-title">GR00T bets on the general body.</h3>
+            <p>
+              Wheels are more efficient on flat ground, quadrupeds own rough
+              inspection, drones own the air — each wins a niche by trading
+              away manipulation breadth or data leverage. The humanoid bet is
+              that generality compounds: one body that fits everywhere,
+              learning from the largest data pool that exists.
+            </p>
+          </div>
+
+          <div class="flywheel" aria-label="Why the humanoid compounds">
+            <ol>
+              <li>
+                <span>01</span>
+                <div><strong>Fit</strong><small>Inherit human spaces and tools as-is</small></div>
+              </li>
+              <li>
+                <span>02</span>
+                <div><strong>Manipulate</strong><small>Two arms, whole-body skills</small></div>
+              </li>
+              <li>
+                <span>03</span>
+                <div><strong>Learn</strong><small>Mine human video for priors</small></div>
+              </li>
+              <li>
+                <span>04</span>
+                <div><strong>Compound</strong><small>One platform amortizes R&amp;D across tasks</small></div>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="neura-lens">
+          <div>
+            <p class="section-label">The NEURA lens</p>
+            <h3>The humanoid is the endgame, not the only game.</h3>
+          </div>
+          <div>
+            <p>
+              A robot maker does not have to choose once. Cobot arms and
+              mobile platforms win structured environments today and can fund
+              the harder humanoid bet; a humanoid program like NEURA's 4NE-1
+              sits at the general end of the same portfolio.
+            </p>
+            <p>
+              A shared model across embodiments lets data collected on one
+              platform partially transfer to the others — which makes the
+              portfolio a data strategy, not just a product line.
+            </p>
+          </div>
+        </section>
+
+        <section class="takeaway">
+          <span class="takeaway-label">Keep this</span>
+          <p>
+            The humanoid is an <strong>interface decision</strong>: match the
+            body the world was <strong>designed for</strong>, and unlock the
+            video it already <strong>filmed</strong>.
+          </p>
+        </section>
+
+        <footer class="source">
+          <div>
+            <p class="section-label">Source</p>
+            <p>
+              Jim Fan on NVIDIA's Embodied AI Lab and Jensen Huang's Prediction
+              that All Robots Will Be Autonomous.
+            </p>
+          </div>
+          <a
+            href="https://www.youtube.com/watch?v=yMGGpMyW_vw"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Watch the conversation <span aria-hidden="true">↗</span>
+          </a>
+        </footer>
+      </article>
+
+      <nav class="note-pagination" aria-label="More field notes">
+          <a href="./notes/003-robotics-is-pre-chinchilla/">
+            <span>Previous note</span>
+            <strong>003 / Robotics is pre-Chinchilla</strong>
+          </a>
+          <a href="./notes/005-generalist-first-specialist-later/">
+            <span>Next note</span>
+            <strong>005 / Generalist first, specialist later</strong>
+          </a>
+      </nav>
+    </main>
+
+    <footer class="site-footer">
+      <span>robotics.ai-mvp.com</span>
+      <span>Strategic field intelligence · Berlin · 2026</span>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </body>
+</html>

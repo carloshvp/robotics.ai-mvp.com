@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="../../" />
+    <meta name="description" content="Why robot foundation models need web data, simulation, and real-world demonstrations." />
+    <meta name="theme-color" content="#f1f0e9" />
+    <meta property="og:title" content="Three fuels for embodied intelligence | Robotics Intelligence" />
+    <meta property="og:description" content="Why robot foundation models need web data, simulation, and real-world demonstrations." />
+    <meta property="og:type" content="article" />
+    <link rel="canonical" href="https://robotics.ai-mvp.com/notes/001-three-fuels-for-embodied-intelligence/" />
+    <title>Three fuels for embodied intelligence | Robotics Intelligence</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css?v=11" />
+    <script src="./main.js?v=11" defer></script>
+
+  </head>
+  <body class="note-site">
+    <div class="progress" aria-hidden="true"><span></span></div>
+
+    <header class="site-header note-site-header">
+      <a class="wordmark" href="./" aria-label="Robotics Intelligence, home">
+        <span class="wordmark-mark" aria-hidden="true"></span>
+        <span>ROBOTICS / INTELLIGENCE</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="./#library">Intelligence index</a>
+        <a href="./#about">About</a>
+      </nav>
+    </header>
+
+    <main id="top" class="note-page">
+      <section class="note-context" aria-label="Note context">
+        <a href="./#library"><span aria-hidden="true">←</span> Intelligence index</a>
+        <div>
+          <span>Field note 001 / 008</span>
+          <span>7 min</span>
+          <span>12 Jun 2026</span>
+        </div>
+      </section>
+
+<article id="note-001" class="learning-note standalone-note">
+        <header class="article-header">
+          <div class="article-id">
+            <span>FIELD NOTE</span>
+            <strong>001</strong>
+          </div>
+          <div class="article-title">
+            <p class="eyebrow">From Jim Fan · NVIDIA GEAR</p>
+            <h2>Three fuels for<br />embodied intelligence</h2>
+            <p class="dek">
+              Robots do not get an internet of actions. They must borrow
+              common sense from human data, rehearse inside synthetic worlds,
+              and pay for experience in physical reality.
+            </p>
+          </div>
+        </header>
+
+        <section class="thesis">
+          <p class="section-label">The thesis</p>
+          <blockquote>
+            A capable robot foundation model will need all three data sources.
+            Each one supplies what the other two are missing.
+          </blockquote>
+          <p class="body-copy">
+            Jim Fan describes robotics data as a three-part portfolio:
+            internet-scale data, simulation, and real-robot demonstrations.
+            The useful distinction is not simply synthetic versus real. It is
+            whether the data offers breadth, action labels, or physical truth.
+            Today, no single source offers all three.
+          </p>
+        </section>
+
+        <section class="data-cards" aria-label="Three types of robotics data">
+          <article class="data-card web-card reveal">
+            <header>
+              <span class="card-number">01</span>
+              <span class="card-tag">BREADTH</span>
+            </header>
+            <div class="card-icon" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <h3>Web data</h3>
+            <p class="card-lead">Watch the world before acting in it.</p>
+            <p>
+              Human videos, images, text, and instructions expose models to a
+              huge range of objects, activities, and environments. They teach
+              semantic context and common-sense priors: what a mug is, how a
+              drawer usually opens, or what tends to happen after water spills.
+            </p>
+            <dl>
+              <div>
+                <dt>Superpower</dt>
+                <dd>Diversity at internet scale</dd>
+              </div>
+              <div>
+                <dt>Blind spot</dt>
+                <dd>No native motor commands</dd>
+              </div>
+            </dl>
+            <p class="card-footnote">
+              Seeing a hand move is not the same as knowing the joint
+              positions, forces, or control signals that produced the motion.
+            </p>
+          </article>
+
+          <article class="data-card sim-card reveal">
+            <header>
+              <span class="card-number">02</span>
+              <span class="card-tag">SCALE</span>
+            </header>
+            <div class="card-icon orbit" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <h3>Simulation</h3>
+            <p class="card-lead">Practice faster than the clock.</p>
+            <p>
+              A simulator provides the missing action-to-consequence loop.
+              Policies can attempt a grasp, fail, recover, and repeat across
+              thousands of parallel worlds. The marginal cost of another
+              episode is low, and experience scales with compute.
+            </p>
+            <dl>
+              <div>
+                <dt>Superpower</dt>
+                <dd>Abundant labeled interaction</dd>
+              </div>
+              <div>
+                <dt>Blind spot</dt>
+                <dd>The sim-to-real gap</dd>
+              </div>
+            </dl>
+            <p class="card-footnote">
+              Graphics, contact physics, friction, latency, sensor noise, and
+              environmental diversity can all differ from reality.
+            </p>
+          </article>
+
+          <article class="data-card real-card reveal">
+            <header>
+              <span class="card-number">03</span>
+              <span class="card-tag">TRUTH</span>
+            </header>
+            <div class="card-icon crosshair" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <h3>Real-robot data</h3>
+            <p class="card-lead">Learn where physics cannot be approximated.</p>
+            <p>
+              Teleoperation and human demonstrations record what actually
+              happens on a specific body: camera frames, robot state, actions,
+              contact, timing, and failures. This is the strongest grounding
+              data for imitation learning and deployment.
+            </p>
+            <dl>
+              <div>
+                <dt>Superpower</dt>
+                <dd>Embodiment-specific reality</dd>
+              </div>
+              <div>
+                <dt>Blind spot</dt>
+                <dd>Human time and hardware cost</dd>
+              </div>
+            </dl>
+            <p class="card-footnote">
+              Collection is bound to wall-clock time, operators, resets,
+              maintenance, safety procedures, and physical wear.
+            </p>
+          </article>
+        </section>
+
+        <section class="comparison" aria-labelledby="comparison-title">
+          <div class="comparison-heading">
+            <p class="section-label">The trade space</p>
+            <h3 id="comparison-title">Each source wins on a different axis.</h3>
+          </div>
+          <div class="matrix-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Data source</th>
+                  <th scope="col">Breadth</th>
+                  <th scope="col">Action signal</th>
+                  <th scope="col">Physical fidelity</th>
+                  <th scope="col">Marginal cost</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><span class="dot web"></span>Web</th>
+                  <td><span class="rating high">High</span></td>
+                  <td><span class="rating low">Low</span></td>
+                  <td><span class="rating mid">Indirect</span></td>
+                  <td><span class="rating high">Low</span></td>
+                </tr>
+                <tr>
+                  <th scope="row"><span class="dot sim"></span>Simulation</th>
+                  <td><span class="rating mid">Designed</span></td>
+                  <td><span class="rating high">Exact</span></td>
+                  <td><span class="rating mid">Approx.</span></td>
+                  <td><span class="rating high">Low</span></td>
+                </tr>
+                <tr>
+                  <th scope="row"><span class="dot real"></span>Real robot</th>
+                  <td><span class="rating low">Limited</span></td>
+                  <td><span class="rating high">Exact</span></td>
+                  <td><span class="rating high">Highest</span></td>
+                  <td><span class="rating low">High</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="synthesis" aria-labelledby="synthesis-title">
+          <div class="synthesis-copy">
+            <p class="section-label">My synthesis</p>
+            <h3 id="synthesis-title">The moat is the mixing strategy.</h3>
+            <p>
+              The lesson is not to choose one source. It is to assign each
+              source the job it does best, then create a loop in which real
+              failures improve the simulator and targeted demonstrations fill
+              the remaining gaps.
+            </p>
+          </div>
+
+          <div class="flywheel" aria-label="Data flywheel">
+            <ol>
+              <li>
+                <span>01</span>
+                <div><strong>Pretrain</strong><small>Broad priors from web data</small></div>
+              </li>
+              <li>
+                <span>02</span>
+                <div><strong>Rehearse</strong><small>Action-rich practice in simulation</small></div>
+              </li>
+              <li>
+                <span>03</span>
+                <div><strong>Ground</strong><small>Calibrate with real demonstrations</small></div>
+              </li>
+              <li>
+                <span>04</span>
+                <div><strong>Deploy & learn</strong><small>Turn failures into the next curriculum</small></div>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="neura-lens">
+          <div>
+            <p class="section-label">The NEURA lens</p>
+            <h3>Manual teaching is expensive. That makes data operations strategic.</h3>
+          </div>
+          <div>
+            <p>
+              A hands-on training approach such as teleoperation can produce
+              high-fidelity, task-relevant demonstrations with no sim-to-real
+              gap. Its constraint is economics: every trajectory consumes
+              operator and robot time.
+            </p>
+            <p>
+              The strategic question is therefore not only how to collect more
+              demonstrations, but how to make each one compound: reuse across
+              tasks, prioritize informative edge cases, automate quality
+              checks, and combine demonstrations with simulation and pretrained
+              visual-language representations.
+            </p>
+          </div>
+        </section>
+
+        <section class="takeaway">
+          <span class="takeaway-label">Keep this</span>
+          <p>
+            Web data supplies <strong>common sense</strong>. Simulation supplies
+            <strong>practice</strong>. Real robots supply
+            <strong>ground truth</strong>.
+          </p>
+        </section>
+
+        <footer class="source">
+          <div>
+            <p class="section-label">Source</p>
+            <p>
+              Jim Fan on NVIDIA's Embodied AI Lab and Jensen Huang's Prediction
+              that All Robots Will Be Autonomous.
+            </p>
+          </div>
+          <a
+            href="https://www.youtube.com/watch?v=yMGGpMyW_vw"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Watch the conversation <span aria-hidden="true">↗</span>
+          </a>
+        </footer>
+      </article>
+
+      <nav class="note-pagination" aria-label="More field notes">
+          <a href="./notes/008-home-robot-learning-kits/">
+            <span>Continue at the edge</span>
+            <strong>008 / Robots for learning at home</strong>
+          </a>
+          <a href="./notes/002-thinking-fast-and-slow-for-robots/">
+            <span>Next note</span>
+            <strong>002 / Robots that think fast and slow</strong>
+          </a>
+      </nav>
+    </main>
+
+    <footer class="site-footer">
+      <span>robotics.ai-mvp.com</span>
+      <span>Strategic field intelligence · Berlin · 2026</span>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </body>
+</html>

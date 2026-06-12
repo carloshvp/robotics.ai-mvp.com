@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="../../" />
+    <meta name="description" content="An interactive comparison of 20 practical robotics platforms for a personal learning lab." />
+    <meta name="theme-color" content="#f1f0e9" />
+    <meta property="og:title" content="Robots for learning at home | Robotics Intelligence" />
+    <meta property="og:description" content="An interactive comparison of 20 practical robotics platforms for a personal learning lab." />
+    <meta property="og:type" content="article" />
+    <link rel="canonical" href="https://robotics.ai-mvp.com/notes/008-home-robot-learning-kits/" />
+    <title>Robots for learning at home | Robotics Intelligence</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css?v=11" />
+    <script src="./main.js?v=11" defer></script>
+    <script src="./diy-robots.js?v=11" defer></script>
+  </head>
+  <body class="note-site">
+    <div class="progress" aria-hidden="true"><span></span></div>
+
+    <header class="site-header note-site-header">
+      <a class="wordmark" href="./" aria-label="Robotics Intelligence, home">
+        <span class="wordmark-mark" aria-hidden="true"></span>
+        <span>ROBOTICS / INTELLIGENCE</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="./#library">Intelligence index</a>
+        <a href="./#about">About</a>
+      </nav>
+    </header>
+
+    <main id="top" class="note-page">
+      <section class="note-context" aria-label="Note context">
+        <a href="./#library"><span aria-hidden="true">←</span> Intelligence index</a>
+        <div>
+          <span>Field note 008 / 008</span>
+          <span>20 kits</span>
+          <span>12 Jun 2026</span>
+        </div>
+      </section>
+
+<article id="note-008" class="learning-note standalone-note">
+        <header class="article-header">
+          <div class="article-id">
+            <span>FIELD NOTE</span>
+            <strong>008</strong>
+          </div>
+          <div class="article-title">
+            <p class="eyebrow">Learning kits · June 2026</p>
+            <h2>Robots for<br />learning at home</h2>
+            <p class="dek">
+              Twenty practical ways to begin experimenting with robotics,
+              from a $90 AI car to research-grade ROS platforms and
+              quadrupeds.
+            </p>
+          </div>
+        </header>
+
+        <section class="thesis">
+          <p class="section-label">The thesis</p>
+          <blockquote>
+            The best first robot is the one whose learning loop matches what
+            you actually want to practice.
+          </blockquote>
+          <p class="body-copy">
+            This comparison combines product type, intended use, approximate
+            price, and six scored dimensions in one view. Five means the
+            strongest fit. For setup, five means easiest; for price, five
+            means best affordability. Scores compare this set of products,
+            not every robot on the market.
+          </p>
+        </section>
+
+        <section class="diy-explorer" aria-labelledby="diy-table-title">
+          <div class="diy-heading">
+            <p class="section-label">The home lab menu</p>
+            <h3 id="diy-table-title">Start with the learning loop, then choose the body.</h3>
+            <p class="diy-hint">
+              Filter by robot type or show only the selected kits. Every
+              column is sortable; the first click puts the strongest scores
+              first and the lowest approximate prices first.
+            </p>
+          </div>
+
+          <div class="diy-picks" aria-labelledby="diy-picks-title">
+            <div class="diy-picks-intro">
+              <p class="section-label">Selected top kits</p>
+              <h4 id="diy-picks-title">Seven goals, seven sensible starting points.</h4>
+            </div>
+            <div id="diy-pick-list" class="diy-pick-list"></div>
+          </div>
+
+          <div class="diy-controls">
+            <label>
+              <span>Search</span>
+              <input
+                id="diy-search"
+                type="search"
+                placeholder="Robot, use, stack…"
+                autocomplete="off"
+              />
+            </label>
+            <label>
+              <span>Robot type</span>
+              <select id="diy-type">
+                <option value="all">All robot types</option>
+                <option value="mobile">Mobile robots</option>
+                <option value="arm">Robot arms</option>
+                <option value="legged">Legged robots</option>
+                <option value="social">Social robots</option>
+              </select>
+            </label>
+            <div class="diy-pick-filter" aria-label="Filter selected top kits">
+              <span>Selection</span>
+              <div>
+                <button class="diy-chip active" type="button" data-picks="all">All kits</button>
+                <button class="diy-chip" type="button" data-picks="selected">Top picks</button>
+              </div>
+            </div>
+            <span class="diy-count" id="diy-count" aria-live="polite">20 / 20</span>
+          </div>
+
+          <div class="diy-legend">
+            <span><strong>5</strong> strongest fit</span>
+            <span><strong>Setup 5</strong> easiest</span>
+            <span><strong>Price 5</strong> best affordability</span>
+            <span>Prices are approximate and may exclude the computer, tax, or import costs</span>
+          </div>
+
+          <div class="diy-table-wrap">
+            <table id="diy-table" class="diy-table">
+              <thead>
+                <tr>
+                  <th scope="col" aria-sort="none">
+                    <button type="button" data-key="name">Robot <span class="dir" aria-hidden="true"></span></button>
+                  </th>
+                  <th scope="col" aria-sort="none">
+                    <button type="button" data-key="type">Type <span class="dir" aria-hidden="true"></span></button>
+                  </th>
+                  <th scope="col" aria-sort="none">
+                    <button type="button" data-key="bestUse">Best use <span class="dir" aria-hidden="true"></span></button>
+                  </th>
+                  <th scope="col" aria-sort="none">
+                    <button type="button" data-key="priceValue">Approx price <span class="dir" aria-hidden="true"></span></button>
+                  </th>
+                  <th scope="col" aria-sort="none">
+                    <button type="button" data-key="learning">Learning <span class="dir" aria-hidden="true"></span></button>
+                  </th>
+                  <th scope="col" aria-sort="none">
+                    <button type="button" data-key="openness">Openness <span class="dir" aria-hidden="true"></span></button>
+                  </th>
+                  <th scope="col" aria-sort="none">
+                    <button type="button" data-key="hardware">Hardware <span class="dir" aria-hidden="true"></span></button>
+                  </th>
+                  <th scope="col" aria-sort="none">
+                    <button type="button" data-key="setup">Setup <span class="dir" aria-hidden="true"></span></button>
+                  </th>
+                  <th scope="col" aria-sort="none">
+                    <button type="button" data-key="affordability">Price fit <span class="dir" aria-hidden="true"></span></button>
+                  </th>
+                  <th scope="col" aria-sort="none">
+                    <button type="button" data-key="ai">AI potential <span class="dir" aria-hidden="true"></span></button>
+                  </th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+            <noscript>
+              <p class="robot-noscript">JavaScript is required for the interactive table.</p>
+            </noscript>
+          </div>
+        </section>
+
+        <section class="synthesis" aria-labelledby="synthesis-008-title">
+          <div class="synthesis-copy">
+            <p class="section-label">My synthesis</p>
+            <h3 id="synthesis-008-title">Buy the smallest machine that preserves the real problem.</h3>
+            <p>
+              A camera car is enough to learn perception and closed-loop
+              control. A TurtleBot earns its premium when ROS navigation is
+              the curriculum. An arm becomes essential when the learning
+              objective is manipulation, and legged hardware only pays off
+              when locomotion itself is the subject.
+            </p>
+          </div>
+
+          <div class="flywheel" aria-label="A progression for home robotics">
+            <ol>
+              <li>
+                <span>01</span>
+                <div><strong>Sense</strong><small>Camera, range, and state estimation</small></div>
+              </li>
+              <li>
+                <span>02</span>
+                <div><strong>Act</strong><small>Close the loop with motors and control</small></div>
+              </li>
+              <li>
+                <span>03</span>
+                <div><strong>Plan</strong><small>Navigation, manipulation, and behavior</small></div>
+              </li>
+              <li>
+                <span>04</span>
+                <div><strong>Learn</strong><small>Imitation, policies, and embodied AI</small></div>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="neura-lens">
+          <div>
+            <p class="section-label">How to read it</p>
+            <h3>A high score is not the same as the right first project.</h3>
+          </div>
+          <div>
+            <p>
+              The scores expose trade-offs, but the “Best use” column should
+              drive the decision. PiCar-X is the accessible first AI robot;
+              TurtleBot 3 and 4 are better ROS classrooms; SO-ARM101 is the
+              clearest route into imitation learning.
+            </p>
+            <p>
+              Budget for the whole system. Several low headline prices omit a
+              Raspberry Pi, Jetson, single-board computer, batteries, tax, or
+              import costs. Unitree Go2 only becomes the advanced legged pick
+              in the EDU configuration, and only when the budget can absorb
+              research-grade hardware.
+            </p>
+          </div>
+        </section>
+
+        <section class="takeaway">
+          <span class="takeaway-label">Keep this</span>
+          <p>
+            Choose the <strong>learning objective</strong> first. The robot is
+            the <strong>apparatus</strong>, not the curriculum.
+          </p>
+        </section>
+
+        <footer class="source">
+          <div>
+            <p class="section-label">Source</p>
+            <p>
+              Comparison assembled from the two supplied research tables and
+              linked manufacturer pages, 12 June 2026. Prices are snapshots,
+              not purchase quotes.
+            </p>
+          </div>
+          <a href="./notes/008-home-robot-learning-kits.md" target="_blank" rel="noreferrer">
+            View the complete data note <span aria-hidden="true">↗</span>
+          </a>
+        </footer>
+      </article>
+
+      <nav class="note-pagination" aria-label="More field notes">
+          <a href="./notes/007-humanoid-robot-field-2026/">
+            <span>Previous note</span>
+            <strong>007 / The humanoid robot field, 2026</strong>
+          </a>
+          <a href="./notes/001-three-fuels-for-embodied-intelligence/">
+            <span>Return to the beginning</span>
+            <strong>001 / Three fuels for embodied intelligence</strong>
+          </a>
+      </nav>
+    </main>
+
+    <footer class="site-footer">
+      <span>robotics.ai-mvp.com</span>
+      <span>Strategic field intelligence · Berlin · 2026</span>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </body>
+</html>

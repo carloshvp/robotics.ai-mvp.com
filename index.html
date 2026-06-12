@@ -5,1881 +5,431 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Field notes on robotics, embodied AI, and the systems that help machines learn to act in the physical world."
+      content="A strategic intelligence database on robotics, embodied AI, humanoids, and the systems that turn research into deployment."
     />
     <meta name="theme-color" content="#f1f0e9" />
-    <meta property="og:title" content="Robotics Field Notes" />
+    <meta property="og:title" content="Robotics Intelligence | AI MVP" />
     <meta
       property="og:description"
-      content="Learning in public about robotics, embodied AI, and physical intelligence."
+      content="Strategic field intelligence on robotics, embodied AI, and physical intelligence."
     />
     <meta property="og:type" content="website" />
-    <title>Robotics Field Notes | AI MVP</title>
+    <title>Robotics Intelligence | AI MVP</title>
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./styles.css?v=9" />
-    <script src="./main.js?v=9" defer></script>
-    <script src="./robots.js?v=9" defer></script>
+    <link rel="stylesheet" href="./styles.css?v=11" />
+    <script src="./main.js?v=11" defer></script>
   </head>
-  <body>
+  <body class="intelligence-home">
     <div class="progress" aria-hidden="true"><span></span></div>
 
     <header class="site-header">
-      <a class="wordmark" href="#top" aria-label="Robotics Field Notes, home">
+      <a class="wordmark" href="#top" aria-label="Robotics Intelligence, home">
         <span class="wordmark-mark" aria-hidden="true"></span>
-        <span>ROBOTICS / FIELD NOTES</span>
+        <span>ROBOTICS / INTELLIGENCE</span>
       </a>
       <nav aria-label="Primary navigation">
-        <a href="#notes">Notes <span>07</span></a>
-        <a href="#about">About</a>
+        <a href="#signals">Signals</a>
+        <a href="#library">Library <span>08</span></a>
+        <a href="#about">Method</a>
       </nav>
     </header>
 
     <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
+      <section class="intelligence-hero" aria-labelledby="hero-title">
         <div class="hero-kicker reveal">
-          <span>Learning log</span>
+          <span>Strategic research database</span>
           <span>Berlin · 2026</span>
         </div>
 
-        <h1 id="hero-title" class="reveal">
-          Building intelligence<br />
-          that can <em>touch</em> the world.
-        </h1>
+        <div class="intelligence-hero-copy">
+          <p class="hero-index reveal">RI / 001—008</p>
+          <h1 id="hero-title" class="reveal">
+            Robotics intelligence<br />
+            for decisions that<br />
+            <em>have to touch reality.</em>
+          </h1>
+        </div>
 
-        <div class="hero-bottom reveal">
+        <div class="intelligence-hero-bottom reveal">
           <p>
-            A growing set of notes on embodied AI, robot learning, and the
-            machinery behind physical intelligence.
+            A working database of market maps, technical mental models, and
+            strategic implications for embodied AI.
           </p>
-          <a class="down-link" href="#notes">
-            Begin with note 01
+          <div class="hero-brief">
+            <span>Current thesis</span>
+            <strong>
+              The advantage is moving from impressive demos to repeatable
+              data, deployment, and learning systems.
+            </strong>
+          </div>
+          <a class="down-link" href="#library">
+            Open the index
             <span aria-hidden="true">↓</span>
           </a>
         </div>
       </section>
 
-      <section id="notes" class="note-index" aria-labelledby="index-title">
-        <p class="section-label" id="index-title">01 / Learning archive</p>
-        <article class="note-row">
-          <span class="note-number">001</span>
-          <div>
-            <p class="eyebrow">Data engines · Embodied AI</p>
-            <h2>Three fuels for embodied intelligence</h2>
-          </div>
-          <div class="note-meta">
-            <span>12 Jun 2026</span>
-            <span>7 min</span>
-          </div>
-          <a href="#note-001" aria-label="Read Three fuels for embodied intelligence">
-            Read <span aria-hidden="true">↘</span>
-          </a>
-        </article>
-        <article class="note-row">
-          <span class="note-number">002</span>
-          <div>
-            <p class="eyebrow">Architectures · Embodied AI</p>
-            <h2>Robots that think fast and slow</h2>
-          </div>
-          <div class="note-meta">
-            <span>12 Jun 2026</span>
-            <span>5 min</span>
-          </div>
-          <a href="#note-002" aria-label="Read Robots that think fast and slow">
-            Read <span aria-hidden="true">↘</span>
-          </a>
-        </article>
-        <article class="note-row">
-          <span class="note-number">003</span>
-          <div>
-            <p class="eyebrow">Scaling laws · Research frontier</p>
-            <h2>Robotics is pre-Chinchilla</h2>
-          </div>
-          <div class="note-meta">
-            <span>12 Jun 2026</span>
-            <span>5 min</span>
-          </div>
-          <a href="#note-003" aria-label="Read Robotics is pre-Chinchilla">
-            Read <span aria-hidden="true">↘</span>
-          </a>
-        </article>
-        <article class="note-row">
-          <span class="note-number">004</span>
-          <div>
-            <p class="eyebrow">Form factors · Humanoids</p>
-            <h2>Why robots shaped like us?</h2>
-          </div>
-          <div class="note-meta">
-            <span>12 Jun 2026</span>
-            <span>5 min</span>
-          </div>
-          <a href="#note-004" aria-label="Read Why robots shaped like us?">
-            Read <span aria-hidden="true">↘</span>
-          </a>
-        </article>
-        <article class="note-row">
-          <span class="note-number">005</span>
-          <div>
-            <p class="eyebrow">Strategy · Foundation models</p>
-            <h2>Generalist first, specialist later</h2>
-          </div>
-          <div class="note-meta">
-            <span>12 Jun 2026</span>
-            <span>5 min</span>
-          </div>
-          <a href="#note-005" aria-label="Read Generalist first, specialist later">
-            Read <span aria-hidden="true">↘</span>
-          </a>
-        </article>
-        <article class="note-row">
-          <span class="note-number">006</span>
-          <div>
-            <p class="eyebrow">Hardware · Edge compute</p>
-            <h2>Embedded AI hardware, 2026</h2>
-          </div>
-          <div class="note-meta">
-            <span>12 Jun 2026</span>
-            <span>4 min</span>
-          </div>
-          <a href="#note-006" aria-label="Read Embedded AI hardware, 2026">
-            Read <span aria-hidden="true">↘</span>
-          </a>
-        </article>
-        <article class="note-row">
-          <span class="note-number">007</span>
-          <div>
-            <p class="eyebrow">Market map · Humanoids</p>
-            <h2>The humanoid robot field, 2026</h2>
-          </div>
-          <div class="note-meta">
-            <span>12 Jun 2026</span>
-            <span>30 robots</span>
-          </div>
-          <a href="#note-007" aria-label="Read The humanoid robot field, 2026">
-            Explore <span aria-hidden="true">↘</span>
-          </a>
-        </article>
+      <section class="database-status" aria-label="Database coverage">
+        <div>
+          <span>Briefings</span>
+          <strong>08</strong>
+        </div>
+        <div>
+          <span>Platforms tracked</span>
+          <strong>62</strong>
+        </div>
+        <div>
+          <span>Strategic lenses</span>
+          <strong>05</strong>
+        </div>
+        <div>
+          <span>Last updated</span>
+          <strong>12.06.26</strong>
+        </div>
       </section>
 
-      <article id="note-001" class="learning-note">
-        <header class="article-header">
-          <div class="article-id">
-            <span>FIELD NOTE</span>
-            <strong>001</strong>
-          </div>
-          <div class="article-title">
-            <p class="eyebrow">From Jim Fan · NVIDIA GEAR</p>
-            <h2>Three fuels for<br />embodied intelligence</h2>
-            <p class="dek">
-              Robots do not get an internet of actions. They must borrow
-              common sense from human data, rehearse inside synthetic worlds,
-              and pay for experience in physical reality.
-            </p>
-          </div>
-        </header>
+      <section id="signals" class="signal-board" aria-labelledby="signals-title">
+        <div class="signal-heading">
+          <p class="section-label">01 / Signals in view</p>
+          <h2 id="signals-title">What the field is telling us now.</h2>
+        </div>
 
-        <section class="thesis">
-          <p class="section-label">The thesis</p>
-          <blockquote>
-            A capable robot foundation model will need all three data sources.
-            Each one supplies what the other two are missing.
-          </blockquote>
-          <p class="body-copy">
-            Jim Fan describes robotics data as a three-part portfolio:
-            internet-scale data, simulation, and real-robot demonstrations.
-            The useful distinction is not simply synthetic versus real. It is
-            whether the data offers breadth, action labels, or physical truth.
-            Today, no single source offers all three.
-          </p>
-        </section>
-
-        <section class="data-cards" aria-label="Three types of robotics data">
-          <article class="data-card web-card reveal">
-            <header>
-              <span class="card-number">01</span>
-              <span class="card-tag">BREADTH</span>
-            </header>
-            <div class="card-icon" aria-hidden="true">
-              <span></span><span></span><span></span><span></span>
-            </div>
-            <h3>Web data</h3>
-            <p class="card-lead">Watch the world before acting in it.</p>
+        <div class="signal-grid">
+          <article>
+            <span class="signal-number">01</span>
+            <p class="eyebrow">Data operations</p>
+            <h3>The training mix is becoming the moat.</h3>
             <p>
-              Human videos, images, text, and instructions expose models to a
-              huge range of objects, activities, and environments. They teach
-              semantic context and common-sense priors: what a mug is, how a
-              drawer usually opens, or what tends to happen after water spills.
+              Web priors create breadth, simulation creates cheap practice,
+              and real demonstrations create physical truth. Advantage comes
+              from making the three compound.
             </p>
-            <dl>
-              <div>
-                <dt>Superpower</dt>
-                <dd>Diversity at internet scale</dd>
-              </div>
-              <div>
-                <dt>Blind spot</dt>
-                <dd>No native motor commands</dd>
-              </div>
-            </dl>
-            <p class="card-footnote">
-              Seeing a hand move is not the same as knowing the joint
-              positions, forces, or control signals that produced the motion.
-            </p>
+            <a href="./notes/001-three-fuels-for-embodied-intelligence/">
+              Read the data thesis <span aria-hidden="true">↗</span>
+            </a>
           </article>
-
-          <article class="data-card sim-card reveal">
-            <header>
-              <span class="card-number">02</span>
-              <span class="card-tag">SCALE</span>
-            </header>
-            <div class="card-icon orbit" aria-hidden="true">
-              <span></span><span></span><span></span>
-            </div>
-            <h3>Simulation</h3>
-            <p class="card-lead">Practice faster than the clock.</p>
+          <article>
+            <span class="signal-number">02</span>
+            <p class="eyebrow">System architecture</p>
+            <h3>Intelligence is splitting by clock speed.</h3>
             <p>
-              A simulator provides the missing action-to-consequence loop.
-              Policies can attempt a grasp, fail, recover, and repeat across
-              thousands of parallel worlds. The marginal cost of another
-              episode is low, and experience scales with compute.
+              Slow general reasoning is commoditizing. Fast, embodied control
+              and the interface between planning and reflex remain defensible
+              product territory.
             </p>
-            <dl>
-              <div>
-                <dt>Superpower</dt>
-                <dd>Abundant labeled interaction</dd>
-              </div>
-              <div>
-                <dt>Blind spot</dt>
-                <dd>The sim-to-real gap</dd>
-              </div>
-            </dl>
-            <p class="card-footnote">
-              Graphics, contact physics, friction, latency, sensor noise, and
-              environmental diversity can all differ from reality.
-            </p>
+            <a href="./notes/002-thinking-fast-and-slow-for-robots/">
+              Inspect the architecture <span aria-hidden="true">↗</span>
+            </a>
           </article>
-
-          <article class="data-card real-card reveal">
-            <header>
-              <span class="card-number">03</span>
-              <span class="card-tag">TRUTH</span>
-            </header>
-            <div class="card-icon crosshair" aria-hidden="true">
-              <span></span><span></span><span></span>
-            </div>
-            <h3>Real-robot data</h3>
-            <p class="card-lead">Learn where physics cannot be approximated.</p>
+          <article>
+            <span class="signal-number">03</span>
+            <p class="eyebrow">Market structure</p>
+            <h3>The humanoid race has entered deployment.</h3>
             <p>
-              Teleoperation and human demonstrations record what actually
-              happens on a specific body: camera frames, robot state, actions,
-              contact, timing, and failures. This is the strongest grounding
-              data for imitation learning and deployment.
+              Price, reliability, useful hours, and learning velocity now
+              matter more than another walking demo. China is already
+              competing across the full price ladder.
             </p>
-            <dl>
-              <div>
-                <dt>Superpower</dt>
-                <dd>Embodiment-specific reality</dd>
-              </div>
-              <div>
-                <dt>Blind spot</dt>
-                <dd>Human time and hardware cost</dd>
-              </div>
-            </dl>
-            <p class="card-footnote">
-              Collection is bound to wall-clock time, operators, resets,
-              maintenance, safety procedures, and physical wear.
-            </p>
+            <a href="./notes/007-humanoid-robot-field-2026/">
+              Explore 30 humanoids <span aria-hidden="true">↗</span>
+            </a>
           </article>
-        </section>
+        </div>
+      </section>
 
-        <section class="comparison" aria-labelledby="comparison-title">
-          <div class="comparison-heading">
-            <p class="section-label">The trade space</p>
-            <h3 id="comparison-title">Each source wins on a different axis.</h3>
-          </div>
-          <div class="matrix-wrap">
-            <table>
-              <thead>
-                <tr>
-                  <th scope="col">Data source</th>
-                  <th scope="col">Breadth</th>
-                  <th scope="col">Action signal</th>
-                  <th scope="col">Physical fidelity</th>
-                  <th scope="col">Marginal cost</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row"><span class="dot web"></span>Web</th>
-                  <td><span class="rating high">High</span></td>
-                  <td><span class="rating low">Low</span></td>
-                  <td><span class="rating mid">Indirect</span></td>
-                  <td><span class="rating high">Low</span></td>
-                </tr>
-                <tr>
-                  <th scope="row"><span class="dot sim"></span>Simulation</th>
-                  <td><span class="rating mid">Designed</span></td>
-                  <td><span class="rating high">Exact</span></td>
-                  <td><span class="rating mid">Approx.</span></td>
-                  <td><span class="rating high">Low</span></td>
-                </tr>
-                <tr>
-                  <th scope="row"><span class="dot real"></span>Real robot</th>
-                  <td><span class="rating low">Limited</span></td>
-                  <td><span class="rating high">Exact</span></td>
-                  <td><span class="rating high">Highest</span></td>
-                  <td><span class="rating low">High</span></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-        <section class="synthesis" aria-labelledby="synthesis-title">
-          <div class="synthesis-copy">
-            <p class="section-label">My synthesis</p>
-            <h3 id="synthesis-title">The moat is the mixing strategy.</h3>
-            <p>
-              The lesson is not to choose one source. It is to assign each
-              source the job it does best, then create a loop in which real
-              failures improve the simulator and targeted demonstrations fill
-              the remaining gaps.
-            </p>
-          </div>
-
-          <div class="flywheel" aria-label="Data flywheel">
-            <ol>
-              <li>
-                <span>01</span>
-                <div><strong>Pretrain</strong><small>Broad priors from web data</small></div>
-              </li>
-              <li>
-                <span>02</span>
-                <div><strong>Rehearse</strong><small>Action-rich practice in simulation</small></div>
-              </li>
-              <li>
-                <span>03</span>
-                <div><strong>Ground</strong><small>Calibrate with real demonstrations</small></div>
-              </li>
-              <li>
-                <span>04</span>
-                <div><strong>Deploy & learn</strong><small>Turn failures into the next curriculum</small></div>
-              </li>
-            </ol>
-          </div>
-        </section>
-
-        <section class="neura-lens">
+      <section id="library" class="intelligence-library" aria-labelledby="library-title">
+        <div class="library-heading">
           <div>
-            <p class="section-label">The NEURA lens</p>
-            <h3>Manual teaching is expensive. That makes data operations strategic.</h3>
+            <p class="section-label">02 / Intelligence library</p>
+            <h2 id="library-title">One question per note.<br />One page per answer.</h2>
           </div>
-          <div>
-            <p>
-              A hands-on training approach such as teleoperation can produce
-              high-fidelity, task-relevant demonstrations with no sim-to-real
-              gap. Its constraint is economics: every trajectory consumes
-              operator and robot time.
-            </p>
-            <p>
-              The strategic question is therefore not only how to collect more
-              demonstrations, but how to make each one compound: reuse across
-              tasks, prioritize informative edge cases, automate quality
-              checks, and combine demonstrations with simulation and pretrained
-              visual-language representations.
-            </p>
-          </div>
-        </section>
-
-        <section class="takeaway">
-          <span class="takeaway-label">Keep this</span>
           <p>
-            Web data supplies <strong>common sense</strong>. Simulation supplies
-            <strong>practice</strong>. Real robots supply
-            <strong>ground truth</strong>.
+            Filter the archive by strategic lens, or search across titles,
+            topics, and core questions.
           </p>
-        </section>
+        </div>
 
-        <footer class="source">
-          <div>
-            <p class="section-label">Source</p>
-            <p>
-              Jim Fan on NVIDIA's Embodied AI Lab and Jensen Huang's Prediction
-              that All Robots Will Be Autonomous.
-            </p>
-          </div>
-          <a
-            href="https://www.youtube.com/watch?v=yMGGpMyW_vw"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Watch the conversation <span aria-hidden="true">↗</span>
-          </a>
-        </footer>
-      </article>
-
-      <article id="note-002" class="learning-note">
-        <header class="article-header">
-          <div class="article-id">
-            <span>FIELD NOTE</span>
-            <strong>002</strong>
-          </div>
-          <div class="article-title">
-            <p class="eyebrow">From Jim Fan · NVIDIA GEAR</p>
-            <h2>Robots that think<br />fast and slow</h2>
-            <p class="dek">
-              Kahneman's two systems map cleanly onto a robot's brain: a slow,
-              deliberate planner and a fast, intuitive body. How the two talk
-              to each other is still open research.
-            </p>
-          </div>
-        </header>
-
-        <section class="thesis">
-          <p class="section-label">The thesis</p>
-          <blockquote>
-            Plan at one hertz. Act at a thousand. A robot mind needs both
-            tempos at once.
-          </blockquote>
-          <p class="body-copy">
-            Borrowing from Daniel Kahneman's <em>Thinking, Fast and Slow</em>,
-            Jim Fan splits embodied intelligence in two. System 2 deliberates:
-            reasoning, planning, writing code — work that large models already
-            do well. System 1 executes: fast, intuitive motor control that
-            never reaches conscious thought. Grasping a cup, you do not decide
-            where each fingertip goes at every millisecond.
-          </p>
-        </section>
-
-        <section class="data-cards duo" aria-label="System 2 and System 1">
-          <article class="data-card sim-card reveal">
-            <header>
-              <span class="card-number">01</span>
-              <span class="card-tag">SLOW</span>
-            </header>
-            <div class="card-icon orbit" aria-hidden="true">
-              <span></span><span></span><span></span>
-            </div>
-            <h3>System 2</h3>
-            <p class="card-lead">Deliberate: reason, plan, write code.</p>
-            <p>
-              The slow mind runs on big models. Vision-language models and
-              LLMs in a loop can already reason about a scene, decompose a
-              task, and even generate code to orchestrate behavior — deciding
-              what to do next at roughly one decision per second.
-            </p>
-            <dl>
-              <div>
-                <dt>Superpower</dt>
-                <dd>Long-horizon reasoning</dd>
-              </div>
-              <div>
-                <dt>Blind spot</dt>
-                <dd>Seconds of latency</dd>
-              </div>
-            </dl>
-            <p class="card-footnote">
-              A model that thinks in seconds cannot close a control loop that
-              physics demands in milliseconds.
-            </p>
-          </article>
-
-          <article class="data-card real-card reveal">
-            <header>
-              <span class="card-number">02</span>
-              <span class="card-tag">FAST</span>
-            </header>
-            <div class="card-icon crosshair" aria-hidden="true">
-              <span></span><span></span><span></span>
-            </div>
-            <h3>System 1</h3>
-            <p class="card-lead">Intuitive: act before you can explain it.</p>
-            <p>
-              The fast mind is reflex. Whole-body balance, grasping, and
-              contact-rich manipulation need decisions at something like a
-              thousand hertz — which points to compact, fast sensorimotor
-              policies rather than giant models.
-            </p>
-            <dl>
-              <div>
-                <dt>Superpower</dt>
-                <dd>Reflex-speed control</dd>
-              </div>
-              <div>
-                <dt>Blind spot</dt>
-                <dd>No deliberation</dd>
-              </div>
-            </dl>
-            <p class="card-footnote">
-              A reflex cannot plan a multi-step task or reason its way through
-              a situation it has never seen.
-            </p>
-          </article>
-        </section>
-
-        <section class="comparison" aria-labelledby="comparison-002-title">
-          <div class="comparison-heading">
-            <p class="section-label">The trade space</p>
-            <h3 id="comparison-002-title">Two tempos, one body.</h3>
-          </div>
-          <div class="matrix-wrap">
-            <table>
-              <thead>
-                <tr>
-                  <th scope="col">System</th>
-                  <th scope="col">Tempo</th>
-                  <th scope="col">Mode</th>
-                  <th scope="col">Runs on</th>
-                  <th scope="col">Breaks when</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row"><span class="dot sim"></span>System 2</th>
-                  <td><span class="rating mid">~1 Hz</span></td>
-                  <td>Deliberate</td>
-                  <td>Large VLMs &amp; LLMs in a loop</td>
-                  <td>Contact needs millisecond reflexes</td>
-                </tr>
-                <tr>
-                  <th scope="row"><span class="dot real"></span>System 1</th>
-                  <td><span class="rating high">~1 kHz</span></td>
-                  <td>Intuitive</td>
-                  <td>Compact sensorimotor policies</td>
-                  <td>The task needs long-horizon planning</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-        <section class="synthesis" aria-labelledby="synthesis-002-title">
-          <div class="synthesis-copy">
-            <p class="section-label">The open problem</p>
-            <h3 id="synthesis-002-title">The interface is the research.</h3>
-            <p>
-              Fan frames the unsolved part as architecture: one monolithic
-              model or a cascade of specialized ones — and if a cascade, do
-              the systems communicate through text or through latent
-              variables? Text is interpretable but slow and lossy; latents
-              are rich but opaque. NVIDIA's later GR00T N1 made the framing
-              concrete: a vision-language module for System 2 driving a
-              diffusion-transformer action module for System 1.
-            </p>
-          </div>
-
-          <div class="flywheel" aria-label="Open architecture questions">
-            <ol>
-              <li>
-                <span>01</span>
-                <div><strong>Monolithic</strong><small>One end-to-end model — cleaner, harder to control</small></div>
-              </li>
-              <li>
-                <span>02</span>
-                <div><strong>Cascaded</strong><small>Separate models per system, wired together</small></div>
-              </li>
-              <li>
-                <span>03</span>
-                <div><strong>The wire</strong><small>Text or latent vectors between the systems?</small></div>
-              </li>
-              <li>
-                <span>04</span>
-                <div><strong>The clock</strong><small>Bridging 1 Hz deliberation and 1 kHz control</small></div>
-              </li>
-            </ol>
-          </div>
-        </section>
-
-        <section class="neura-lens">
-          <div>
-            <p class="section-label">The NEURA lens</p>
-            <h3>Own the reflexes. Rent the reasoning.</h3>
-          </div>
-          <div>
-            <p>
-              General-purpose System 2 reasoning is fast becoming a commodity
-              available from foundation-model providers. The defensible layers
-              for a robot maker are System 1 — embodiment-specific,
-              safety-critical, kilohertz-rate control — and the interface
-              contract between the two systems.
-            </p>
-            <p>
-              That contract is also a safety boundary: while System 2
-              deliberates for seconds, System 1 must stay competent and safe
-              on its own. Designing the handshake — skill APIs, latent
-              commands, interruption semantics — is product work, not just
-              research.
-            </p>
-          </div>
-        </section>
-
-        <section class="takeaway">
-          <span class="takeaway-label">Keep this</span>
-          <p>
-            System 2 <strong>sets the goal</strong>. System 1
-            <strong>does the touching</strong>. The handshake is
-            <strong>still research</strong>.
-          </p>
-        </section>
-
-        <footer class="source">
-          <div>
-            <p class="section-label">Source</p>
-            <p>
-              Jim Fan on NVIDIA's Embodied AI Lab and Jensen Huang's Prediction
-              that All Robots Will Be Autonomous.
-            </p>
-          </div>
-          <a
-            href="https://www.youtube.com/watch?v=yMGGpMyW_vw"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Watch the conversation <span aria-hidden="true">↗</span>
-          </a>
-        </footer>
-      </article>
-
-      <article id="note-003" class="learning-note">
-        <header class="article-header">
-          <div class="article-id">
-            <span>FIELD NOTE</span>
-            <strong>003</strong>
-          </div>
-          <div class="article-title">
-            <p class="eyebrow">From Jim Fan · NVIDIA GEAR</p>
-            <h2>Robotics is<br />pre-Chinchilla</h2>
-            <p class="dek">
-              Language models come with a recipe: how much data to pair with
-              how many parameters. Embodied AI has no such curve yet — and
-              finding it is itself a research frontier.
-            </p>
-          </div>
-        </header>
-
-        <section class="thesis">
-          <p class="section-label">The thesis</p>
-          <blockquote>
-            The scaling laws for embodied AI are yet to be studied. Mapping
-            them is the work.
-          </blockquote>
-          <p class="body-copy">
-            In language modeling, scaling laws made training predictable:
-            loss falls smoothly with parameters, data, and compute. The
-            Chinchilla result reset the field — for a fixed compute budget,
-            scale data and parameters together, roughly twenty tokens per
-            parameter. Robotics has no equivalent map. Jim Fan is explicit
-            that the embodied scaling law is an open research goal, not a
-            known input to planning.
-          </p>
-        </section>
-
-        <section class="data-cards" aria-label="Scaling laws: known, unknown, expected">
-          <article class="data-card web-card reveal">
-            <header>
-              <span class="card-number">01</span>
-              <span class="card-tag">KNOWN</span>
-            </header>
-            <div class="card-icon" aria-hidden="true">
-              <span></span><span></span><span></span><span></span>
-            </div>
-            <h3>The LLM recipe</h3>
-            <p class="card-lead">Compute in, capability out — predictably.</p>
-            <p>
-              Kaplan (2020) and Chinchilla (Hoffmann et al., 2022) showed that
-              language-model loss follows smooth power laws. Chinchilla's
-              headline: most models were undertrained — pair every parameter
-              with roughly 20 tokens. Capability planning became engineering
-              rather than gambling.
-            </p>
-            <dl>
-              <div>
-                <dt>Superpower</dt>
-                <dd>Predictable returns</dd>
-              </div>
-              <div>
-                <dt>Blind spot</dt>
-                <dd>Proven for text only</dd>
-              </div>
-            </dl>
-            <p class="card-footnote">
-              Every frontier lab sizes its training runs against these curves
-              before committing compute.
-            </p>
-          </article>
-
-          <article class="data-card sim-card reveal">
-            <header>
-              <span class="card-number">02</span>
-              <span class="card-tag">UNKNOWN</span>
-            </header>
-            <div class="card-icon orbit" aria-hidden="true">
-              <span></span><span></span><span></span>
-            </div>
-            <h3>The robotics tangle</h3>
-            <p class="card-lead">Too many axes to scale at once.</p>
-            <p>
-              An embodied scaling law must span model size, simulation hours,
-              real-fleet hours, embodiments, and the mixture across all three
-              data fuels. There is no canonical "token of action," and the
-              metric that matters is task success rate — expensive to evaluate
-              and not guaranteed to track loss.
-            </p>
-            <dl>
-              <div>
-                <dt>Hard part</dt>
-                <dd>Heterogeneous data</dd>
-              </div>
-              <div>
-                <dt>Harder part</dt>
-                <dd>Success rate ≠ loss</dd>
-              </div>
-            </dl>
-            <p class="card-footnote">
-              Real-robot data is bound to wall-clock time: a robot can collect
-              at most 24 hours per day, and usually far less.
-            </p>
-          </article>
-
-          <article class="data-card real-card reveal">
-            <header>
-              <span class="card-number">03</span>
-              <span class="card-tag">EXPECTED</span>
-            </header>
-            <div class="card-icon crosshair" aria-hidden="true">
-              <span></span><span></span><span></span>
-            </div>
-            <h3>The wager</h3>
-            <p class="card-lead">Emergence should arrive here too.</p>
-            <p>
-              Fan's bet is that the LLM pattern repeats: tokenize actions
-              well, compress them with a transformer like any other modality,
-              and emergent properties appear as data and model size scale.
-              The embodied Chinchilla is a result waiting to be measured.
-            </p>
-            <dl>
-              <div>
-                <dt>Bet</dt>
-                <dd>Actions scale like text</dd>
-              </div>
-              <div>
-                <dt>Status</dt>
-                <dd>Active research</dd>
-              </div>
-            </dl>
-            <p class="card-footnote">
-              Until the curve exists, every data budget in robotics is a
-              hypothesis.
-            </p>
-          </article>
-        </section>
-
-        <section class="comparison" aria-labelledby="comparison-003-title">
-          <div class="comparison-heading">
-            <p class="section-label">The trade space</p>
-            <h3 id="comparison-003-title">One field has a map. The other has a frontier.</h3>
-          </div>
-          <div class="matrix-wrap">
-            <table>
-              <thead>
-                <tr>
-                  <th scope="col">Dimension</th>
-                  <th scope="col">Language models</th>
-                  <th scope="col">Embodied AI</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Scaling recipe</th>
-                  <td><span class="rating high">Mapped</span></td>
-                  <td><span class="rating low">Unknown</span></td>
-                </tr>
-                <tr>
-                  <th scope="row">Unit of data</th>
-                  <td>Tokens</td>
-                  <td>Trajectories &amp; action tokens</td>
-                </tr>
-                <tr>
-                  <th scope="row">Capability proxy</th>
-                  <td>Validation loss</td>
-                  <td>Task success rate</td>
-                </tr>
-                <tr>
-                  <th scope="row">Data supply</th>
-                  <td><span class="rating high">Internet-scale</span></td>
-                  <td><span class="rating low">Robot-bound</span></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-        <section class="synthesis" aria-labelledby="synthesis-003-title">
-          <div class="synthesis-copy">
-            <p class="section-label">My synthesis</p>
-            <h3 id="synthesis-003-title">Whoever maps the curve, budgets the future.</h3>
-            <p>
-              Until an embodied scaling law exists, robotics data strategy is
-              a portfolio of bets. The rational response is to run the
-              experiment deliberately: small pilots across a grid of model
-              sizes and data volumes, fitted curves, and only then large
-              spend on what the curve rewards.
-            </p>
-          </div>
-
-          <div class="flywheel" aria-label="Finding the scaling law">
-            <ol>
-              <li>
-                <span>01</span>
-                <div><strong>Tokenize</strong><small>Make actions a first-class modality</small></div>
-              </li>
-              <li>
-                <span>02</span>
-                <div><strong>Pilot</strong><small>Small runs across model × data grids</small></div>
-              </li>
-              <li>
-                <span>03</span>
-                <div><strong>Fit</strong><small>Measure capability vs data and parameters</small></div>
-              </li>
-              <li>
-                <span>04</span>
-                <div><strong>Spend</strong><small>Scale only what the curve rewards</small></div>
-              </li>
-            </ol>
-          </div>
-        </section>
-
-        <section class="neura-lens">
-          <div>
-            <p class="section-label">The NEURA lens</p>
-            <h3>A data engine should discover its own scaling law.</h3>
-          </div>
-          <div>
-            <p>
-              For a company whose moat includes demonstration data, "how much
-              data is enough?" has direct capital consequences. Instrumenting
-              collection — marginal task success per additional
-              demonstration-hour, per task family and embodiment — turns
-              operations into the experiment that reveals the curve.
-            </p>
-            <p>
-              A training-gym program is exactly the place where those curves
-              can be measured systematically: controlled tasks, repeatable
-              evaluation, and a steady stream of demonstrations to plot
-              against capability.
-            </p>
-          </div>
-        </section>
-
-        <section class="takeaway">
-          <span class="takeaway-label">Keep this</span>
-          <p>
-            LLMs have a <strong>recipe</strong>. Robotics still has a
-            <strong>hypothesis</strong>.
-          </p>
-        </section>
-
-        <footer class="source">
-          <div>
-            <p class="section-label">Source</p>
-            <p>
-              Jim Fan on NVIDIA's Embodied AI Lab and Jensen Huang's Prediction
-              that All Robots Will Be Autonomous. Context: Hoffmann et al.
-              2022, "Training Compute-Optimal Large Language Models."
-            </p>
-          </div>
-          <a
-            href="https://www.youtube.com/watch?v=yMGGpMyW_vw"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Watch the conversation <span aria-hidden="true">↗</span>
-          </a>
-        </footer>
-      </article>
-
-      <article id="note-004" class="learning-note">
-        <header class="article-header">
-          <div class="article-id">
-            <span>FIELD NOTE</span>
-            <strong>004</strong>
-          </div>
-          <div class="article-title">
-            <p class="eyebrow">From Jim Fan · NVIDIA GEAR</p>
-            <h2>Why robots<br />shaped like us?</h2>
-            <p class="dek">
-              Not romance, not sci-fi. The humanoid form factor is an
-              interface decision — a body compatible with a world we built for
-              ourselves, and with the video we already filmed of it.
-            </p>
-          </div>
-        </header>
-
-        <section class="thesis">
-          <p class="section-label">The thesis</p>
-          <blockquote>
-            The world is built around the human form. Tools, spaces, and
-            workflows assume our body and our hands.
-          </blockquote>
-          <p class="body-copy">
-            Jim Fan's case for humanoids rests on compatibility: restaurants,
-            factories, hospitals — and all the equipment and tools inside them
-            — are designed for the human form and the human hands. A robot
-            that shares the form factor inherits that world as-is. This is why
-            Project GR00T focuses on humanoid robots.
-          </p>
-        </section>
-
-        <section class="data-cards" aria-label="Three arguments for the humanoid form factor">
-          <article class="data-card web-card reveal">
-            <header>
-              <span class="card-number">01</span>
-              <span class="card-tag">ENVIRONMENT</span>
-            </header>
-            <div class="card-icon" aria-hidden="true">
-              <span></span><span></span><span></span><span></span>
-            </div>
-            <h3>A world pre-fitted</h3>
-            <p class="card-lead">Zero retrofit required.</p>
-            <p>
-              Door handles, stairs, shelves at human height, tools with human
-              grips: the built environment is one giant assumption about the
-              human body. A humanoid steps into it unchanged, while every
-              other form factor ships with an implicit demand to modify the
-              environment instead.
-            </p>
-            <dl>
-              <div>
-                <dt>Superpower</dt>
-                <dd>Drop-in compatibility</dd>
-              </div>
-              <div>
-                <dt>Blind spot</dt>
-                <dd>Hardest hardware problem</dd>
-              </div>
-            </dl>
-            <p class="card-footnote">
-              Generality of the body is bought with difficulty of the control
-              problem.
-            </p>
-          </article>
-
-          <article class="data-card sim-card reveal">
-            <header>
-              <span class="card-number">02</span>
-              <span class="card-tag">BODY</span>
-            </header>
-            <div class="card-icon orbit" aria-hidden="true">
-              <span></span><span></span><span></span>
-            </div>
-            <h3>Two arms, two legs</h3>
-            <p class="card-lead">Redundancy is capability.</p>
-            <p>
-              Two arms beat one for manipulation: hold-and-act, handovers,
-              large or awkward objects. Two legs with enough degrees of
-              freedom let the robot balance in different ways, traverse
-              complex terrain, and brace its whole body to move objects in
-              ways a wheeled base cannot.
-            </p>
-            <dl>
-              <div>
-                <dt>Superpower</dt>
-                <dd>Bimanual + whole-body</dd>
-              </div>
-              <div>
-                <dt>Blind spot</dt>
-                <dd>Balance is expensive</dd>
-              </div>
-            </dl>
-            <p class="card-footnote">
-              The same degrees of freedom that make control hard are what make
-              the body general.
-            </p>
-          </article>
-
-          <article class="data-card real-card reveal">
-            <header>
-              <span class="card-number">03</span>
-              <span class="card-tag">DATA</span>
-            </header>
-            <div class="card-icon crosshair" aria-hidden="true">
-              <span></span><span></span><span></span>
-            </div>
-            <h3>The video dividend</h3>
-            <p class="card-lead">The internet already filmed your training set.</p>
-            <p>
-              Most video online shows human bodies and five-fingered hands at
-              work. That footage can be used — partially — for robot training
-              only when the embodiment matches. The closer the body is to
-              human, the more of the internet becomes usable pretraining
-              signal.
-            </p>
-            <dl>
-              <div>
-                <dt>Superpower</dt>
-                <dd>Web-scale priors</dd>
-              </div>
-              <div>
-                <dt>Blind spot</dt>
-                <dd>Transfer is partial</dd>
-              </div>
-            </dl>
-            <p class="card-footnote">
-              Per note 001: web data supplies common sense, not motor
-              commands. Matching embodiment widens that pipe.
-            </p>
-          </article>
-        </section>
-
-        <section class="comparison" aria-labelledby="comparison-004-title">
-          <div class="comparison-heading">
-            <p class="section-label">The trade space</p>
-            <h3 id="comparison-004-title">Every body is a trade-off.</h3>
-          </div>
-          <div class="matrix-wrap">
-            <table>
-              <thead>
-                <tr>
-                  <th scope="col">Form factor</th>
-                  <th scope="col">Built-world fit</th>
-                  <th scope="col">Manipulation</th>
-                  <th scope="col">Video transfer</th>
-                  <th scope="col">Economics today</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Humanoid</th>
-                  <td><span class="rating high">High</span></td>
-                  <td><span class="rating high">Bimanual</span></td>
-                  <td><span class="rating high">Highest</span></td>
-                  <td><span class="rating low">Immature</span></td>
-                </tr>
-                <tr>
-                  <th scope="row">Wheeled + arm</th>
-                  <td><span class="rating mid">Flat floors</span></td>
-                  <td><span class="rating mid">One arm</span></td>
-                  <td><span class="rating low">Low</span></td>
-                  <td><span class="rating high">Proven</span></td>
-                </tr>
-                <tr>
-                  <th scope="row">Quadruped</th>
-                  <td><span class="rating mid">No hands</span></td>
-                  <td><span class="rating low">Minimal</span></td>
-                  <td><span class="rating low">Low</span></td>
-                  <td><span class="rating mid">Niches</span></td>
-                </tr>
-                <tr>
-                  <th scope="row">Aerial</th>
-                  <td><span class="rating low">Reach only</span></td>
-                  <td><span class="rating low">Minimal</span></td>
-                  <td><span class="rating low">Low</span></td>
-                  <td><span class="rating mid">Niches</span></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-        <section class="synthesis" aria-labelledby="synthesis-004-title">
-          <div class="synthesis-copy">
-            <p class="section-label">My synthesis</p>
-            <h3 id="synthesis-004-title">GR00T bets on the general body.</h3>
-            <p>
-              Wheels are more efficient on flat ground, quadrupeds own rough
-              inspection, drones own the air — each wins a niche by trading
-              away manipulation breadth or data leverage. The humanoid bet is
-              that generality compounds: one body that fits everywhere,
-              learning from the largest data pool that exists.
-            </p>
-          </div>
-
-          <div class="flywheel" aria-label="Why the humanoid compounds">
-            <ol>
-              <li>
-                <span>01</span>
-                <div><strong>Fit</strong><small>Inherit human spaces and tools as-is</small></div>
-              </li>
-              <li>
-                <span>02</span>
-                <div><strong>Manipulate</strong><small>Two arms, whole-body skills</small></div>
-              </li>
-              <li>
-                <span>03</span>
-                <div><strong>Learn</strong><small>Mine human video for priors</small></div>
-              </li>
-              <li>
-                <span>04</span>
-                <div><strong>Compound</strong><small>One platform amortizes R&amp;D across tasks</small></div>
-              </li>
-            </ol>
-          </div>
-        </section>
-
-        <section class="neura-lens">
-          <div>
-            <p class="section-label">The NEURA lens</p>
-            <h3>The humanoid is the endgame, not the only game.</h3>
-          </div>
-          <div>
-            <p>
-              A robot maker does not have to choose once. Cobot arms and
-              mobile platforms win structured environments today and can fund
-              the harder humanoid bet; a humanoid program like NEURA's 4NE-1
-              sits at the general end of the same portfolio.
-            </p>
-            <p>
-              A shared model across embodiments lets data collected on one
-              platform partially transfer to the others — which makes the
-              portfolio a data strategy, not just a product line.
-            </p>
-          </div>
-        </section>
-
-        <section class="takeaway">
-          <span class="takeaway-label">Keep this</span>
-          <p>
-            The humanoid is an <strong>interface decision</strong>: match the
-            body the world was <strong>designed for</strong>, and unlock the
-            video it already <strong>filmed</strong>.
-          </p>
-        </section>
-
-        <footer class="source">
-          <div>
-            <p class="section-label">Source</p>
-            <p>
-              Jim Fan on NVIDIA's Embodied AI Lab and Jensen Huang's Prediction
-              that All Robots Will Be Autonomous.
-            </p>
-          </div>
-          <a
-            href="https://www.youtube.com/watch?v=yMGGpMyW_vw"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Watch the conversation <span aria-hidden="true">↗</span>
-          </a>
-        </footer>
-      </article>
-
-      <article id="note-005" class="learning-note">
-        <header class="article-header">
-          <div class="article-id">
-            <span>FIELD NOTE</span>
-            <strong>005</strong>
-          </div>
-          <div class="article-title">
-            <p class="eyebrow">From Jim Fan · NVIDIA GEAR</p>
-            <h2>Generalist first,<br />specialist later</h2>
-            <p class="dek">
-              NLP already ran this experiment: a zoo of task-specific models
-              lost to one generalist. Jim Fan expects robotics to repeat the
-              curve — that is the premise of Project GR00T.
-            </p>
-          </div>
-        </header>
-
-        <section class="thesis">
-          <p class="section-label">The thesis</p>
-          <blockquote>
-            The specialized generalist is almost always stronger than the
-            original specialist.
-          </blockquote>
-          <p class="body-copy">
-            Before ChatGPT, NLP shipped different models and pipelines for
-            translation, coding, math, and creative writing — completely
-            different training pipelines per task. Then one generalist
-            unified everything. Fan expects robotics, which is still mostly
-            in its specialist stage, to follow the same trajectory.
-          </p>
-        </section>
-
-        <section class="data-cards" aria-label="From specialists to specialized generalists">
-          <article class="data-card web-card reveal">
-            <header>
-              <span class="card-number">01</span>
-              <span class="card-tag">BEFORE</span>
-            </header>
-            <div class="card-icon" aria-hidden="true">
-              <span></span><span></span><span></span><span></span>
-            </div>
-            <h3>The specialist zoo</h3>
-            <p class="card-lead">One task, one model, one pipeline.</p>
-            <p>
-              Translation, sentiment, summarization, code: each NLP task had
-              its own architecture, its own training data, its own maintenance
-              burden. Progress in one silo barely moved the others. Robotics
-              today largely looks like this — one policy per cell, per task,
-              per machine.
-            </p>
-            <dl>
-              <div>
-                <dt>Strength</dt>
-                <dd>Focused performance</dd>
-              </div>
-              <div>
-                <dt>Weakness</dt>
-                <dd>Nothing transfers</dd>
-              </div>
-            </dl>
-            <p class="card-footnote">
-              Every new task restarts the engineering from near zero.
-            </p>
-          </article>
-
-          <article class="data-card sim-card reveal">
-            <header>
-              <span class="card-number">02</span>
-              <span class="card-tag">AFTER</span>
-            </header>
-            <div class="card-icon orbit" aria-hidden="true">
-              <span></span><span></span><span></span>
-            </div>
-            <h3>The generalist</h3>
-            <p class="card-lead">One model unified everything.</p>
-            <p>
-              ChatGPT collapsed the zoo into a single model. Emergent
-              capabilities — skills nobody explicitly trained — transfer from
-              one task to the next, and a single model with a single API is
-              far easier to maintain than a fleet of bespoke pipelines.
-            </p>
-            <dl>
-              <div>
-                <dt>Strength</dt>
-                <dd>Transfer + emergence</dd>
-              </div>
-              <div>
-                <dt>Weakness</dt>
-                <dd>Heavy to train and run</dd>
-              </div>
-            </dl>
-            <p class="card-footnote">
-              The maintenance economics matter as much as the accuracy: one
-              model, one update path.
-            </p>
-          </article>
-
-          <article class="data-card real-card reveal">
-            <header>
-              <span class="card-number">03</span>
-              <span class="card-tag">NEXT</span>
-            </header>
-            <div class="card-icon crosshair" aria-hidden="true">
-              <span></span><span></span><span></span>
-            </div>
-            <h3>The specialized generalist</h3>
-            <p class="card-lead">Trim the giant back down.</p>
-            <p>
-              Once the generalist exists, you prompt it, fine-tune it, and
-              distill it back into specialists — and the specialized
-              generalist is almost always stronger than the original
-              specialist. Many specialists, one parent model. This is exactly
-              how LLMs are deployed today.
-            </p>
-            <dl>
-              <div>
-                <dt>Strength</dt>
-                <dd>Best of both</dd>
-              </div>
-              <div>
-                <dt>Weakness</dt>
-                <dd>Needs the generalist first</dd>
-              </div>
-            </dl>
-            <p class="card-footnote">
-              GR00T's premise for robots: build the generalist, then
-              specialize per task and embodiment.
-            </p>
-          </article>
-        </section>
-
-        <section class="comparison" aria-labelledby="comparison-005-title">
-          <div class="comparison-heading">
-            <p class="section-label">The trade space</p>
-            <h3 id="comparison-005-title">Robotics is rerunning the NLP timeline.</h3>
-          </div>
-          <div class="matrix-wrap">
-            <table>
-              <thead>
-                <tr>
-                  <th scope="col">Stage</th>
-                  <th scope="col">Language AI</th>
-                  <th scope="col">Robotics</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Specialists</th>
-                  <td>One model per task — translation, NER, sentiment</td>
-                  <td><span class="rating mid">Today</span> One policy per cell</td>
-                </tr>
-                <tr>
-                  <th scope="row">Generalist</th>
-                  <td>GPT-3 → ChatGPT unified the field</td>
-                  <td><span class="rating high">In progress</span> Project GR00T</td>
-                </tr>
-                <tr>
-                  <th scope="row">Specialized generalists</th>
-                  <td>Prompted, fine-tuned, distilled per task</td>
-                  <td><span class="rating low">To come</span> Per task &amp; embodiment</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-        <section class="synthesis" aria-labelledby="synthesis-005-title">
-          <div class="synthesis-copy">
-            <p class="section-label">My synthesis</p>
-            <h3 id="synthesis-005-title">Bet on the curve, not the niche.</h3>
-            <p>
-              If the generalist arrives, value migrates from hand-built task
-              stacks to whoever can specialize the generalist fastest. The
-              cycle then feeds itself: every deployed specialist generates the
-              demonstrations that improve the next generalist.
-            </p>
-          </div>
-
-          <div class="flywheel" aria-label="The generalist cycle">
-            <ol>
-              <li>
-                <span>01</span>
-                <div><strong>Generalize</strong><small>One model across tasks and embodiments</small></div>
-              </li>
-              <li>
-                <span>02</span>
-                <div><strong>Prompt</strong><small>Steer it with instructions</small></div>
-              </li>
-              <li>
-                <span>03</span>
-                <div><strong>Distill</strong><small>Compress it to the deployment</small></div>
-              </li>
-              <li>
-                <span>04</span>
-                <div><strong>Repeat</strong><small>Specialist data feeds the next generalist</small></div>
-              </li>
-            </ol>
-          </div>
-        </section>
-
-        <section class="neura-lens">
-          <div>
-            <p class="section-label">The NEURA lens</p>
-            <h3>Specialization becomes configuration.</h3>
-          </div>
-          <div>
-            <p>
-              If the generalist wins, per-customer engineering becomes
-              per-customer fine-tuning: the marginal cost of serving a new
-              task collapses, and the differentiator shifts to proprietary
-              demonstrations plus the pipeline that turns them into
-              specialized models quickly.
-            </p>
-            <p>
-              A training-gym program is that pipeline — the machinery for
-              producing specialized generalists on demand.
-            </p>
-          </div>
-        </section>
-
-        <section class="takeaway">
-          <span class="takeaway-label">Keep this</span>
-          <p>
-            Train <strong>one generalist</strong>. Distill
-            <strong>every specialist</strong> from it.
-          </p>
-        </section>
-
-        <footer class="source">
-          <div>
-            <p class="section-label">Source</p>
-            <p>
-              Jim Fan on NVIDIA's Embodied AI Lab and Jensen Huang's Prediction
-              that All Robots Will Be Autonomous.
-            </p>
-          </div>
-          <a
-            href="https://www.youtube.com/watch?v=yMGGpMyW_vw"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Watch the conversation <span aria-hidden="true">↗</span>
-          </a>
-        </footer>
-      </article>
-
-      <article id="note-006" class="learning-note">
-        <header class="article-header">
-          <div class="article-id">
-            <span>FIELD NOTE</span>
-            <strong>006</strong>
-          </div>
-          <div class="article-title">
-            <p class="eyebrow">Field survey · June 2026</p>
-            <h2>Embedded AI<br />hardware, 2026</h2>
-            <p class="dek">
-              Twelve platforms that can be a robot's onboard brain right now,
-              scored on the four axes that matter — and sortable by any of
-              them.
-            </p>
-          </div>
-        </header>
-
-        <section class="thesis">
-          <p class="section-label">The thesis</p>
-          <blockquote>
-            Compute, memory, power, price. Onboard intelligence is a four-way
-            trade — no platform wins all four.
-          </blockquote>
-          <p class="body-copy">
-            A field survey of the current embedded AI hardware menu, from
-            flagship Jetson modules to USB accelerators. Star ratings are
-            normalized within this set: five stars is best in class on that
-            axis — fastest, biggest, most frugal, cheapest. Filter by family,
-            search, or sort any column to see the trade-offs move.
-          </p>
-        </section>
-
-        <section class="hw-explorer" aria-labelledby="hw-title">
-          <div class="hw-heading">
-            <p class="section-label">The hardware menu</p>
-            <h3 id="hw-title">Twelve ways to give a robot a brain.</h3>
-            <p class="hw-hint">
-              Click a column header to sort — the first click ranks best
-              first. Stars are relative to this set, not absolute.
-            </p>
-          </div>
-
-          <div class="hw-controls">
+        <div class="library-controls">
+          <label class="library-search">
+            <span>Search intelligence</span>
             <input
-              id="hw-search"
+              id="note-search"
               type="search"
-              placeholder="Filter platforms…"
-              aria-label="Filter platforms by text"
+              placeholder="Search topics, questions, companies…"
+              autocomplete="off"
             />
-            <button class="hw-chip active" type="button" data-family="all">All</button>
-            <button class="hw-chip" type="button" data-family="jetson">Jetson</button>
-            <button class="hw-chip" type="button" data-family="pi">Raspberry Pi</button>
-            <button class="hw-chip" type="button" data-family="accel">Accelerators</button>
-            <button class="hw-chip" type="button" data-family="kit">Kits &amp; SBCs</button>
-            <span class="hw-count" id="hw-count">12 / 12</span>
+          </label>
+          <div class="library-filters" aria-label="Filter notes by strategic lens">
+            <span>Strategic lens</span>
+            <div>
+              <button class="library-chip active" type="button" data-note-filter="all">All</button>
+              <button class="library-chip" type="button" data-note-filter="models">Models &amp; data</button>
+              <button class="library-chip" type="button" data-note-filter="systems">Robot systems</button>
+              <button class="library-chip" type="button" data-note-filter="market">Market</button>
+              <button class="library-chip" type="button" data-note-filter="learning">Build &amp; learn</button>
+            </div>
           </div>
+          <span class="library-count" id="note-count" aria-live="polite">08 / 08</span>
+        </div>
 
-          <div class="hw-table-wrap">
-            <table id="hw-table" class="hw-table">
-              <thead>
-                <tr>
-                  <th scope="col" aria-sort="none">
-                    <button type="button" data-key="platform">Platform <span class="dir" aria-hidden="true"></span></button>
-                  </th>
-                  <th scope="col" aria-sort="none">
-                    <button type="button" data-key="release">Release <span class="dir" aria-hidden="true"></span></button>
-                  </th>
-                  <th scope="col" aria-sort="none">
-                    <button type="button" data-key="compute">AI compute <span class="dir" aria-hidden="true"></span></button>
-                  </th>
-                  <th scope="col" aria-sort="none">
-                    <button type="button" data-key="memory">Memory <span class="dir" aria-hidden="true"></span></button>
-                  </th>
-                  <th scope="col" aria-sort="none">
-                    <button type="button" data-key="power">Power <span class="dir" aria-hidden="true"></span></button>
-                  </th>
-                  <th scope="col" aria-sort="none">
-                    <button type="button" data-key="price">Price <span class="dir" aria-hidden="true"></span></button>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr data-family="jetson" data-platform="Jetson AGX Thor" data-compute="5" data-memory="5" data-power="1" data-price="1">
-                  <th scope="row"><a href="https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-thor/" target="_blank" rel="noreferrer">Jetson AGX Thor</a></th>
-                  <td class="release">2025</td>
-                  <td><span class="stars" role="img" aria-label="5 of 5">★★★★★</span><small>2070 FP4 TFLOPS</small></td>
-                  <td><span class="stars" role="img" aria-label="5 of 5">★★★★★</span><small>128 GB</small></td>
-                  <td><span class="stars" role="img" aria-label="1 of 5">★<span class="dim">★★★★</span></span><small>40 to 130 W</small></td>
-                  <td><span class="stars" role="img" aria-label="1 of 5">★<span class="dim">★★★★</span></span><small>$3,499, ≈€4,190 EU</small></td>
-                </tr>
-                <tr data-family="jetson" data-platform="Jetson AGX Orin" data-compute="4" data-memory="5" data-power="2" data-price="2">
-                  <th scope="row"><a href="https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/" target="_blank" rel="noreferrer">Jetson AGX Orin</a></th>
-                  <td class="release">2022</td>
-                  <td><span class="stars" role="img" aria-label="4 of 5">★★★★<span class="dim">★</span></span><small>275 TOPS</small></td>
-                  <td><span class="stars" role="img" aria-label="5 of 5">★★★★★</span><small>64 GB dev kit</small></td>
-                  <td><span class="stars" role="img" aria-label="2 of 5">★★<span class="dim">★★★</span></span><small>15 to 60 W</small></td>
-                  <td><span class="stars" role="img" aria-label="2 of 5">★★<span class="dim">★★★</span></span><small>$1,999 launch price</small></td>
-                </tr>
-                <tr data-family="jetson" data-platform="Jetson Orin NX 16 GB Super" data-compute="4" data-memory="3" data-power="3" data-price="3">
-                  <th scope="row"><a href="https://developer.nvidia.com/embedded/jetson-orin-nx" target="_blank" rel="noreferrer">Jetson Orin NX 16 GB Super</a></th>
-                  <td class="release">2023, Super 2025</td>
-                  <td><span class="stars" role="img" aria-label="4 of 5">★★★★<span class="dim">★</span></span><small>157 TOPS</small></td>
-                  <td><span class="stars" role="img" aria-label="3 of 5">★★★<span class="dim">★★</span></span><small>16 GB</small></td>
-                  <td><span class="stars" role="img" aria-label="3 of 5">★★★<span class="dim">★★</span></span><small>10 to 40 W</small></td>
-                  <td><span class="stars" role="img" aria-label="3 of 5">★★★<span class="dim">★★</span></span><small>≈€900 to €1,050 kit or bundle</small></td>
-                </tr>
-                <tr data-family="jetson" data-platform="Jetson Orin Nano Super" data-compute="3" data-memory="2" data-power="4" data-price="4">
-                  <th scope="row"><a href="https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/nano-super-developer-kit/" target="_blank" rel="noreferrer">Jetson Orin Nano Super</a></th>
-                  <td class="release">2024 refresh, 2023 HW</td>
-                  <td><span class="stars" role="img" aria-label="3 of 5">★★★<span class="dim">★★</span></span><small>67 TOPS</small></td>
-                  <td><span class="stars" role="img" aria-label="2 of 5">★★<span class="dim">★★★</span></span><small>8 GB</small></td>
-                  <td><span class="stars" role="img" aria-label="4 of 5">★★★★<span class="dim">★</span></span><small>7 to 25 W</small></td>
-                  <td><span class="stars" role="img" aria-label="4 of 5">★★★★<span class="dim">★</span></span><small>$249 official</small></td>
-                </tr>
-                <tr data-family="pi" data-platform="Raspberry Pi 5 barebone 16 GB" data-compute="1" data-memory="3" data-power="5" data-price="4">
-                  <th scope="row"><a href="https://www.raspberrypi.com/products/raspberry-pi-5/" target="_blank" rel="noreferrer">Raspberry Pi 5 barebone 16 GB</a></th>
-                  <td class="release">2023, 16 GB in 2025</td>
-                  <td><span class="stars" role="img" aria-label="1 of 5">★<span class="dim">★★★★</span></span><small>No AI accelerator</small></td>
-                  <td><span class="stars" role="img" aria-label="3 of 5">★★★<span class="dim">★★</span></span><small>16 GB</small></td>
-                  <td><span class="stars" role="img" aria-label="5 of 5">★★★★★</span><small>2 to 10 W board, 27 W PSU budget</small></td>
-                  <td><span class="stars" role="img" aria-label="4 of 5">★★★★<span class="dim">★</span></span><small>$305 current official 16 GB price</small></td>
-                </tr>
-                <tr data-family="pi" data-platform="Raspberry Pi 5 plus AI HAT+ 2" data-compute="2" data-memory="3" data-power="4" data-price="4">
-                  <th scope="row"><a href="https://www.raspberrypi.com/products/ai-hat-plus-2/" target="_blank" rel="noreferrer">Raspberry Pi 5 plus AI HAT+ 2</a></th>
-                  <td class="release">2026</td>
-                  <td><span class="stars" role="img" aria-label="2 of 5">★★<span class="dim">★★★</span></span><small>40 INT4 TOPS</small></td>
-                  <td><span class="stars" role="img" aria-label="3 of 5">★★★<span class="dim">★★</span></span><small>16 GB Pi plus 8 GB AI HAT</small></td>
-                  <td><span class="stars" role="img" aria-label="4 of 5">★★★★<span class="dim">★</span></span><small>≈5 to 15 W system class</small></td>
-                  <td><span class="stars" role="img" aria-label="4 of 5">★★★★<span class="dim">★</span></span><small>$130 HAT, Pi extra</small></td>
-                </tr>
-                <tr data-family="accel" data-platform="Google Coral USB Edge TPU" data-compute="1" data-memory="1" data-power="5" data-price="5">
-                  <th scope="row"><a href="https://coral.ai/products/accelerator/" target="_blank" rel="noreferrer">Google Coral USB Edge TPU</a></th>
-                  <td class="release">2019</td>
-                  <td><span class="stars" role="img" aria-label="1 of 5">★<span class="dim">★★★★</span></span><small>4 INT8 TOPS</small></td>
-                  <td><span class="stars" role="img" aria-label="1 of 5">★<span class="dim">★★★★</span></span><small>No usable model RAM class</small></td>
-                  <td><span class="stars" role="img" aria-label="5 of 5">★★★★★</span><small>≈2 W</small></td>
-                  <td><span class="stars" role="img" aria-label="5 of 5">★★★★★</span><small>≈€90 to €130</small></td>
-                </tr>
-                <tr data-family="accel" data-platform="Hailo 8 M.2" data-compute="2" data-memory="1" data-power="5" data-price="5">
-                  <th scope="row"><a href="https://hailo.ai/products/ai-accelerators/hailo-8-m2-ai-acceleration-module/" target="_blank" rel="noreferrer">Hailo 8 M.2</a></th>
-                  <td class="release">2019</td>
-                  <td><span class="stars" role="img" aria-label="2 of 5">★★<span class="dim">★★★</span></span><small>26 TOPS</small></td>
-                  <td><span class="stars" role="img" aria-label="1 of 5">★<span class="dim">★★★★</span></span><small>On-chip memory, no external DRAM</small></td>
-                  <td><span class="stars" role="img" aria-label="5 of 5">★★★★★</span><small>2.5 W typical</small></td>
-                  <td><span class="stars" role="img" aria-label="5 of 5">★★★★★</span><small>≈€165 to €200</small></td>
-                </tr>
-                <tr data-family="accel" data-platform="Hailo 10H / AI HAT+ 2 class" data-compute="2" data-memory="2" data-power="5" data-price="5">
-                  <th scope="row"><a href="https://hailo.ai/products/ai-accelerators/hailo-10h-ai-accelerator/" target="_blank" rel="noreferrer">Hailo 10H / AI HAT+ 2 class</a></th>
-                  <td class="release">2024 chip, 2026 Pi product</td>
-                  <td><span class="stars" role="img" aria-label="2 of 5">★★<span class="dim">★★★</span></span><small>40 TOPS</small></td>
-                  <td><span class="stars" role="img" aria-label="2 of 5">★★<span class="dim">★★★</span></span><small>8 GB on Pi HAT+ 2</small></td>
-                  <td><span class="stars" role="img" aria-label="5 of 5">★★★★★</span><small>Under 5 W chip class</small></td>
-                  <td><span class="stars" role="img" aria-label="5 of 5">★★★★★</span><small>$130 via Pi AI HAT+ 2</small></td>
-                </tr>
-                <tr data-family="kit" data-platform="Qualcomm RB3 Gen 2 Core Kit" data-compute="2" data-memory="2" data-power="4" data-price="4">
-                  <th scope="row"><a href="https://www.qualcomm.com/developer/hardware/rb3-gen-2-development-kit" target="_blank" rel="noreferrer">Qualcomm RB3 Gen 2 Core Kit</a></th>
-                  <td class="release">2024</td>
-                  <td><span class="stars" role="img" aria-label="2 of 5">★★<span class="dim">★★★</span></span><small>12 TOPS</small></td>
-                  <td><span class="stars" role="img" aria-label="2 of 5">★★<span class="dim">★★★</span></span><small>6 GB kit class</small></td>
-                  <td><span class="stars" role="img" aria-label="4 of 5">★★★★<span class="dim">★</span></span><small>≈7 to 12 W class</small></td>
-                  <td><span class="stars" role="img" aria-label="4 of 5">★★★★<span class="dim">★</span></span><small>$399 core kit</small></td>
-                </tr>
-                <tr data-family="kit" data-platform="Arduino VENTUNO Q" data-compute="2" data-memory="3" data-power="3" data-price="4">
-                  <th scope="row"><a href="https://www.arduino.cc/product-ventuno-q" target="_blank" rel="noreferrer">Arduino VENTUNO Q</a></th>
-                  <td class="release">2026</td>
-                  <td><span class="stars" role="img" aria-label="2 of 5">★★<span class="dim">★★★</span></span><small>40 TOPS</small></td>
-                  <td><span class="stars" role="img" aria-label="3 of 5">★★★<span class="dim">★★</span></span><small>16 GB</small></td>
-                  <td><span class="stars" role="img" aria-label="3 of 5">★★★<span class="dim">★★</span></span><small>Unknown, assume 10 to 25 W class</small></td>
-                  <td><span class="stars" role="img" aria-label="4 of 5">★★★★<span class="dim">★</span></span><small>Just under $300 expected</small></td>
-                </tr>
-                <tr data-family="kit" data-platform="RK3588 SBC class" data-compute="1" data-memory="4" data-power="4" data-price="4">
-                  <th scope="row"><a href="https://www.rock-chips.com/a/en/products/RK35_Series/2022/0926/1660.html" target="_blank" rel="noreferrer">RK3588 SBC class</a></th>
-                  <td class="release">2022 to 2025, board dependent</td>
-                  <td><span class="stars" role="img" aria-label="1 of 5">★<span class="dim">★★★★</span></span><small>6 TOPS</small></td>
-                  <td><span class="stars" role="img" aria-label="4 of 5">★★★★<span class="dim">★</span></span><small>Up to 32 GB</small></td>
-                  <td><span class="stars" role="img" aria-label="4 of 5">★★★★<span class="dim">★</span></span><small>≈5 to 15 W board class</small></td>
-                  <td><span class="stars" role="img" aria-label="4 of 5">★★★★<span class="dim">★</span></span><small>≈€220 to €500</small></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-        <section class="synthesis" aria-labelledby="synthesis-006-title">
-          <div class="synthesis-copy">
-            <p class="section-label">My synthesis</p>
-            <h3 id="synthesis-006-title">Memory is the new TOPS.</h3>
-            <p>
-              Sort by any column and four tiers fall out. The deeper pattern:
-              compute is no longer the scarce resource — memory gates what
-              class of model can live onboard at all (Thor's 128 GB exists
-              precisely for VLA-class models), and watts decide whether the
-              platform can ride on a battery.
-            </p>
-          </div>
-
-          <div class="flywheel" aria-label="The four hardware tiers">
-            <ol>
-              <li>
-                <span>01</span>
-                <div><strong>Flagship Jetson</strong><small>VLA-class models onboard — pay in watts and euros</small></div>
-              </li>
-              <li>
-                <span>02</span>
-                <div><strong>Mid Jetson</strong><small>The System 1 sweet spot: perception + compact policies</small></div>
-              </li>
-              <li>
-                <span>03</span>
-                <div><strong>Accelerator + host</strong><small>Fixed-function perception at single-digit watts</small></div>
-              </li>
-              <li>
-                <span>04</span>
-                <div><strong>Kits &amp; SBCs</strong><small>Prototype cheap; rarely the final reflexes</small></div>
-              </li>
-            </ol>
-          </div>
-        </section>
-
-        <section class="neura-lens">
-          <div>
-            <p class="section-label">The NEURA lens</p>
-            <h3>Silicon follows the System 1 / System 2 split.</h3>
-          </div>
-          <div>
-            <p>
-              Note 002's dual-system framing decides the shopping list:
-              System 1 must run onboard in real time, so the robot's silicon
-              is sized for the reflexes — perception and control at a power
-              budget the chassis can carry. System 2 can burst to off-board
-              or cloud compute when deliberation is needed.
-            </p>
-            <p>
-              Fleet economics push the same way: onboard compute multiplies
-              with every unit shipped, while shared System 2 amortizes across
-              the fleet. The cheapest TOPS are the ones you don't put in the
-              robot.
-            </p>
-          </div>
-        </section>
-
-        <section class="takeaway">
-          <span class="takeaway-label">Keep this</span>
-          <p>
-            TOPS are <strong>cheap</strong>. <strong>Memory</strong> and
-            <strong>watts</strong> decide what runs onboard.
-          </p>
-        </section>
-
-        <footer class="source">
-          <div>
-            <p class="section-label">Source</p>
-            <p>
-              Field survey compiled from vendor specs and street prices,
-              June 2026. Star ratings are normalized within this set of
-              twelve platforms.
-            </p>
-          </div>
-          <a href="./notes/006-embedded-ai-hardware-2026.md" target="_blank" rel="noreferrer">
-            View the data note <span aria-hidden="true">↗</span>
-          </a>
-        </footer>
-      </article>
-
-      <article id="note-007" class="learning-note">
-        <header class="article-header">
-          <div class="article-id">
-            <span>FIELD NOTE</span>
-            <strong>007</strong>
-          </div>
-          <div class="article-title">
-            <p class="eyebrow">Market map · June 2026</p>
-            <h2>The humanoid<br />robot field, 2026</h2>
-            <p class="dek">
-              Thirty major humanoids, from factory deployments to fresh
-              announcements. Filter the field, sort the economics, and hover
-              over any robot to see the machine behind the numbers.
-            </p>
-          </div>
-        </header>
-
-        <section class="thesis">
-          <p class="section-label">The thesis</p>
-          <blockquote>
-            The humanoid race is not one market yet. It is a spectrum from
-            prototypes and reservations to paid deployments.
-          </blockquote>
-          <p class="body-copy">
-            This snapshot tracks thirty prominent full-size and compact
-            humanoids. “Available” means there is a sales, preorder,
-            reservation, leasing, or paid-deployment channel. “Announced”
-            covers prototypes and pilots without an open commercial path.
-            Prices marked as estimates are targets or third-party reports,
-            not quotes.
-          </p>
-        </section>
-
-        <section class="robot-explorer" aria-labelledby="robot-table-title">
-          <div class="robot-heading">
-            <p class="section-label">The field</p>
-            <h3 id="robot-table-title">Thirty bodies chasing general-purpose work.</h3>
-            <p class="robot-hint">
-              Filter by country and availability. Sort by company, country,
-              release, price, or disclosed units. Hover or focus a photo for
-              a larger view.
-            </p>
-          </div>
-
-          <div class="robot-controls">
-            <label class="robot-search">
-              <span>Search</span>
-              <input
-                id="robot-search"
-                type="search"
-                placeholder="Robot, company, compute…"
-                autocomplete="off"
-              />
-            </label>
-            <label>
-              <span>Country</span>
-              <select id="robot-country">
-                <option value="all">All countries</option>
-                <option value="Canada">Canada</option>
-                <option value="China">China</option>
-                <option value="Germany">Germany</option>
-                <option value="Norway">Norway</option>
-                <option value="USA">USA</option>
-              </select>
-            </label>
-            <div class="robot-status-filter" aria-label="Filter by availability">
-              <span>Availability</span>
+        <div class="intelligence-grid" id="note-grid">
+          <article
+            class="intelligence-card"
+            data-note-topics="models systems"
+            data-note-search="three fuels embodied intelligence data engines web data simulation real robot demonstrations training moat neura"
+          >
+            <a href="./notes/001-three-fuels-for-embodied-intelligence/">
+              <header>
+                <span class="card-id">001</span>
+                <span class="card-status">Mental model</span>
+              </header>
               <div>
-                <button class="robot-chip active" type="button" data-status="all">All</button>
-                <button class="robot-chip" type="button" data-status="available">Available</button>
-                <button class="robot-chip" type="button" data-status="announced">Just announced</button>
+                <p class="eyebrow">Data engines · Embodied AI</p>
+                <h3>Three fuels for embodied intelligence</h3>
+                <p>
+                  Why no single source of robot experience is enough, and
+                  where the durable data advantage may live.
+                </p>
               </div>
-            </div>
-            <span class="robot-count" id="robot-count" aria-live="polite">30 / 30</span>
-          </div>
+              <footer>
+                <span>Strategic question</span>
+                <strong>How should a robotics company build its data flywheel?</strong>
+                <small>7 min read <i aria-hidden="true">↗</i></small>
+              </footer>
+            </a>
+          </article>
 
-          <div class="robot-legend">
-            <span><i class="status-dot available"></i> Available includes preorder, reservation, leasing, and paid deployment</span>
-            <span><i class="status-dot announced"></i> Announced includes prototypes and closed pilots</span>
-            <span><sup>*</sup> Estimate, target, or portfolio-wide count</span>
-          </div>
+          <article
+            class="intelligence-card"
+            data-note-topics="models systems"
+            data-note-search="thinking fast slow robots system one system two vla architecture control reflex reasoning planning"
+          >
+            <a href="./notes/002-thinking-fast-and-slow-for-robots/">
+              <header>
+                <span class="card-id">002</span>
+                <span class="card-status">Architecture</span>
+              </header>
+              <div>
+                <p class="eyebrow">Architectures · Control</p>
+                <h3>Robots that think fast and slow</h3>
+                <p>
+                  A useful map of the gap between deliberate reasoning and
+                  millisecond physical control.
+                </p>
+              </div>
+              <footer>
+                <span>Strategic question</span>
+                <strong>Which layers become commodities, and which remain defensible?</strong>
+                <small>5 min read <i aria-hidden="true">↗</i></small>
+              </footer>
+            </a>
+          </article>
 
-          <div class="robot-table-wrap">
-            <table id="robot-table" class="robot-table">
-              <thead>
-                <tr>
-                  <th scope="col" aria-sort="none">
-                    <button type="button" data-key="name">Robot <span class="dir" aria-hidden="true"></span></button>
-                  </th>
-                  <th scope="col" aria-sort="none">
-                    <button type="button" data-key="company">Company <span class="dir" aria-hidden="true"></span></button>
-                  </th>
-                  <th scope="col" aria-sort="none">
-                    <button type="button" data-key="country">Country <span class="dir" aria-hidden="true"></span></button>
-                  </th>
-                  <th scope="col">Availability</th>
-                  <th scope="col" aria-sort="none">
-                    <button type="button" data-key="release">Release <span class="dir" aria-hidden="true"></span></button>
-                  </th>
-                  <th scope="col" aria-sort="none">
-                    <button type="button" data-key="price">Price <span class="dir" aria-hidden="true"></span></button>
-                  </th>
-                  <th scope="col" aria-sort="none">
-                    <button type="button" data-key="units">Units <span class="dir" aria-hidden="true"></span></button>
-                  </th>
-                  <th scope="col">Main compute</th>
-                </tr>
-              </thead>
-              <tbody></tbody>
-            </table>
-            <noscript>
-              <p class="robot-noscript">JavaScript is required for the interactive table.</p>
-            </noscript>
-          </div>
-        </section>
+          <article
+            class="intelligence-card"
+            data-note-topics="models"
+            data-note-search="robotics pre chinchilla scaling laws compute data models embodied ai recipe economics"
+          >
+            <a href="./notes/003-robotics-is-pre-chinchilla/">
+              <header>
+                <span class="card-id">003</span>
+                <span class="card-status">Research frontier</span>
+              </header>
+              <div>
+                <p class="eyebrow">Scaling laws · Economics</p>
+                <h3>Robotics is pre-Chinchilla</h3>
+                <p>
+                  Robot learning still lacks a reliable recipe for allocating
+                  model, compute, simulation, and fleet hours.
+                </p>
+              </div>
+              <footer>
+                <span>Strategic question</span>
+                <strong>How do you invest before the scaling law is known?</strong>
+                <small>5 min read <i aria-hidden="true">↗</i></small>
+              </footer>
+            </a>
+          </article>
 
-        <section class="synthesis" aria-labelledby="synthesis-007-title">
-          <div class="synthesis-copy">
-            <p class="section-label">My synthesis</p>
-            <h3 id="synthesis-007-title">China is already competing on price and volume.</h3>
-            <p>
-              The table makes the market structure visible. US and European
-              companies cluster around closed industrial pilots and premium
-              systems. Chinese vendors span the whole ladder: low-cost
-              education platforms, research bodies, and factory-scale
-              deployments. The competitive variable is shifting from “can it
-              walk?” to cost, reliability, data, and useful hours per day.
-            </p>
-          </div>
+          <article
+            class="intelligence-card"
+            data-note-topics="systems market"
+            data-note-search="humanoid form factor embodiment human world tools video data arms legs interface"
+          >
+            <a href="./notes/004-why-the-humanoid-form-factor/">
+              <header>
+                <span class="card-id">004</span>
+                <span class="card-status">Product thesis</span>
+              </header>
+              <div>
+                <p class="eyebrow">Form factors · Humanoids</p>
+                <h3>Why robots shaped like us?</h3>
+                <p>
+                  The humanoid body is not a sci-fi preference. It is an
+                  interface to human spaces, tools, and training data.
+                </p>
+              </div>
+              <footer>
+                <span>Strategic question</span>
+                <strong>When does human compatibility justify mechanical complexity?</strong>
+                <small>5 min read <i aria-hidden="true">↗</i></small>
+              </footer>
+            </a>
+          </article>
 
-          <div class="robot-stats" aria-label="Humanoid field summary">
-            <div>
-              <strong>30</strong>
-              <span>robots tracked</span>
-            </div>
-            <div>
-              <strong>5</strong>
-              <span>countries represented</span>
-            </div>
-            <div>
-              <strong>21</strong>
-              <span>China-based entries</span>
-            </div>
-            <div>
-              <strong>$1.4k</strong>
-              <span>lowest reported entry price</span>
-            </div>
-          </div>
-        </section>
+          <article
+            class="intelligence-card"
+            data-note-topics="models market"
+            data-note-search="generalist specialist foundation models strategy groot fine tuning distillation task policies"
+          >
+            <a href="./notes/005-generalist-first-specialist-later/">
+              <header>
+                <span class="card-id">005</span>
+                <span class="card-status">Platform strategy</span>
+              </header>
+              <div>
+                <p class="eyebrow">Foundation models · Strategy</p>
+                <h3>Generalist first, specialist later</h3>
+                <p>
+                  Why task-specific robot policies may become distilled
+                  products of a shared general foundation.
+                </p>
+              </div>
+              <footer>
+                <span>Strategic question</span>
+                <strong>Does the business scale by projects or by a shared platform?</strong>
+                <small>5 min read <i aria-hidden="true">↗</i></small>
+              </footer>
+            </a>
+          </article>
 
-        <section class="neura-lens">
-          <div>
-            <p class="section-label">How to read it</p>
-            <h3>Availability is a gradient disguised as a label.</h3>
-          </div>
-          <div>
-            <p>
-              A reservation, a research unit, and a robot working a paid
-              warehouse shift are all called “available” here, but they are
-              not equivalent. The status filter answers whether a commercial
-              path exists; the status note explains how mature that path is.
-            </p>
-            <p>
-              Unit counts are even less standardized. Some companies disclose
-              model deliveries, others only portfolio totals, pilots, orders,
-              capacity targets, or nothing at all. Unknown values sort last,
-              and portfolio-wide figures carry an asterisk.
-            </p>
-          </div>
-        </section>
+          <article
+            class="intelligence-card"
+            data-note-topics="systems learning"
+            data-note-search="embedded ai hardware 2026 jetson thor orin raspberry pi hailo edge compute memory power price"
+          >
+            <a href="./notes/006-embedded-ai-hardware-2026/">
+              <header>
+                <span class="card-id">006</span>
+                <span class="card-status live">Interactive</span>
+              </header>
+              <div>
+                <p class="eyebrow">Hardware · Edge compute</p>
+                <h3>Embedded AI hardware, 2026</h3>
+                <p>
+                  Twelve onboard compute platforms compared across AI
+                  performance, memory, power, price, and release.
+                </p>
+              </div>
+              <footer>
+                <span>Strategic question</span>
+                <strong>What intelligence belongs onboard, and what belongs elsewhere?</strong>
+                <small>12 platforms <i aria-hidden="true">↗</i></small>
+              </footer>
+            </a>
+          </article>
 
-        <section class="takeaway">
-          <span class="takeaway-label">Keep this</span>
-          <p>
-            Humanoids have moved from <strong>demo race</strong> to
-            <strong>deployment race</strong>.
-          </p>
-        </section>
+          <article
+            class="intelligence-card intelligence-card-featured"
+            data-note-topics="market systems"
+            data-note-search="humanoid robot field 2026 market map neura 4ne1 china usa germany price availability deployments units"
+          >
+            <a href="./notes/007-humanoid-robot-field-2026/">
+              <header>
+                <span class="card-id">007</span>
+                <span class="card-status live">Interactive market map</span>
+              </header>
+              <div>
+                <p class="eyebrow">Market landscape · Humanoids</p>
+                <h3>The humanoid robot field, 2026</h3>
+                <p>
+                  Thirty prominent humanoid platforms across five countries,
+                  mapped by commercial availability, price, release, compute,
+                  and disclosed deployment.
+                </p>
+              </div>
+              <div class="featured-metrics" aria-label="Market map coverage">
+                <span><strong>30</strong> robots</span>
+                <span><strong>05</strong> countries</span>
+                <span><strong>21</strong> China-based</span>
+              </div>
+              <footer>
+                <span>Strategic question</span>
+                <strong>Where is the market moving from prototype to repeatable deployment?</strong>
+                <small>Open the market map <i aria-hidden="true">↗</i></small>
+              </footer>
+            </a>
+          </article>
 
-        <footer class="source">
-          <div>
-            <p class="section-label">Source</p>
-            <p>
-              Market snapshot compiled from manufacturer pages, public
-              reporting, and the supplied research table, 12 June 2026.
-              Images are credited to their respective manufacturers.
-            </p>
-          </div>
-          <a href="./notes/007-humanoid-robot-field-2026.md" target="_blank" rel="noreferrer">
-            View methodology &amp; sources <span aria-hidden="true">↗</span>
-          </a>
-        </footer>
-      </article>
+          <article
+            class="intelligence-card"
+            data-note-topics="learning systems"
+            data-note-search="robots learning home diy robotics kits ros turtlebot lerobot arms cars quadruped education comparison"
+          >
+            <a href="./notes/008-home-robot-learning-kits/">
+              <header>
+                <span class="card-id">008</span>
+                <span class="card-status live">Interactive</span>
+              </header>
+              <div>
+                <p class="eyebrow">Learning systems · Home lab</p>
+                <h3>Robots for learning at home</h3>
+                <p>
+                  Twenty practical learning platforms compared by curriculum,
+                  openness, hardware, setup, price, and AI potential.
+                </p>
+              </div>
+              <footer>
+                <span>Strategic question</span>
+                <strong>Which physical learning loop is worth buying first?</strong>
+                <small>20 kits <i aria-hidden="true">↗</i></small>
+              </footer>
+            </a>
+          </article>
+        </div>
 
-      <section id="about" class="about">
-        <p class="section-label">About this project</p>
+        <p class="library-empty" id="library-empty" hidden>
+          No notes match this view. Try another lens or search term.
+        </p>
+      </section>
+
+      <section id="about" class="intelligence-method" aria-labelledby="method-title">
         <div>
-          <h2>A public notebook for learning robotics from first principles.</h2>
-          <p>
-            Each note turns one source into a compact mental model: what matters,
-            where the trade-offs sit, and which questions are worth carrying
-            into the next experiment.
-          </p>
+          <p class="section-label">03 / Working method</p>
+          <h2 id="method-title">Research built to survive a strategy conversation.</h2>
+        </div>
+        <div class="method-steps">
+          <article>
+            <span>01 / Signal</span>
+            <h3>Start with the mechanism.</h3>
+            <p>
+              Separate what a source actually establishes from what the field
+              merely repeats.
+            </p>
+          </article>
+          <article>
+            <span>02 / Implication</span>
+            <h3>Translate technology into advantage.</h3>
+            <p>
+              Ask what changes in cost, speed, defensibility, product, or
+              market structure.
+            </p>
+          </article>
+          <article>
+            <span>03 / NEURA lens</span>
+            <h3>Bring the question back to execution.</h3>
+            <p>
+              Connect the research to data operations, Neuraverse, NeuraGym,
+              and the path from hardware to useful work.
+            </p>
+          </article>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <span>robotics.ai-mvp.com</span>
-      <span>Learning in public · 2026</span>
+      <span>Strategic field intelligence · Berlin · 2026</span>
       <a href="#top">Back to top ↑</a>
     </footer>
   </body>

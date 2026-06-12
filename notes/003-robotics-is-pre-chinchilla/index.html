@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="../../" />
+    <meta name="description" content="Embodied AI still lacks a reliable scaling recipe for models, data, and compute." />
+    <meta name="theme-color" content="#f1f0e9" />
+    <meta property="og:title" content="Robotics is pre-Chinchilla | Robotics Intelligence" />
+    <meta property="og:description" content="Embodied AI still lacks a reliable scaling recipe for models, data, and compute." />
+    <meta property="og:type" content="article" />
+    <link rel="canonical" href="https://robotics.ai-mvp.com/notes/003-robotics-is-pre-chinchilla/" />
+    <title>Robotics is pre-Chinchilla | Robotics Intelligence</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css?v=11" />
+    <script src="./main.js?v=11" defer></script>
+
+  </head>
+  <body class="note-site">
+    <div class="progress" aria-hidden="true"><span></span></div>
+
+    <header class="site-header note-site-header">
+      <a class="wordmark" href="./" aria-label="Robotics Intelligence, home">
+        <span class="wordmark-mark" aria-hidden="true"></span>
+        <span>ROBOTICS / INTELLIGENCE</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="./#library">Intelligence index</a>
+        <a href="./#about">About</a>
+      </nav>
+    </header>
+
+    <main id="top" class="note-page">
+      <section class="note-context" aria-label="Note context">
+        <a href="./#library"><span aria-hidden="true">←</span> Intelligence index</a>
+        <div>
+          <span>Field note 003 / 008</span>
+          <span>5 min</span>
+          <span>12 Jun 2026</span>
+        </div>
+      </section>
+
+<article id="note-003" class="learning-note standalone-note">
+        <header class="article-header">
+          <div class="article-id">
+            <span>FIELD NOTE</span>
+            <strong>003</strong>
+          </div>
+          <div class="article-title">
+            <p class="eyebrow">From Jim Fan · NVIDIA GEAR</p>
+            <h2>Robotics is<br />pre-Chinchilla</h2>
+            <p class="dek">
+              Language models come with a recipe: how much data to pair with
+              how many parameters. Embodied AI has no such curve yet — and
+              finding it is itself a research frontier.
+            </p>
+          </div>
+        </header>
+
+        <section class="thesis">
+          <p class="section-label">The thesis</p>
+          <blockquote>
+            The scaling laws for embodied AI are yet to be studied. Mapping
+            them is the work.
+          </blockquote>
+          <p class="body-copy">
+            In language modeling, scaling laws made training predictable:
+            loss falls smoothly with parameters, data, and compute. The
+            Chinchilla result reset the field — for a fixed compute budget,
+            scale data and parameters together, roughly twenty tokens per
+            parameter. Robotics has no equivalent map. Jim Fan is explicit
+            that the embodied scaling law is an open research goal, not a
+            known input to planning.
+          </p>
+        </section>
+
+        <section class="data-cards" aria-label="Scaling laws: known, unknown, expected">
+          <article class="data-card web-card reveal">
+            <header>
+              <span class="card-number">01</span>
+              <span class="card-tag">KNOWN</span>
+            </header>
+            <div class="card-icon" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <h3>The LLM recipe</h3>
+            <p class="card-lead">Compute in, capability out — predictably.</p>
+            <p>
+              Kaplan (2020) and Chinchilla (Hoffmann et al., 2022) showed that
+              language-model loss follows smooth power laws. Chinchilla's
+              headline: most models were undertrained — pair every parameter
+              with roughly 20 tokens. Capability planning became engineering
+              rather than gambling.
+            </p>
+            <dl>
+              <div>
+                <dt>Superpower</dt>
+                <dd>Predictable returns</dd>
+              </div>
+              <div>
+                <dt>Blind spot</dt>
+                <dd>Proven for text only</dd>
+              </div>
+            </dl>
+            <p class="card-footnote">
+              Every frontier lab sizes its training runs against these curves
+              before committing compute.
+            </p>
+          </article>
+
+          <article class="data-card sim-card reveal">
+            <header>
+              <span class="card-number">02</span>
+              <span class="card-tag">UNKNOWN</span>
+            </header>
+            <div class="card-icon orbit" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <h3>The robotics tangle</h3>
+            <p class="card-lead">Too many axes to scale at once.</p>
+            <p>
+              An embodied scaling law must span model size, simulation hours,
+              real-fleet hours, embodiments, and the mixture across all three
+              data fuels. There is no canonical "token of action," and the
+              metric that matters is task success rate — expensive to evaluate
+              and not guaranteed to track loss.
+            </p>
+            <dl>
+              <div>
+                <dt>Hard part</dt>
+                <dd>Heterogeneous data</dd>
+              </div>
+              <div>
+                <dt>Harder part</dt>
+                <dd>Success rate ≠ loss</dd>
+              </div>
+            </dl>
+            <p class="card-footnote">
+              Real-robot data is bound to wall-clock time: a robot can collect
+              at most 24 hours per day, and usually far less.
+            </p>
+          </article>
+
+          <article class="data-card real-card reveal">
+            <header>
+              <span class="card-number">03</span>
+              <span class="card-tag">EXPECTED</span>
+            </header>
+            <div class="card-icon crosshair" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <h3>The wager</h3>
+            <p class="card-lead">Emergence should arrive here too.</p>
+            <p>
+              Fan's bet is that the LLM pattern repeats: tokenize actions
+              well, compress them with a transformer like any other modality,
+              and emergent properties appear as data and model size scale.
+              The embodied Chinchilla is a result waiting to be measured.
+            </p>
+            <dl>
+              <div>
+                <dt>Bet</dt>
+                <dd>Actions scale like text</dd>
+              </div>
+              <div>
+                <dt>Status</dt>
+                <dd>Active research</dd>
+              </div>
+            </dl>
+            <p class="card-footnote">
+              Until the curve exists, every data budget in robotics is a
+              hypothesis.
+            </p>
+          </article>
+        </section>
+
+        <section class="comparison" aria-labelledby="comparison-003-title">
+          <div class="comparison-heading">
+            <p class="section-label">The trade space</p>
+            <h3 id="comparison-003-title">One field has a map. The other has a frontier.</h3>
+          </div>
+          <div class="matrix-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Dimension</th>
+                  <th scope="col">Language models</th>
+                  <th scope="col">Embodied AI</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Scaling recipe</th>
+                  <td><span class="rating high">Mapped</span></td>
+                  <td><span class="rating low">Unknown</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Unit of data</th>
+                  <td>Tokens</td>
+                  <td>Trajectories &amp; action tokens</td>
+                </tr>
+                <tr>
+                  <th scope="row">Capability proxy</th>
+                  <td>Validation loss</td>
+                  <td>Task success rate</td>
+                </tr>
+                <tr>
+                  <th scope="row">Data supply</th>
+                  <td><span class="rating high">Internet-scale</span></td>
+                  <td><span class="rating low">Robot-bound</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="synthesis" aria-labelledby="synthesis-003-title">
+          <div class="synthesis-copy">
+            <p class="section-label">My synthesis</p>
+            <h3 id="synthesis-003-title">Whoever maps the curve, budgets the future.</h3>
+            <p>
+              Until an embodied scaling law exists, robotics data strategy is
+              a portfolio of bets. The rational response is to run the
+              experiment deliberately: small pilots across a grid of model
+              sizes and data volumes, fitted curves, and only then large
+              spend on what the curve rewards.
+            </p>
+          </div>
+
+          <div class="flywheel" aria-label="Finding the scaling law">
+            <ol>
+              <li>
+                <span>01</span>
+                <div><strong>Tokenize</strong><small>Make actions a first-class modality</small></div>
+              </li>
+              <li>
+                <span>02</span>
+                <div><strong>Pilot</strong><small>Small runs across model × data grids</small></div>
+              </li>
+              <li>
+                <span>03</span>
+                <div><strong>Fit</strong><small>Measure capability vs data and parameters</small></div>
+              </li>
+              <li>
+                <span>04</span>
+                <div><strong>Spend</strong><small>Scale only what the curve rewards</small></div>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="neura-lens">
+          <div>
+            <p class="section-label">The NEURA lens</p>
+            <h3>A data engine should discover its own scaling law.</h3>
+          </div>
+          <div>
+            <p>
+              For a company whose moat includes demonstration data, "how much
+              data is enough?" has direct capital consequences. Instrumenting
+              collection — marginal task success per additional
+              demonstration-hour, per task family and embodiment — turns
+              operations into the experiment that reveals the curve.
+            </p>
+            <p>
+              A training-gym program is exactly the place where those curves
+              can be measured systematically: controlled tasks, repeatable
+              evaluation, and a steady stream of demonstrations to plot
+              against capability.
+            </p>
+          </div>
+        </section>
+
+        <section class="takeaway">
+          <span class="takeaway-label">Keep this</span>
+          <p>
+            LLMs have a <strong>recipe</strong>. Robotics still has a
+            <strong>hypothesis</strong>.
+          </p>
+        </section>
+
+        <footer class="source">
+          <div>
+            <p class="section-label">Source</p>
+            <p>
+              Jim Fan on NVIDIA's Embodied AI Lab and Jensen Huang's Prediction
+              that All Robots Will Be Autonomous. Context: Hoffmann et al.
+              2022, "Training Compute-Optimal Large Language Models."
+            </p>
+          </div>
+          <a
+            href="https://www.youtube.com/watch?v=yMGGpMyW_vw"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Watch the conversation <span aria-hidden="true">↗</span>
+          </a>
+        </footer>
+      </article>
+
+      <nav class="note-pagination" aria-label="More field notes">
+          <a href="./notes/002-thinking-fast-and-slow-for-robots/">
+            <span>Previous note</span>
+            <strong>002 / Robots that think fast and slow</strong>
+          </a>
+          <a href="./notes/004-why-the-humanoid-form-factor/">
+            <span>Next note</span>
+            <strong>004 / Why robots shaped like us?</strong>
+          </a>
+      </nav>
+    </main>
+
+    <footer class="site-footer">
+      <span>robotics.ai-mvp.com</span>
+      <span>Strategic field intelligence · Berlin · 2026</span>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </body>
+</html>
