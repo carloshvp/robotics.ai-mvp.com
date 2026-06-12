@@ -23,6 +23,28 @@ revealItems.forEach((item) => revealObserver.observe(item));
 window.addEventListener("scroll", updateProgress, { passive: true });
 updateProgress();
 
+const scrollToTarget = (target) => {
+  const top = target.getBoundingClientRect().top + window.scrollY;
+  window.scrollTo({ top, behavior: "auto" });
+};
+
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+  link.addEventListener("click", (event) => {
+    const target = document.querySelector(link.getAttribute("href"));
+    if (!target) return;
+
+    event.preventDefault();
+    history.pushState(null, "", link.getAttribute("href"));
+    requestAnimationFrame(() => scrollToTarget(target));
+  });
+});
+
+window.addEventListener("load", () => {
+  if (!window.location.hash) return;
+  const target = document.querySelector(window.location.hash);
+  if (target) setTimeout(() => scrollToTarget(target), 0);
+});
+
 const hwTable = document.getElementById("hw-table");
 
 if (hwTable) {

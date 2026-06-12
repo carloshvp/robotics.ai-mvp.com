@@ -16,8 +16,9 @@
     <meta property="og:type" content="website" />
     <title>Robotics Field Notes | AI MVP</title>
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./styles.css" />
-    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="./styles.css?v=9" />
+    <script src="./main.js?v=9" defer></script>
+    <script src="./robots.js?v=9" defer></script>
   </head>
   <body>
     <div class="progress" aria-hidden="true"><span></span></div>
@@ -28,7 +29,7 @@
         <span>ROBOTICS / FIELD NOTES</span>
       </a>
       <nav aria-label="Primary navigation">
-        <a href="#notes">Notes <span>06</span></a>
+        <a href="#notes">Notes <span>07</span></a>
         <a href="#about">About</a>
       </nav>
     </header>
@@ -141,6 +142,20 @@
           </div>
           <a href="#note-006" aria-label="Read Embedded AI hardware, 2026">
             Read <span aria-hidden="true">↘</span>
+          </a>
+        </article>
+        <article class="note-row">
+          <span class="note-number">007</span>
+          <div>
+            <p class="eyebrow">Market map · Humanoids</p>
+            <h2>The humanoid robot field, 2026</h2>
+          </div>
+          <div class="note-meta">
+            <span>12 Jun 2026</span>
+            <span>30 robots</span>
+          </div>
+          <a href="#note-007" aria-label="Read The humanoid robot field, 2026">
+            Explore <span aria-hidden="true">↘</span>
           </a>
         </article>
       </section>
@@ -1651,6 +1666,200 @@
           </div>
           <a href="./notes/006-embedded-ai-hardware-2026.md" target="_blank" rel="noreferrer">
             View the data note <span aria-hidden="true">↗</span>
+          </a>
+        </footer>
+      </article>
+
+      <article id="note-007" class="learning-note">
+        <header class="article-header">
+          <div class="article-id">
+            <span>FIELD NOTE</span>
+            <strong>007</strong>
+          </div>
+          <div class="article-title">
+            <p class="eyebrow">Market map · June 2026</p>
+            <h2>The humanoid<br />robot field, 2026</h2>
+            <p class="dek">
+              Thirty major humanoids, from factory deployments to fresh
+              announcements. Filter the field, sort the economics, and hover
+              over any robot to see the machine behind the numbers.
+            </p>
+          </div>
+        </header>
+
+        <section class="thesis">
+          <p class="section-label">The thesis</p>
+          <blockquote>
+            The humanoid race is not one market yet. It is a spectrum from
+            prototypes and reservations to paid deployments.
+          </blockquote>
+          <p class="body-copy">
+            This snapshot tracks thirty prominent full-size and compact
+            humanoids. “Available” means there is a sales, preorder,
+            reservation, leasing, or paid-deployment channel. “Announced”
+            covers prototypes and pilots without an open commercial path.
+            Prices marked as estimates are targets or third-party reports,
+            not quotes.
+          </p>
+        </section>
+
+        <section class="robot-explorer" aria-labelledby="robot-table-title">
+          <div class="robot-heading">
+            <p class="section-label">The field</p>
+            <h3 id="robot-table-title">Thirty bodies chasing general-purpose work.</h3>
+            <p class="robot-hint">
+              Filter by country and availability. Sort by company, country,
+              release, price, or disclosed units. Hover or focus a photo for
+              a larger view.
+            </p>
+          </div>
+
+          <div class="robot-controls">
+            <label class="robot-search">
+              <span>Search</span>
+              <input
+                id="robot-search"
+                type="search"
+                placeholder="Robot, company, compute…"
+                autocomplete="off"
+              />
+            </label>
+            <label>
+              <span>Country</span>
+              <select id="robot-country">
+                <option value="all">All countries</option>
+                <option value="Canada">Canada</option>
+                <option value="China">China</option>
+                <option value="Germany">Germany</option>
+                <option value="Norway">Norway</option>
+                <option value="USA">USA</option>
+              </select>
+            </label>
+            <div class="robot-status-filter" aria-label="Filter by availability">
+              <span>Availability</span>
+              <div>
+                <button class="robot-chip active" type="button" data-status="all">All</button>
+                <button class="robot-chip" type="button" data-status="available">Available</button>
+                <button class="robot-chip" type="button" data-status="announced">Just announced</button>
+              </div>
+            </div>
+            <span class="robot-count" id="robot-count" aria-live="polite">30 / 30</span>
+          </div>
+
+          <div class="robot-legend">
+            <span><i class="status-dot available"></i> Available includes preorder, reservation, leasing, and paid deployment</span>
+            <span><i class="status-dot announced"></i> Announced includes prototypes and closed pilots</span>
+            <span><sup>*</sup> Estimate, target, or portfolio-wide count</span>
+          </div>
+
+          <div class="robot-table-wrap">
+            <table id="robot-table" class="robot-table">
+              <thead>
+                <tr>
+                  <th scope="col" aria-sort="none">
+                    <button type="button" data-key="name">Robot <span class="dir" aria-hidden="true"></span></button>
+                  </th>
+                  <th scope="col" aria-sort="none">
+                    <button type="button" data-key="company">Company <span class="dir" aria-hidden="true"></span></button>
+                  </th>
+                  <th scope="col" aria-sort="none">
+                    <button type="button" data-key="country">Country <span class="dir" aria-hidden="true"></span></button>
+                  </th>
+                  <th scope="col">Availability</th>
+                  <th scope="col" aria-sort="none">
+                    <button type="button" data-key="release">Release <span class="dir" aria-hidden="true"></span></button>
+                  </th>
+                  <th scope="col" aria-sort="none">
+                    <button type="button" data-key="price">Price <span class="dir" aria-hidden="true"></span></button>
+                  </th>
+                  <th scope="col" aria-sort="none">
+                    <button type="button" data-key="units">Units <span class="dir" aria-hidden="true"></span></button>
+                  </th>
+                  <th scope="col">Main compute</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+            <noscript>
+              <p class="robot-noscript">JavaScript is required for the interactive table.</p>
+            </noscript>
+          </div>
+        </section>
+
+        <section class="synthesis" aria-labelledby="synthesis-007-title">
+          <div class="synthesis-copy">
+            <p class="section-label">My synthesis</p>
+            <h3 id="synthesis-007-title">China is already competing on price and volume.</h3>
+            <p>
+              The table makes the market structure visible. US and European
+              companies cluster around closed industrial pilots and premium
+              systems. Chinese vendors span the whole ladder: low-cost
+              education platforms, research bodies, and factory-scale
+              deployments. The competitive variable is shifting from “can it
+              walk?” to cost, reliability, data, and useful hours per day.
+            </p>
+          </div>
+
+          <div class="robot-stats" aria-label="Humanoid field summary">
+            <div>
+              <strong>30</strong>
+              <span>robots tracked</span>
+            </div>
+            <div>
+              <strong>5</strong>
+              <span>countries represented</span>
+            </div>
+            <div>
+              <strong>21</strong>
+              <span>China-based entries</span>
+            </div>
+            <div>
+              <strong>$1.4k</strong>
+              <span>lowest reported entry price</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="neura-lens">
+          <div>
+            <p class="section-label">How to read it</p>
+            <h3>Availability is a gradient disguised as a label.</h3>
+          </div>
+          <div>
+            <p>
+              A reservation, a research unit, and a robot working a paid
+              warehouse shift are all called “available” here, but they are
+              not equivalent. The status filter answers whether a commercial
+              path exists; the status note explains how mature that path is.
+            </p>
+            <p>
+              Unit counts are even less standardized. Some companies disclose
+              model deliveries, others only portfolio totals, pilots, orders,
+              capacity targets, or nothing at all. Unknown values sort last,
+              and portfolio-wide figures carry an asterisk.
+            </p>
+          </div>
+        </section>
+
+        <section class="takeaway">
+          <span class="takeaway-label">Keep this</span>
+          <p>
+            Humanoids have moved from <strong>demo race</strong> to
+            <strong>deployment race</strong>.
+          </p>
+        </section>
+
+        <footer class="source">
+          <div>
+            <p class="section-label">Source</p>
+            <p>
+              Market snapshot compiled from manufacturer pages, public
+              reporting, and the supplied research table, 12 June 2026.
+              Images are credited to their respective manufacturers.
+            </p>
+          </div>
+          <a href="./notes/007-humanoid-robot-field-2026.md" target="_blank" rel="noreferrer">
+            View methodology &amp; sources <span aria-hidden="true">↗</span>
           </a>
         </footer>
       </article>
