@@ -456,11 +456,13 @@ if (diyTable) {
     const filled = "★".repeat(score);
     const empty = "★".repeat(5 - score);
     return `
-      <span class="diy-score" role="img" aria-label="${label}: ${score} of 5">
-        <strong>${score}</strong>
-        <span class="diy-stars">${filled}<i>${empty}</i></span>
-      </span>
-      <small>${note}</small>
+      <div class="diy-metric">
+        <span class="diy-metric-label">${label}</span>
+        <span class="diy-stars" role="img" aria-label="${label}: ${score} of 5">
+          ${filled}<i>${empty}</i>
+        </span>
+        <small>${note}</small>
+      </div>
     `;
   };
 
@@ -476,9 +478,19 @@ if (diyTable) {
     )
     .join("");
 
+  const sortableValue = (robot) => {
+    if (sortKey === "format") return `${robot.type} ${robot.bestUse}`;
+    if (sortKey === "price") return robot.priceValue;
+    if (sortKey === "learningOpen") {
+      return (robot.learning + robot.openness) / 2;
+    }
+    if (sortKey === "build") return (robot.hardware + robot.setup) / 2;
+    return robot[sortKey];
+  };
+
   const compareRobots = (left, right) => {
-    const a = left[sortKey];
-    const b = right[sortKey];
+    const a = sortableValue(left);
+    const b = sortableValue(right);
     const result =
       typeof a === "string"
         ? a.localeCompare(b, "en", { sensitivity: "base" })
@@ -520,14 +532,29 @@ if (diyTable) {
               </a>
               ${robot.pick ? `<span class="diy-pick-tag">${robot.pick}</span>` : ""}
             </th>
-            <td>${robot.type}</td>
-            <td class="diy-best-use">${robot.bestUse}</td>
-            <td class="diy-price">${robot.price}</td>
-            ${scores
-              .map(([key, label]) =>
-                `<td>${scoreMarkup(robot[key], robot[`${key}Note`], label)}</td>`,
-              )
-              .join("")}
+            <td class="diy-format">
+              <span>${robot.type}</span>
+              <strong>${robot.bestUse}</strong>
+            </td>
+            <td class="diy-price">
+              <strong>${robot.price}</strong>
+              ${scoreMarkup(
+                robot.affordability,
+                robot.affordabilityNote,
+                "Affordability",
+              )}
+            </td>
+            <td class="diy-paired">
+              ${scoreMarkup(robot.learning, robot.learningNote, "Learning")}
+              ${scoreMarkup(robot.openness, robot.opennessNote, "Openness")}
+            </td>
+            <td class="diy-paired">
+              ${scoreMarkup(robot.hardware, robot.hardwareNote, "Hardware")}
+              ${scoreMarkup(robot.setup, robot.setupNote, "Setup")}
+            </td>
+            <td>
+              ${scoreMarkup(robot.ai, robot.aiNote, "AI potential")}
+            </td>
           </tr>
         `,
       )
@@ -552,7 +579,7 @@ if (diyTable) {
   sortButtons.forEach((button) => {
     button.addEventListener("click", () => {
       const nextKey = button.dataset.key;
-      const scoreKeys = scores.map(([key]) => key);
+      const scoreKeys = ["learningOpen", "build", "ai"];
       const firstDirection = scoreKeys.includes(nextKey) ? -1 : 1;
       sortDirection =
         nextKey === sortKey ? sortDirection * -1 : firstDirection;

@@ -62,5 +62,7 @@ when ROS navigation is the actual subject. Arms are the correct apparatus for
 manipulation and imitation learning. Legged systems only earn their additional
 complexity when gait, balance, or locomotion is itself the learning objective.
 
-The website version is sortable by every column, filterable by robot type, and
-can isolate the seven selected top kits.
+The website groups related dimensions into six decision-oriented columns:
+robot, format and use, price and affordability, learning and openness,
+hardware and setup, and AI potential. It remains sortable by every visible
+column, filterable by robot type, and can isolate the seven selected top kits.
