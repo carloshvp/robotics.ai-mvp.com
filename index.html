@@ -28,7 +28,7 @@
         <span>ROBOTICS / FIELD NOTES</span>
       </a>
       <nav aria-label="Primary navigation">
-        <a href="#notes">Notes <span>05</span></a>
+        <a href="#notes">Notes <span>06</span></a>
         <a href="#about">About</a>
       </nav>
     </header>
@@ -126,6 +126,20 @@
             <span>5 min</span>
           </div>
           <a href="#note-005" aria-label="Read Generalist first, specialist later">
+            Read <span aria-hidden="true">↘</span>
+          </a>
+        </article>
+        <article class="note-row">
+          <span class="note-number">006</span>
+          <div>
+            <p class="eyebrow">Hardware · Edge compute</p>
+            <h2>Embedded AI hardware, 2026</h2>
+          </div>
+          <div class="note-meta">
+            <span>12 Jun 2026</span>
+            <span>4 min</span>
+          </div>
+          <a href="#note-006" aria-label="Read Embedded AI hardware, 2026">
             Read <span aria-hidden="true">↘</span>
           </a>
         </article>
@@ -1374,6 +1388,269 @@
             rel="noreferrer"
           >
             Watch the conversation <span aria-hidden="true">↗</span>
+          </a>
+        </footer>
+      </article>
+
+      <article id="note-006" class="learning-note">
+        <header class="article-header">
+          <div class="article-id">
+            <span>FIELD NOTE</span>
+            <strong>006</strong>
+          </div>
+          <div class="article-title">
+            <p class="eyebrow">Field survey · June 2026</p>
+            <h2>Embedded AI<br />hardware, 2026</h2>
+            <p class="dek">
+              Twelve platforms that can be a robot's onboard brain right now,
+              scored on the four axes that matter — and sortable by any of
+              them.
+            </p>
+          </div>
+        </header>
+
+        <section class="thesis">
+          <p class="section-label">The thesis</p>
+          <blockquote>
+            Compute, memory, power, price. Onboard intelligence is a four-way
+            trade — no platform wins all four.
+          </blockquote>
+          <p class="body-copy">
+            A field survey of the current embedded AI hardware menu, from
+            flagship Jetson modules to USB accelerators. Star ratings are
+            normalized within this set: five stars is best in class on that
+            axis — fastest, biggest, most frugal, cheapest. Filter by family,
+            search, or sort any column to see the trade-offs move.
+          </p>
+        </section>
+
+        <section class="hw-explorer" aria-labelledby="hw-title">
+          <div class="hw-heading">
+            <p class="section-label">The hardware menu</p>
+            <h3 id="hw-title">Twelve ways to give a robot a brain.</h3>
+            <p class="hw-hint">
+              Click a column header to sort — the first click ranks best
+              first. Stars are relative to this set, not absolute.
+            </p>
+          </div>
+
+          <div class="hw-controls">
+            <input
+              id="hw-search"
+              type="search"
+              placeholder="Filter platforms…"
+              aria-label="Filter platforms by text"
+            />
+            <button class="hw-chip active" type="button" data-family="all">All</button>
+            <button class="hw-chip" type="button" data-family="jetson">Jetson</button>
+            <button class="hw-chip" type="button" data-family="pi">Raspberry Pi</button>
+            <button class="hw-chip" type="button" data-family="accel">Accelerators</button>
+            <button class="hw-chip" type="button" data-family="kit">Kits &amp; SBCs</button>
+            <span class="hw-count" id="hw-count">12 / 12</span>
+          </div>
+
+          <div class="hw-table-wrap">
+            <table id="hw-table" class="hw-table">
+              <thead>
+                <tr>
+                  <th scope="col" aria-sort="none">
+                    <button type="button" data-key="platform">Platform <span class="dir" aria-hidden="true"></span></button>
+                  </th>
+                  <th scope="col" aria-sort="none">
+                    <button type="button" data-key="release">Release <span class="dir" aria-hidden="true"></span></button>
+                  </th>
+                  <th scope="col" aria-sort="none">
+                    <button type="button" data-key="compute">AI compute <span class="dir" aria-hidden="true"></span></button>
+                  </th>
+                  <th scope="col" aria-sort="none">
+                    <button type="button" data-key="memory">Memory <span class="dir" aria-hidden="true"></span></button>
+                  </th>
+                  <th scope="col" aria-sort="none">
+                    <button type="button" data-key="power">Power <span class="dir" aria-hidden="true"></span></button>
+                  </th>
+                  <th scope="col" aria-sort="none">
+                    <button type="button" data-key="price">Price <span class="dir" aria-hidden="true"></span></button>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr data-family="jetson" data-platform="Jetson AGX Thor" data-release="2025" data-compute="5" data-memory="5" data-power="1" data-price="1">
+                  <th scope="row">Jetson AGX Thor</th>
+                  <td class="release">2025</td>
+                  <td><span class="stars" role="img" aria-label="5 of 5">★★★★★</span><small>2070 FP4 TFLOPS</small></td>
+                  <td><span class="stars" role="img" aria-label="5 of 5">★★★★★</span><small>128 GB</small></td>
+                  <td><span class="stars" role="img" aria-label="1 of 5">★<span class="dim">★★★★</span></span><small>40 to 130 W</small></td>
+                  <td><span class="stars" role="img" aria-label="1 of 5">★<span class="dim">★★★★</span></span><small>$3,499, ≈€4,190 EU</small></td>
+                </tr>
+                <tr data-family="jetson" data-platform="Jetson AGX Orin" data-release="2022" data-compute="4" data-memory="5" data-power="2" data-price="2">
+                  <th scope="row">Jetson AGX Orin</th>
+                  <td class="release">2022</td>
+                  <td><span class="stars" role="img" aria-label="4 of 5">★★★★<span class="dim">★</span></span><small>275 TOPS</small></td>
+                  <td><span class="stars" role="img" aria-label="5 of 5">★★★★★</span><small>64 GB dev kit</small></td>
+                  <td><span class="stars" role="img" aria-label="2 of 5">★★<span class="dim">★★★</span></span><small>15 to 60 W</small></td>
+                  <td><span class="stars" role="img" aria-label="2 of 5">★★<span class="dim">★★★</span></span><small>$1,999 launch price</small></td>
+                </tr>
+                <tr data-family="jetson" data-platform="Jetson Orin NX 16 GB Super" data-release="2025" data-compute="4" data-memory="3" data-power="3" data-price="3">
+                  <th scope="row">Jetson Orin NX 16 GB Super</th>
+                  <td class="release">2023, Super 2025</td>
+                  <td><span class="stars" role="img" aria-label="4 of 5">★★★★<span class="dim">★</span></span><small>157 TOPS</small></td>
+                  <td><span class="stars" role="img" aria-label="3 of 5">★★★<span class="dim">★★</span></span><small>16 GB</small></td>
+                  <td><span class="stars" role="img" aria-label="3 of 5">★★★<span class="dim">★★</span></span><small>10 to 40 W</small></td>
+                  <td><span class="stars" role="img" aria-label="3 of 5">★★★<span class="dim">★★</span></span><small>≈€900 to €1,050 kit or bundle</small></td>
+                </tr>
+                <tr data-family="jetson" data-platform="Jetson Orin Nano Super" data-release="2024" data-compute="3" data-memory="2" data-power="4" data-price="4">
+                  <th scope="row">Jetson Orin Nano Super</th>
+                  <td class="release">2024 refresh, 2023 HW</td>
+                  <td><span class="stars" role="img" aria-label="3 of 5">★★★<span class="dim">★★</span></span><small>67 TOPS</small></td>
+                  <td><span class="stars" role="img" aria-label="2 of 5">★★<span class="dim">★★★</span></span><small>8 GB</small></td>
+                  <td><span class="stars" role="img" aria-label="4 of 5">★★★★<span class="dim">★</span></span><small>7 to 25 W</small></td>
+                  <td><span class="stars" role="img" aria-label="4 of 5">★★★★<span class="dim">★</span></span><small>$249 official</small></td>
+                </tr>
+                <tr data-family="pi" data-platform="Raspberry Pi 5 barebone 16 GB" data-release="2025" data-compute="1" data-memory="3" data-power="5" data-price="4">
+                  <th scope="row">Raspberry Pi 5 barebone 16 GB</th>
+                  <td class="release">2023, 16 GB in 2025</td>
+                  <td><span class="stars" role="img" aria-label="1 of 5">★<span class="dim">★★★★</span></span><small>No AI accelerator</small></td>
+                  <td><span class="stars" role="img" aria-label="3 of 5">★★★<span class="dim">★★</span></span><small>16 GB</small></td>
+                  <td><span class="stars" role="img" aria-label="5 of 5">★★★★★</span><small>2 to 10 W board, 27 W PSU budget</small></td>
+                  <td><span class="stars" role="img" aria-label="4 of 5">★★★★<span class="dim">★</span></span><small>$305 current official 16 GB price</small></td>
+                </tr>
+                <tr data-family="pi" data-platform="Raspberry Pi 5 plus AI HAT+ 2" data-release="2026" data-compute="2" data-memory="3" data-power="4" data-price="4">
+                  <th scope="row">Raspberry Pi 5 plus AI HAT+ 2</th>
+                  <td class="release">2026</td>
+                  <td><span class="stars" role="img" aria-label="2 of 5">★★<span class="dim">★★★</span></span><small>40 INT4 TOPS</small></td>
+                  <td><span class="stars" role="img" aria-label="3 of 5">★★★<span class="dim">★★</span></span><small>16 GB Pi plus 8 GB AI HAT</small></td>
+                  <td><span class="stars" role="img" aria-label="4 of 5">★★★★<span class="dim">★</span></span><small>≈5 to 15 W system class</small></td>
+                  <td><span class="stars" role="img" aria-label="4 of 5">★★★★<span class="dim">★</span></span><small>$130 HAT, Pi extra</small></td>
+                </tr>
+                <tr data-family="accel" data-platform="Google Coral USB Edge TPU" data-release="2019" data-compute="1" data-memory="1" data-power="5" data-price="5">
+                  <th scope="row">Google Coral USB Edge TPU</th>
+                  <td class="release">2019</td>
+                  <td><span class="stars" role="img" aria-label="1 of 5">★<span class="dim">★★★★</span></span><small>4 INT8 TOPS</small></td>
+                  <td><span class="stars" role="img" aria-label="1 of 5">★<span class="dim">★★★★</span></span><small>No usable model RAM class</small></td>
+                  <td><span class="stars" role="img" aria-label="5 of 5">★★★★★</span><small>≈2 W</small></td>
+                  <td><span class="stars" role="img" aria-label="5 of 5">★★★★★</span><small>≈€90 to €130</small></td>
+                </tr>
+                <tr data-family="accel" data-platform="Hailo 8 M.2" data-release="2019" data-compute="2" data-memory="1" data-power="5" data-price="5">
+                  <th scope="row">Hailo 8 M.2</th>
+                  <td class="release">2019</td>
+                  <td><span class="stars" role="img" aria-label="2 of 5">★★<span class="dim">★★★</span></span><small>26 TOPS</small></td>
+                  <td><span class="stars" role="img" aria-label="1 of 5">★<span class="dim">★★★★</span></span><small>On-chip memory, no external DRAM</small></td>
+                  <td><span class="stars" role="img" aria-label="5 of 5">★★★★★</span><small>2.5 W typical</small></td>
+                  <td><span class="stars" role="img" aria-label="5 of 5">★★★★★</span><small>≈€165 to €200</small></td>
+                </tr>
+                <tr data-family="accel" data-platform="Hailo 10H / AI HAT+ 2 class" data-release="2024" data-compute="2" data-memory="2" data-power="5" data-price="5">
+                  <th scope="row">Hailo 10H / AI HAT+ 2 class</th>
+                  <td class="release">2024 chip, 2026 Pi product</td>
+                  <td><span class="stars" role="img" aria-label="2 of 5">★★<span class="dim">★★★</span></span><small>40 TOPS</small></td>
+                  <td><span class="stars" role="img" aria-label="2 of 5">★★<span class="dim">★★★</span></span><small>8 GB on Pi HAT+ 2</small></td>
+                  <td><span class="stars" role="img" aria-label="5 of 5">★★★★★</span><small>Under 5 W chip class</small></td>
+                  <td><span class="stars" role="img" aria-label="5 of 5">★★★★★</span><small>$130 via Pi AI HAT+ 2</small></td>
+                </tr>
+                <tr data-family="kit" data-platform="Qualcomm RB3 Gen 2 Core Kit" data-release="2024" data-compute="2" data-memory="2" data-power="4" data-price="4">
+                  <th scope="row">Qualcomm RB3 Gen 2 Core Kit</th>
+                  <td class="release">2024</td>
+                  <td><span class="stars" role="img" aria-label="2 of 5">★★<span class="dim">★★★</span></span><small>12 TOPS</small></td>
+                  <td><span class="stars" role="img" aria-label="2 of 5">★★<span class="dim">★★★</span></span><small>6 GB kit class</small></td>
+                  <td><span class="stars" role="img" aria-label="4 of 5">★★★★<span class="dim">★</span></span><small>≈7 to 12 W class</small></td>
+                  <td><span class="stars" role="img" aria-label="4 of 5">★★★★<span class="dim">★</span></span><small>$399 core kit</small></td>
+                </tr>
+                <tr data-family="kit" data-platform="Arduino VENTUNO Q" data-release="2026" data-compute="2" data-memory="3" data-power="3" data-price="4">
+                  <th scope="row">Arduino VENTUNO Q</th>
+                  <td class="release">2026</td>
+                  <td><span class="stars" role="img" aria-label="2 of 5">★★<span class="dim">★★★</span></span><small>40 TOPS</small></td>
+                  <td><span class="stars" role="img" aria-label="3 of 5">★★★<span class="dim">★★</span></span><small>16 GB</small></td>
+                  <td><span class="stars" role="img" aria-label="3 of 5">★★★<span class="dim">★★</span></span><small>Unknown, assume 10 to 25 W class</small></td>
+                  <td><span class="stars" role="img" aria-label="4 of 5">★★★★<span class="dim">★</span></span><small>Just under $300 expected</small></td>
+                </tr>
+                <tr data-family="kit" data-platform="RK3588 SBC class" data-release="2022" data-compute="1" data-memory="4" data-power="4" data-price="4">
+                  <th scope="row">RK3588 SBC class</th>
+                  <td class="release">2022 to 2025, board dependent</td>
+                  <td><span class="stars" role="img" aria-label="1 of 5">★<span class="dim">★★★★</span></span><small>6 TOPS</small></td>
+                  <td><span class="stars" role="img" aria-label="4 of 5">★★★★<span class="dim">★</span></span><small>Up to 32 GB</small></td>
+                  <td><span class="stars" role="img" aria-label="4 of 5">★★★★<span class="dim">★</span></span><small>≈5 to 15 W board class</small></td>
+                  <td><span class="stars" role="img" aria-label="4 of 5">★★★★<span class="dim">★</span></span><small>≈€220 to €500</small></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="synthesis" aria-labelledby="synthesis-006-title">
+          <div class="synthesis-copy">
+            <p class="section-label">My synthesis</p>
+            <h3 id="synthesis-006-title">Memory is the new TOPS.</h3>
+            <p>
+              Sort by any column and four tiers fall out. The deeper pattern:
+              compute is no longer the scarce resource — memory gates what
+              class of model can live onboard at all (Thor's 128 GB exists
+              precisely for VLA-class models), and watts decide whether the
+              platform can ride on a battery.
+            </p>
+          </div>
+
+          <div class="flywheel" aria-label="The four hardware tiers">
+            <ol>
+              <li>
+                <span>01</span>
+                <div><strong>Flagship Jetson</strong><small>VLA-class models onboard — pay in watts and euros</small></div>
+              </li>
+              <li>
+                <span>02</span>
+                <div><strong>Mid Jetson</strong><small>The System 1 sweet spot: perception + compact policies</small></div>
+              </li>
+              <li>
+                <span>03</span>
+                <div><strong>Accelerator + host</strong><small>Fixed-function perception at single-digit watts</small></div>
+              </li>
+              <li>
+                <span>04</span>
+                <div><strong>Kits &amp; SBCs</strong><small>Prototype cheap; rarely the final reflexes</small></div>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="neura-lens">
+          <div>
+            <p class="section-label">The NEURA lens</p>
+            <h3>Silicon follows the System 1 / System 2 split.</h3>
+          </div>
+          <div>
+            <p>
+              Note 002's dual-system framing decides the shopping list:
+              System 1 must run onboard in real time, so the robot's silicon
+              is sized for the reflexes — perception and control at a power
+              budget the chassis can carry. System 2 can burst to off-board
+              or cloud compute when deliberation is needed.
+            </p>
+            <p>
+              Fleet economics push the same way: onboard compute multiplies
+              with every unit shipped, while shared System 2 amortizes across
+              the fleet. The cheapest TOPS are the ones you don't put in the
+              robot.
+            </p>
+          </div>
+        </section>
+
+        <section class="takeaway">
+          <span class="takeaway-label">Keep this</span>
+          <p>
+            TOPS are <strong>cheap</strong>. <strong>Memory</strong> and
+            <strong>watts</strong> decide what runs onboard.
+          </p>
+        </section>
+
+        <footer class="source">
+          <div>
+            <p class="section-label">Source</p>
+            <p>
+              Field survey compiled from vendor specs and street prices,
+              June 2026. Star ratings are normalized within this set of
+              twelve platforms.
+            </p>
+          </div>
+          <a href="./notes/006-embedded-ai-hardware-2026.md" target="_blank" rel="noreferrer">
+            View the data note <span aria-hidden="true">↗</span>
           </a>
         </footer>
       </article>
