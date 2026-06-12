@@ -218,6 +218,11 @@ main {
   border-bottom: 1px solid var(--ink);
 }
 
+.note-row + .note-row {
+  margin-top: 0;
+  border-top: 0;
+}
+
 .note-number {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 30px;
@@ -255,6 +260,10 @@ main {
   background: var(--white);
   border: 1px solid var(--ink);
   box-shadow: 12px 12px 0 var(--ink);
+}
+
+.learning-note + .learning-note {
+  margin-top: clamp(90px, 12vw, 160px);
 }
 
 .article-header {
@@ -342,6 +351,10 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   border-bottom: 1px solid var(--ink);
+}
+
+.data-cards.duo {
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .data-card {
@@ -903,7 +916,8 @@ tbody th {
 }
 
 @media (max-width: 980px) {
-  .data-cards {
+  .data-cards,
+  .data-cards.duo {
     grid-template-columns: 1fr;
   }
 

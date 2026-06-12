@@ -28,7 +28,7 @@
         <span>ROBOTICS / FIELD NOTES</span>
       </a>
       <nav aria-label="Primary navigation">
-        <a href="#notes">Notes <span>01</span></a>
+        <a href="#notes">Notes <span>05</span></a>
         <a href="#about">About</a>
       </nav>
     </header>
@@ -70,6 +70,62 @@
             <span>7 min</span>
           </div>
           <a href="#note-001" aria-label="Read Three fuels for embodied intelligence">
+            Read <span aria-hidden="true">↘</span>
+          </a>
+        </article>
+        <article class="note-row">
+          <span class="note-number">002</span>
+          <div>
+            <p class="eyebrow">Architectures · Embodied AI</p>
+            <h2>Robots that think fast and slow</h2>
+          </div>
+          <div class="note-meta">
+            <span>12 Jun 2026</span>
+            <span>5 min</span>
+          </div>
+          <a href="#note-002" aria-label="Read Robots that think fast and slow">
+            Read <span aria-hidden="true">↘</span>
+          </a>
+        </article>
+        <article class="note-row">
+          <span class="note-number">003</span>
+          <div>
+            <p class="eyebrow">Scaling laws · Research frontier</p>
+            <h2>Robotics is pre-Chinchilla</h2>
+          </div>
+          <div class="note-meta">
+            <span>12 Jun 2026</span>
+            <span>5 min</span>
+          </div>
+          <a href="#note-003" aria-label="Read Robotics is pre-Chinchilla">
+            Read <span aria-hidden="true">↘</span>
+          </a>
+        </article>
+        <article class="note-row">
+          <span class="note-number">004</span>
+          <div>
+            <p class="eyebrow">Form factors · Humanoids</p>
+            <h2>Why robots shaped like us?</h2>
+          </div>
+          <div class="note-meta">
+            <span>12 Jun 2026</span>
+            <span>5 min</span>
+          </div>
+          <a href="#note-004" aria-label="Read Why robots shaped like us?">
+            Read <span aria-hidden="true">↘</span>
+          </a>
+        </article>
+        <article class="note-row">
+          <span class="note-number">005</span>
+          <div>
+            <p class="eyebrow">Strategy · Foundation models</p>
+            <h2>Generalist first, specialist later</h2>
+          </div>
+          <div class="note-meta">
+            <span>12 Jun 2026</span>
+            <span>5 min</span>
+          </div>
+          <a href="#note-005" aria-label="Read Generalist first, specialist later">
             Read <span aria-hidden="true">↘</span>
           </a>
         </article>
@@ -310,6 +366,997 @@
             Web data supplies <strong>common sense</strong>. Simulation supplies
             <strong>practice</strong>. Real robots supply
             <strong>ground truth</strong>.
+          </p>
+        </section>
+
+        <footer class="source">
+          <div>
+            <p class="section-label">Source</p>
+            <p>
+              Jim Fan on NVIDIA's Embodied AI Lab and Jensen Huang's Prediction
+              that All Robots Will Be Autonomous.
+            </p>
+          </div>
+          <a
+            href="https://www.youtube.com/watch?v=yMGGpMyW_vw"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Watch the conversation <span aria-hidden="true">↗</span>
+          </a>
+        </footer>
+      </article>
+
+      <article id="note-002" class="learning-note">
+        <header class="article-header">
+          <div class="article-id">
+            <span>FIELD NOTE</span>
+            <strong>002</strong>
+          </div>
+          <div class="article-title">
+            <p class="eyebrow">From Jim Fan · NVIDIA GEAR</p>
+            <h2>Robots that think<br />fast and slow</h2>
+            <p class="dek">
+              Kahneman's two systems map cleanly onto a robot's brain: a slow,
+              deliberate planner and a fast, intuitive body. How the two talk
+              to each other is still open research.
+            </p>
+          </div>
+        </header>
+
+        <section class="thesis">
+          <p class="section-label">The thesis</p>
+          <blockquote>
+            Plan at one hertz. Act at a thousand. A robot mind needs both
+            tempos at once.
+          </blockquote>
+          <p class="body-copy">
+            Borrowing from Daniel Kahneman's <em>Thinking, Fast and Slow</em>,
+            Jim Fan splits embodied intelligence in two. System 2 deliberates:
+            reasoning, planning, writing code — work that large models already
+            do well. System 1 executes: fast, intuitive motor control that
+            never reaches conscious thought. Grasping a cup, you do not decide
+            where each fingertip goes at every millisecond.
+          </p>
+        </section>
+
+        <section class="data-cards duo" aria-label="System 2 and System 1">
+          <article class="data-card sim-card reveal">
+            <header>
+              <span class="card-number">01</span>
+              <span class="card-tag">SLOW</span>
+            </header>
+            <div class="card-icon orbit" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <h3>System 2</h3>
+            <p class="card-lead">Deliberate: reason, plan, write code.</p>
+            <p>
+              The slow mind runs on big models. Vision-language models and
+              LLMs in a loop can already reason about a scene, decompose a
+              task, and even generate code to orchestrate behavior — deciding
+              what to do next at roughly one decision per second.
+            </p>
+            <dl>
+              <div>
+                <dt>Superpower</dt>
+                <dd>Long-horizon reasoning</dd>
+              </div>
+              <div>
+                <dt>Blind spot</dt>
+                <dd>Seconds of latency</dd>
+              </div>
+            </dl>
+            <p class="card-footnote">
+              A model that thinks in seconds cannot close a control loop that
+              physics demands in milliseconds.
+            </p>
+          </article>
+
+          <article class="data-card real-card reveal">
+            <header>
+              <span class="card-number">02</span>
+              <span class="card-tag">FAST</span>
+            </header>
+            <div class="card-icon crosshair" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <h3>System 1</h3>
+            <p class="card-lead">Intuitive: act before you can explain it.</p>
+            <p>
+              The fast mind is reflex. Whole-body balance, grasping, and
+              contact-rich manipulation need decisions at something like a
+              thousand hertz — which points to compact, fast sensorimotor
+              policies rather than giant models.
+            </p>
+            <dl>
+              <div>
+                <dt>Superpower</dt>
+                <dd>Reflex-speed control</dd>
+              </div>
+              <div>
+                <dt>Blind spot</dt>
+                <dd>No deliberation</dd>
+              </div>
+            </dl>
+            <p class="card-footnote">
+              A reflex cannot plan a multi-step task or reason its way through
+              a situation it has never seen.
+            </p>
+          </article>
+        </section>
+
+        <section class="comparison" aria-labelledby="comparison-002-title">
+          <div class="comparison-heading">
+            <p class="section-label">The trade space</p>
+            <h3 id="comparison-002-title">Two tempos, one body.</h3>
+          </div>
+          <div class="matrix-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">System</th>
+                  <th scope="col">Tempo</th>
+                  <th scope="col">Mode</th>
+                  <th scope="col">Runs on</th>
+                  <th scope="col">Breaks when</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><span class="dot sim"></span>System 2</th>
+                  <td><span class="rating mid">~1 Hz</span></td>
+                  <td>Deliberate</td>
+                  <td>Large VLMs &amp; LLMs in a loop</td>
+                  <td>Contact needs millisecond reflexes</td>
+                </tr>
+                <tr>
+                  <th scope="row"><span class="dot real"></span>System 1</th>
+                  <td><span class="rating high">~1 kHz</span></td>
+                  <td>Intuitive</td>
+                  <td>Compact sensorimotor policies</td>
+                  <td>The task needs long-horizon planning</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="synthesis" aria-labelledby="synthesis-002-title">
+          <div class="synthesis-copy">
+            <p class="section-label">The open problem</p>
+            <h3 id="synthesis-002-title">The interface is the research.</h3>
+            <p>
+              Fan frames the unsolved part as architecture: one monolithic
+              model or a cascade of specialized ones — and if a cascade, do
+              the systems communicate through text or through latent
+              variables? Text is interpretable but slow and lossy; latents
+              are rich but opaque. NVIDIA's later GR00T N1 made the framing
+              concrete: a vision-language module for System 2 driving a
+              diffusion-transformer action module for System 1.
+            </p>
+          </div>
+
+          <div class="flywheel" aria-label="Open architecture questions">
+            <ol>
+              <li>
+                <span>01</span>
+                <div><strong>Monolithic</strong><small>One end-to-end model — cleaner, harder to control</small></div>
+              </li>
+              <li>
+                <span>02</span>
+                <div><strong>Cascaded</strong><small>Separate models per system, wired together</small></div>
+              </li>
+              <li>
+                <span>03</span>
+                <div><strong>The wire</strong><small>Text or latent vectors between the systems?</small></div>
+              </li>
+              <li>
+                <span>04</span>
+                <div><strong>The clock</strong><small>Bridging 1 Hz deliberation and 1 kHz control</small></div>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="neura-lens">
+          <div>
+            <p class="section-label">The NEURA lens</p>
+            <h3>Own the reflexes. Rent the reasoning.</h3>
+          </div>
+          <div>
+            <p>
+              General-purpose System 2 reasoning is fast becoming a commodity
+              available from foundation-model providers. The defensible layers
+              for a robot maker are System 1 — embodiment-specific,
+              safety-critical, kilohertz-rate control — and the interface
+              contract between the two systems.
+            </p>
+            <p>
+              That contract is also a safety boundary: while System 2
+              deliberates for seconds, System 1 must stay competent and safe
+              on its own. Designing the handshake — skill APIs, latent
+              commands, interruption semantics — is product work, not just
+              research.
+            </p>
+          </div>
+        </section>
+
+        <section class="takeaway">
+          <span class="takeaway-label">Keep this</span>
+          <p>
+            System 2 <strong>sets the goal</strong>. System 1
+            <strong>does the touching</strong>. The handshake is
+            <strong>still research</strong>.
+          </p>
+        </section>
+
+        <footer class="source">
+          <div>
+            <p class="section-label">Source</p>
+            <p>
+              Jim Fan on NVIDIA's Embodied AI Lab and Jensen Huang's Prediction
+              that All Robots Will Be Autonomous.
+            </p>
+          </div>
+          <a
+            href="https://www.youtube.com/watch?v=yMGGpMyW_vw"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Watch the conversation <span aria-hidden="true">↗</span>
+          </a>
+        </footer>
+      </article>
+
+      <article id="note-003" class="learning-note">
+        <header class="article-header">
+          <div class="article-id">
+            <span>FIELD NOTE</span>
+            <strong>003</strong>
+          </div>
+          <div class="article-title">
+            <p class="eyebrow">From Jim Fan · NVIDIA GEAR</p>
+            <h2>Robotics is<br />pre-Chinchilla</h2>
+            <p class="dek">
+              Language models come with a recipe: how much data to pair with
+              how many parameters. Embodied AI has no such curve yet — and
+              finding it is itself a research frontier.
+            </p>
+          </div>
+        </header>
+
+        <section class="thesis">
+          <p class="section-label">The thesis</p>
+          <blockquote>
+            The scaling laws for embodied AI are yet to be studied. Mapping
+            them is the work.
+          </blockquote>
+          <p class="body-copy">
+            In language modeling, scaling laws made training predictable:
+            loss falls smoothly with parameters, data, and compute. The
+            Chinchilla result reset the field — for a fixed compute budget,
+            scale data and parameters together, roughly twenty tokens per
+            parameter. Robotics has no equivalent map. Jim Fan is explicit
+            that the embodied scaling law is an open research goal, not a
+            known input to planning.
+          </p>
+        </section>
+
+        <section class="data-cards" aria-label="Scaling laws: known, unknown, expected">
+          <article class="data-card web-card reveal">
+            <header>
+              <span class="card-number">01</span>
+              <span class="card-tag">KNOWN</span>
+            </header>
+            <div class="card-icon" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <h3>The LLM recipe</h3>
+            <p class="card-lead">Compute in, capability out — predictably.</p>
+            <p>
+              Kaplan (2020) and Chinchilla (Hoffmann et al., 2022) showed that
+              language-model loss follows smooth power laws. Chinchilla's
+              headline: most models were undertrained — pair every parameter
+              with roughly 20 tokens. Capability planning became engineering
+              rather than gambling.
+            </p>
+            <dl>
+              <div>
+                <dt>Superpower</dt>
+                <dd>Predictable returns</dd>
+              </div>
+              <div>
+                <dt>Blind spot</dt>
+                <dd>Proven for text only</dd>
+              </div>
+            </dl>
+            <p class="card-footnote">
+              Every frontier lab sizes its training runs against these curves
+              before committing compute.
+            </p>
+          </article>
+
+          <article class="data-card sim-card reveal">
+            <header>
+              <span class="card-number">02</span>
+              <span class="card-tag">UNKNOWN</span>
+            </header>
+            <div class="card-icon orbit" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <h3>The robotics tangle</h3>
+            <p class="card-lead">Too many axes to scale at once.</p>
+            <p>
+              An embodied scaling law must span model size, simulation hours,
+              real-fleet hours, embodiments, and the mixture across all three
+              data fuels. There is no canonical "token of action," and the
+              metric that matters is task success rate — expensive to evaluate
+              and not guaranteed to track loss.
+            </p>
+            <dl>
+              <div>
+                <dt>Hard part</dt>
+                <dd>Heterogeneous data</dd>
+              </div>
+              <div>
+                <dt>Harder part</dt>
+                <dd>Success rate ≠ loss</dd>
+              </div>
+            </dl>
+            <p class="card-footnote">
+              Real-robot data is bound to wall-clock time: a robot can collect
+              at most 24 hours per day, and usually far less.
+            </p>
+          </article>
+
+          <article class="data-card real-card reveal">
+            <header>
+              <span class="card-number">03</span>
+              <span class="card-tag">EXPECTED</span>
+            </header>
+            <div class="card-icon crosshair" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <h3>The wager</h3>
+            <p class="card-lead">Emergence should arrive here too.</p>
+            <p>
+              Fan's bet is that the LLM pattern repeats: tokenize actions
+              well, compress them with a transformer like any other modality,
+              and emergent properties appear as data and model size scale.
+              The embodied Chinchilla is a result waiting to be measured.
+            </p>
+            <dl>
+              <div>
+                <dt>Bet</dt>
+                <dd>Actions scale like text</dd>
+              </div>
+              <div>
+                <dt>Status</dt>
+                <dd>Active research</dd>
+              </div>
+            </dl>
+            <p class="card-footnote">
+              Until the curve exists, every data budget in robotics is a
+              hypothesis.
+            </p>
+          </article>
+        </section>
+
+        <section class="comparison" aria-labelledby="comparison-003-title">
+          <div class="comparison-heading">
+            <p class="section-label">The trade space</p>
+            <h3 id="comparison-003-title">One field has a map. The other has a frontier.</h3>
+          </div>
+          <div class="matrix-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Dimension</th>
+                  <th scope="col">Language models</th>
+                  <th scope="col">Embodied AI</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Scaling recipe</th>
+                  <td><span class="rating high">Mapped</span></td>
+                  <td><span class="rating low">Unknown</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Unit of data</th>
+                  <td>Tokens</td>
+                  <td>Trajectories &amp; action tokens</td>
+                </tr>
+                <tr>
+                  <th scope="row">Capability proxy</th>
+                  <td>Validation loss</td>
+                  <td>Task success rate</td>
+                </tr>
+                <tr>
+                  <th scope="row">Data supply</th>
+                  <td><span class="rating high">Internet-scale</span></td>
+                  <td><span class="rating low">Robot-bound</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="synthesis" aria-labelledby="synthesis-003-title">
+          <div class="synthesis-copy">
+            <p class="section-label">My synthesis</p>
+            <h3 id="synthesis-003-title">Whoever maps the curve, budgets the future.</h3>
+            <p>
+              Until an embodied scaling law exists, robotics data strategy is
+              a portfolio of bets. The rational response is to run the
+              experiment deliberately: small pilots across a grid of model
+              sizes and data volumes, fitted curves, and only then large
+              spend on what the curve rewards.
+            </p>
+          </div>
+
+          <div class="flywheel" aria-label="Finding the scaling law">
+            <ol>
+              <li>
+                <span>01</span>
+                <div><strong>Tokenize</strong><small>Make actions a first-class modality</small></div>
+              </li>
+              <li>
+                <span>02</span>
+                <div><strong>Pilot</strong><small>Small runs across model × data grids</small></div>
+              </li>
+              <li>
+                <span>03</span>
+                <div><strong>Fit</strong><small>Measure capability vs data and parameters</small></div>
+              </li>
+              <li>
+                <span>04</span>
+                <div><strong>Spend</strong><small>Scale only what the curve rewards</small></div>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="neura-lens">
+          <div>
+            <p class="section-label">The NEURA lens</p>
+            <h3>A data engine should discover its own scaling law.</h3>
+          </div>
+          <div>
+            <p>
+              For a company whose moat includes demonstration data, "how much
+              data is enough?" has direct capital consequences. Instrumenting
+              collection — marginal task success per additional
+              demonstration-hour, per task family and embodiment — turns
+              operations into the experiment that reveals the curve.
+            </p>
+            <p>
+              A training-gym program is exactly the place where those curves
+              can be measured systematically: controlled tasks, repeatable
+              evaluation, and a steady stream of demonstrations to plot
+              against capability.
+            </p>
+          </div>
+        </section>
+
+        <section class="takeaway">
+          <span class="takeaway-label">Keep this</span>
+          <p>
+            LLMs have a <strong>recipe</strong>. Robotics still has a
+            <strong>hypothesis</strong>.
+          </p>
+        </section>
+
+        <footer class="source">
+          <div>
+            <p class="section-label">Source</p>
+            <p>
+              Jim Fan on NVIDIA's Embodied AI Lab and Jensen Huang's Prediction
+              that All Robots Will Be Autonomous. Context: Hoffmann et al.
+              2022, "Training Compute-Optimal Large Language Models."
+            </p>
+          </div>
+          <a
+            href="https://www.youtube.com/watch?v=yMGGpMyW_vw"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Watch the conversation <span aria-hidden="true">↗</span>
+          </a>
+        </footer>
+      </article>
+
+      <article id="note-004" class="learning-note">
+        <header class="article-header">
+          <div class="article-id">
+            <span>FIELD NOTE</span>
+            <strong>004</strong>
+          </div>
+          <div class="article-title">
+            <p class="eyebrow">From Jim Fan · NVIDIA GEAR</p>
+            <h2>Why robots<br />shaped like us?</h2>
+            <p class="dek">
+              Not romance, not sci-fi. The humanoid form factor is an
+              interface decision — a body compatible with a world we built for
+              ourselves, and with the video we already filmed of it.
+            </p>
+          </div>
+        </header>
+
+        <section class="thesis">
+          <p class="section-label">The thesis</p>
+          <blockquote>
+            The world is built around the human form. Tools, spaces, and
+            workflows assume our body and our hands.
+          </blockquote>
+          <p class="body-copy">
+            Jim Fan's case for humanoids rests on compatibility: restaurants,
+            factories, hospitals — and all the equipment and tools inside them
+            — are designed for the human form and the human hands. A robot
+            that shares the form factor inherits that world as-is. This is why
+            Project GR00T focuses on humanoid robots.
+          </p>
+        </section>
+
+        <section class="data-cards" aria-label="Three arguments for the humanoid form factor">
+          <article class="data-card web-card reveal">
+            <header>
+              <span class="card-number">01</span>
+              <span class="card-tag">ENVIRONMENT</span>
+            </header>
+            <div class="card-icon" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <h3>A world pre-fitted</h3>
+            <p class="card-lead">Zero retrofit required.</p>
+            <p>
+              Door handles, stairs, shelves at human height, tools with human
+              grips: the built environment is one giant assumption about the
+              human body. A humanoid steps into it unchanged, while every
+              other form factor ships with an implicit demand to modify the
+              environment instead.
+            </p>
+            <dl>
+              <div>
+                <dt>Superpower</dt>
+                <dd>Drop-in compatibility</dd>
+              </div>
+              <div>
+                <dt>Blind spot</dt>
+                <dd>Hardest hardware problem</dd>
+              </div>
+            </dl>
+            <p class="card-footnote">
+              Generality of the body is bought with difficulty of the control
+              problem.
+            </p>
+          </article>
+
+          <article class="data-card sim-card reveal">
+            <header>
+              <span class="card-number">02</span>
+              <span class="card-tag">BODY</span>
+            </header>
+            <div class="card-icon orbit" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <h3>Two arms, two legs</h3>
+            <p class="card-lead">Redundancy is capability.</p>
+            <p>
+              Two arms beat one for manipulation: hold-and-act, handovers,
+              large or awkward objects. Two legs with enough degrees of
+              freedom let the robot balance in different ways, traverse
+              complex terrain, and brace its whole body to move objects in
+              ways a wheeled base cannot.
+            </p>
+            <dl>
+              <div>
+                <dt>Superpower</dt>
+                <dd>Bimanual + whole-body</dd>
+              </div>
+              <div>
+                <dt>Blind spot</dt>
+                <dd>Balance is expensive</dd>
+              </div>
+            </dl>
+            <p class="card-footnote">
+              The same degrees of freedom that make control hard are what make
+              the body general.
+            </p>
+          </article>
+
+          <article class="data-card real-card reveal">
+            <header>
+              <span class="card-number">03</span>
+              <span class="card-tag">DATA</span>
+            </header>
+            <div class="card-icon crosshair" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <h3>The video dividend</h3>
+            <p class="card-lead">The internet already filmed your training set.</p>
+            <p>
+              Most video online shows human bodies and five-fingered hands at
+              work. That footage can be used — partially — for robot training
+              only when the embodiment matches. The closer the body is to
+              human, the more of the internet becomes usable pretraining
+              signal.
+            </p>
+            <dl>
+              <div>
+                <dt>Superpower</dt>
+                <dd>Web-scale priors</dd>
+              </div>
+              <div>
+                <dt>Blind spot</dt>
+                <dd>Transfer is partial</dd>
+              </div>
+            </dl>
+            <p class="card-footnote">
+              Per note 001: web data supplies common sense, not motor
+              commands. Matching embodiment widens that pipe.
+            </p>
+          </article>
+        </section>
+
+        <section class="comparison" aria-labelledby="comparison-004-title">
+          <div class="comparison-heading">
+            <p class="section-label">The trade space</p>
+            <h3 id="comparison-004-title">Every body is a trade-off.</h3>
+          </div>
+          <div class="matrix-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Form factor</th>
+                  <th scope="col">Built-world fit</th>
+                  <th scope="col">Manipulation</th>
+                  <th scope="col">Video transfer</th>
+                  <th scope="col">Economics today</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Humanoid</th>
+                  <td><span class="rating high">High</span></td>
+                  <td><span class="rating high">Bimanual</span></td>
+                  <td><span class="rating high">Highest</span></td>
+                  <td><span class="rating low">Immature</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Wheeled + arm</th>
+                  <td><span class="rating mid">Flat floors</span></td>
+                  <td><span class="rating mid">One arm</span></td>
+                  <td><span class="rating low">Low</span></td>
+                  <td><span class="rating high">Proven</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Quadruped</th>
+                  <td><span class="rating mid">No hands</span></td>
+                  <td><span class="rating low">Minimal</span></td>
+                  <td><span class="rating low">Low</span></td>
+                  <td><span class="rating mid">Niches</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Aerial</th>
+                  <td><span class="rating low">Reach only</span></td>
+                  <td><span class="rating low">Minimal</span></td>
+                  <td><span class="rating low">Low</span></td>
+                  <td><span class="rating mid">Niches</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="synthesis" aria-labelledby="synthesis-004-title">
+          <div class="synthesis-copy">
+            <p class="section-label">My synthesis</p>
+            <h3 id="synthesis-004-title">GR00T bets on the general body.</h3>
+            <p>
+              Wheels are more efficient on flat ground, quadrupeds own rough
+              inspection, drones own the air — each wins a niche by trading
+              away manipulation breadth or data leverage. The humanoid bet is
+              that generality compounds: one body that fits everywhere,
+              learning from the largest data pool that exists.
+            </p>
+          </div>
+
+          <div class="flywheel" aria-label="Why the humanoid compounds">
+            <ol>
+              <li>
+                <span>01</span>
+                <div><strong>Fit</strong><small>Inherit human spaces and tools as-is</small></div>
+              </li>
+              <li>
+                <span>02</span>
+                <div><strong>Manipulate</strong><small>Two arms, whole-body skills</small></div>
+              </li>
+              <li>
+                <span>03</span>
+                <div><strong>Learn</strong><small>Mine human video for priors</small></div>
+              </li>
+              <li>
+                <span>04</span>
+                <div><strong>Compound</strong><small>One platform amortizes R&amp;D across tasks</small></div>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="neura-lens">
+          <div>
+            <p class="section-label">The NEURA lens</p>
+            <h3>The humanoid is the endgame, not the only game.</h3>
+          </div>
+          <div>
+            <p>
+              A robot maker does not have to choose once. Cobot arms and
+              mobile platforms win structured environments today and can fund
+              the harder humanoid bet; a humanoid program like NEURA's 4NE-1
+              sits at the general end of the same portfolio.
+            </p>
+            <p>
+              A shared model across embodiments lets data collected on one
+              platform partially transfer to the others — which makes the
+              portfolio a data strategy, not just a product line.
+            </p>
+          </div>
+        </section>
+
+        <section class="takeaway">
+          <span class="takeaway-label">Keep this</span>
+          <p>
+            The humanoid is an <strong>interface decision</strong>: match the
+            body the world was <strong>designed for</strong>, and unlock the
+            video it already <strong>filmed</strong>.
+          </p>
+        </section>
+
+        <footer class="source">
+          <div>
+            <p class="section-label">Source</p>
+            <p>
+              Jim Fan on NVIDIA's Embodied AI Lab and Jensen Huang's Prediction
+              that All Robots Will Be Autonomous.
+            </p>
+          </div>
+          <a
+            href="https://www.youtube.com/watch?v=yMGGpMyW_vw"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Watch the conversation <span aria-hidden="true">↗</span>
+          </a>
+        </footer>
+      </article>
+
+      <article id="note-005" class="learning-note">
+        <header class="article-header">
+          <div class="article-id">
+            <span>FIELD NOTE</span>
+            <strong>005</strong>
+          </div>
+          <div class="article-title">
+            <p class="eyebrow">From Jim Fan · NVIDIA GEAR</p>
+            <h2>Generalist first,<br />specialist later</h2>
+            <p class="dek">
+              NLP already ran this experiment: a zoo of task-specific models
+              lost to one generalist. Jim Fan expects robotics to repeat the
+              curve — that is the premise of Project GR00T.
+            </p>
+          </div>
+        </header>
+
+        <section class="thesis">
+          <p class="section-label">The thesis</p>
+          <blockquote>
+            The specialized generalist is almost always stronger than the
+            original specialist.
+          </blockquote>
+          <p class="body-copy">
+            Before ChatGPT, NLP shipped different models and pipelines for
+            translation, coding, math, and creative writing — completely
+            different training pipelines per task. Then one generalist
+            unified everything. Fan expects robotics, which is still mostly
+            in its specialist stage, to follow the same trajectory.
+          </p>
+        </section>
+
+        <section class="data-cards" aria-label="From specialists to specialized generalists">
+          <article class="data-card web-card reveal">
+            <header>
+              <span class="card-number">01</span>
+              <span class="card-tag">BEFORE</span>
+            </header>
+            <div class="card-icon" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <h3>The specialist zoo</h3>
+            <p class="card-lead">One task, one model, one pipeline.</p>
+            <p>
+              Translation, sentiment, summarization, code: each NLP task had
+              its own architecture, its own training data, its own maintenance
+              burden. Progress in one silo barely moved the others. Robotics
+              today largely looks like this — one policy per cell, per task,
+              per machine.
+            </p>
+            <dl>
+              <div>
+                <dt>Strength</dt>
+                <dd>Focused performance</dd>
+              </div>
+              <div>
+                <dt>Weakness</dt>
+                <dd>Nothing transfers</dd>
+              </div>
+            </dl>
+            <p class="card-footnote">
+              Every new task restarts the engineering from near zero.
+            </p>
+          </article>
+
+          <article class="data-card sim-card reveal">
+            <header>
+              <span class="card-number">02</span>
+              <span class="card-tag">AFTER</span>
+            </header>
+            <div class="card-icon orbit" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <h3>The generalist</h3>
+            <p class="card-lead">One model unified everything.</p>
+            <p>
+              ChatGPT collapsed the zoo into a single model. Emergent
+              capabilities — skills nobody explicitly trained — transfer from
+              one task to the next, and a single model with a single API is
+              far easier to maintain than a fleet of bespoke pipelines.
+            </p>
+            <dl>
+              <div>
+                <dt>Strength</dt>
+                <dd>Transfer + emergence</dd>
+              </div>
+              <div>
+                <dt>Weakness</dt>
+                <dd>Heavy to train and run</dd>
+              </div>
+            </dl>
+            <p class="card-footnote">
+              The maintenance economics matter as much as the accuracy: one
+              model, one update path.
+            </p>
+          </article>
+
+          <article class="data-card real-card reveal">
+            <header>
+              <span class="card-number">03</span>
+              <span class="card-tag">NEXT</span>
+            </header>
+            <div class="card-icon crosshair" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <h3>The specialized generalist</h3>
+            <p class="card-lead">Trim the giant back down.</p>
+            <p>
+              Once the generalist exists, you prompt it, fine-tune it, and
+              distill it back into specialists — and the specialized
+              generalist is almost always stronger than the original
+              specialist. Many specialists, one parent model. This is exactly
+              how LLMs are deployed today.
+            </p>
+            <dl>
+              <div>
+                <dt>Strength</dt>
+                <dd>Best of both</dd>
+              </div>
+              <div>
+                <dt>Weakness</dt>
+                <dd>Needs the generalist first</dd>
+              </div>
+            </dl>
+            <p class="card-footnote">
+              GR00T's premise for robots: build the generalist, then
+              specialize per task and embodiment.
+            </p>
+          </article>
+        </section>
+
+        <section class="comparison" aria-labelledby="comparison-005-title">
+          <div class="comparison-heading">
+            <p class="section-label">The trade space</p>
+            <h3 id="comparison-005-title">Robotics is rerunning the NLP timeline.</h3>
+          </div>
+          <div class="matrix-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Stage</th>
+                  <th scope="col">Language AI</th>
+                  <th scope="col">Robotics</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Specialists</th>
+                  <td>One model per task — translation, NER, sentiment</td>
+                  <td><span class="rating mid">Today</span> One policy per cell</td>
+                </tr>
+                <tr>
+                  <th scope="row">Generalist</th>
+                  <td>GPT-3 → ChatGPT unified the field</td>
+                  <td><span class="rating high">In progress</span> Project GR00T</td>
+                </tr>
+                <tr>
+                  <th scope="row">Specialized generalists</th>
+                  <td>Prompted, fine-tuned, distilled per task</td>
+                  <td><span class="rating low">To come</span> Per task &amp; embodiment</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="synthesis" aria-labelledby="synthesis-005-title">
+          <div class="synthesis-copy">
+            <p class="section-label">My synthesis</p>
+            <h3 id="synthesis-005-title">Bet on the curve, not the niche.</h3>
+            <p>
+              If the generalist arrives, value migrates from hand-built task
+              stacks to whoever can specialize the generalist fastest. The
+              cycle then feeds itself: every deployed specialist generates the
+              demonstrations that improve the next generalist.
+            </p>
+          </div>
+
+          <div class="flywheel" aria-label="The generalist cycle">
+            <ol>
+              <li>
+                <span>01</span>
+                <div><strong>Generalize</strong><small>One model across tasks and embodiments</small></div>
+              </li>
+              <li>
+                <span>02</span>
+                <div><strong>Prompt</strong><small>Steer it with instructions</small></div>
+              </li>
+              <li>
+                <span>03</span>
+                <div><strong>Distill</strong><small>Compress it to the deployment</small></div>
+              </li>
+              <li>
+                <span>04</span>
+                <div><strong>Repeat</strong><small>Specialist data feeds the next generalist</small></div>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="neura-lens">
+          <div>
+            <p class="section-label">The NEURA lens</p>
+            <h3>Specialization becomes configuration.</h3>
+          </div>
+          <div>
+            <p>
+              If the generalist wins, per-customer engineering becomes
+              per-customer fine-tuning: the marginal cost of serving a new
+              task collapses, and the differentiator shifts to proprietary
+              demonstrations plus the pipeline that turns them into
+              specialized models quickly.
+            </p>
+            <p>
+              A training-gym program is that pipeline — the machinery for
+              producing specialized generalists on demand.
+            </p>
+          </div>
+        </section>
+
+        <section class="takeaway">
+          <span class="takeaway-label">Keep this</span>
+          <p>
+            Train <strong>one generalist</strong>. Distill
+            <strong>every specialist</strong> from it.
           </p>
         </section>
 
