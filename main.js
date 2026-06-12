@@ -36,6 +36,13 @@ if (hwTable) {
   let sortKey = null;
   let sortDir = 1;
 
+  // Release sorts by the leading year of the visible text, so the
+  // column reads monotonically even for multi-year entries.
+  rows.forEach((row) => {
+    const shown = row.querySelector(".release").textContent.match(/\d{4}/);
+    row.dataset.release = shown ? shown[0] : "0";
+  });
+
   const applyFilters = () => {
     const term = searchInput.value.trim().toLowerCase();
     let visible = 0;
