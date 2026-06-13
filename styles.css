@@ -1212,6 +1212,15 @@ tbody th {
   text-transform: uppercase;
 }
 
+.diy-preview {
+  width: 340px;
+  height: 400px;
+}
+
+.diy-preview img {
+  height: 350px;
+}
+
 .robot-stats {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1572,6 +1581,7 @@ tbody th {
   display: inline-block;
   font-size: 15px;
   letter-spacing: -0.025em;
+  cursor: zoom-in;
 }
 
 .diy-name small,

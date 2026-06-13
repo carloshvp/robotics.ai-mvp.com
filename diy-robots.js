@@ -5,6 +5,7 @@ const diyRobotCatalog = [
     category: "mobile",
     bestUse: "Serious ROS 2 learning",
     source: "https://turtlebot.github.io/turtlebot4-user-manual/",
+    image: "./assets/learning-robots/turtlebot-4-lite.png",
     price: "€1,699 Lite to €2,739 Pro",
     priceValue: 1699,
     learning: 5,
@@ -27,6 +28,7 @@ const diyRobotCatalog = [
     category: "arm",
     bestUse: "Imitation learning",
     source: "https://huggingface.co/docs/lerobot/so101",
+    image: "./assets/learning-robots/lerobot-so-arm101.webp",
     price: "About €400 kit",
     priceValue: 400,
     learning: 5,
@@ -49,6 +51,7 @@ const diyRobotCatalog = [
     category: "mobile",
     bestUse: "Robotics fundamentals",
     source: "https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/",
+    image: "./assets/learning-robots/turtlebot-3-burger.png",
     price: "About €809",
     priceValue: 809,
     learning: 5,
@@ -71,6 +74,7 @@ const diyRobotCatalog = [
     category: "arm",
     bestUse: "Manipulation and control",
     source: "https://www.elephantrobotics.com/en/mycobot-pi/",
+    image: "./assets/learning-robots/mycobot-280-pi.png",
     price: "$799",
     priceValue: 799,
     learning: 5,
@@ -92,6 +96,7 @@ const diyRobotCatalog = [
     category: "mobile",
     bestUse: "SLAM and navigation",
     source: "https://global.agilex.ai/products/limo-ros2",
+    image: "./assets/learning-robots/agilex-limo.png",
     price: "€2,371 to €3,570",
     priceValue: 2371,
     learning: 5,
@@ -113,6 +118,7 @@ const diyRobotCatalog = [
     category: "mobile",
     bestUse: "ROS, vision, LiDAR",
     source: "https://category.yahboom.net/products/rosmaster-x3",
+    image: "./assets/learning-robots/yahboom-rosmaster-x3.jpg",
     price: "$659 direct, EU higher",
     priceValue: 659,
     learning: 4,
@@ -134,6 +140,7 @@ const diyRobotCatalog = [
     category: "mobile",
     bestUse: "Autonomy curriculum",
     source: "https://get.duckietown.com/products/duckiebot-db21",
+    image: "./assets/learning-robots/duckiebot-db21j.jpg",
     price: "$429 listed",
     priceValue: 429,
     learning: 4,
@@ -155,6 +162,7 @@ const diyRobotCatalog = [
     category: "legged",
     bestUse: "Legged robotics",
     source: "https://www.hiwonder.com/products/jethexa",
+    image: "./assets/learning-robots/hiwonder-jethexa.jpg",
     price: "$709.99",
     priceValue: 709.99,
     learning: 4,
@@ -176,6 +184,7 @@ const diyRobotCatalog = [
     category: "mobile",
     bestUse: "Edge AI robotics",
     source: "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetbot-ai-robot-kit/",
+    image: "./assets/learning-robots/nvidia-jetbot.jpg",
     price: "About €330 kit",
     priceValue: 330,
     learning: 4,
@@ -197,6 +206,7 @@ const diyRobotCatalog = [
     category: "mobile",
     bestUse: "Modern ROS 2 intro",
     source: "https://www.hiwonder.com/products/mentorpi-m1",
+    image: "./assets/learning-robots/hiwonder-mentorpi-m1.jpg",
     price: "$299.99 without Pi",
     priceValue: 299.99,
     learning: 4,
@@ -218,6 +228,7 @@ const diyRobotCatalog = [
     category: "arm",
     bestUse: "Low-cost manipulation",
     source: "https://www.waveshare.com/roarm-m2-s.htm",
+    image: "./assets/learning-robots/waveshare-roarm-m2-s.jpg",
     price: "About €209",
     priceValue: 209,
     learning: 4,
@@ -240,6 +251,7 @@ const diyRobotCatalog = [
     category: "mobile",
     bestUse: "First AI robot",
     source: "https://www.sunfounder.com/products/picar-x",
+    image: "./assets/learning-robots/sunfounder-picar-x.jpg",
     price: "$89.99 without Pi",
     priceValue: 89.99,
     learning: 4,
@@ -262,6 +274,7 @@ const diyRobotCatalog = [
     category: "mobile",
     bestUse: "Cloud robotics software",
     source: "https://www.viam.com/resources/rover",
+    image: "./assets/learning-robots/viam-rover-2.jpg",
     price: "$99 without SBC",
     priceValue: 99,
     learning: 4,
@@ -283,6 +296,7 @@ const diyRobotCatalog = [
     category: "mobile",
     bestUse: "OpenCV and driving",
     source: "https://www.hiwonder.com/products/turbopi",
+    image: "./assets/learning-robots/hiwonder-turbopi.png",
     price: "$99.99 without Pi",
     priceValue: 99.99,
     learning: 4,
@@ -304,6 +318,7 @@ const diyRobotCatalog = [
     category: "mobile",
     bestUse: "Embedded robotics basics",
     source: "https://store.arduino.cc/products/alvik",
+    image: "./assets/learning-robots/arduino-alvik.jpg",
     price: "€159 official",
     priceValue: 159,
     learning: 4,
@@ -325,6 +340,7 @@ const diyRobotCatalog = [
     category: "legged",
     bestUse: "Gait and kinematics",
     source: "https://www.petoi.com/products/petoi-robot-dog-bittle-x-voice-controlled",
+    image: "./assets/learning-robots/petoi-bittle-x.jpg",
     price: "$319",
     priceValue: 319,
     learning: 4,
@@ -347,6 +363,7 @@ const diyRobotCatalog = [
     category: "social",
     bestUse: "Human-robot interaction",
     source: "https://reachy-mini.org/",
+    image: "./assets/learning-robots/reachy-mini.jpg",
     price: "$299 Lite, $449 full",
     priceValue: 299,
     learning: 4,
@@ -368,6 +385,7 @@ const diyRobotCatalog = [
     category: "mobile",
     bestUse: "Beginner robotics",
     source: "https://www.makeblock.com/products/buy-mbot2",
+    image: "./assets/learning-robots/makeblock-mbot2.jpg",
     price: "€168 to €200, Rover $260",
     priceValue: 168,
     learning: 3,
@@ -389,6 +407,7 @@ const diyRobotCatalog = [
     category: "legged",
     bestUse: "Advanced legged robotics",
     source: "https://www.unitree.com/go2",
+    image: "./assets/learning-robots/unitree-go2.png",
     price: "$2,800, EU about €2,661",
     priceValue: 2661,
     learning: 5,
@@ -412,6 +431,7 @@ const diyRobotCatalog = [
     category: "legged",
     bestUse: "ROS 2 quadruped kit",
     source: "https://category.yahboom.net/products/dogzilla-s1",
+    image: "./assets/learning-robots/yahboom-dogzilla-s1.jpg",
     price: "$660 to $1,010",
     priceValue: 660,
     learning: 3,
@@ -442,6 +462,15 @@ if (diyTable) {
   let pickFilter = "all";
   let sortKey = "name";
   let sortDirection = 1;
+  const preview = document.createElement("div");
+  const previewImage = document.createElement("img");
+  const previewLabel = document.createElement("span");
+
+  preview.className = "robot-preview diy-preview";
+  preview.setAttribute("aria-hidden", "true");
+  previewImage.alt = "";
+  preview.append(previewImage, previewLabel);
+  document.body.append(preview);
 
   const scores = [
     ["learning", "Learning"],
@@ -499,7 +528,26 @@ if (diyTable) {
     return left.name.localeCompare(right.name, "en", { sensitivity: "base" });
   };
 
+  const positionPreview = (x, y) => {
+    const left = Math.min(x + 18, window.innerWidth - 370);
+    const top = Math.min(y + 18, window.innerHeight - 430);
+    preview.style.left = `${Math.max(12, left)}px`;
+    preview.style.top = `${Math.max(12, top)}px`;
+  };
+
+  const showPreview = (link, x, y) => {
+    previewImage.src = link.dataset.preview;
+    previewLabel.textContent = link.dataset.name;
+    positionPreview(x, y);
+    preview.classList.add("visible");
+  };
+
+  const hidePreview = () => {
+    preview.classList.remove("visible");
+  };
+
   const render = () => {
+    hidePreview();
     const term = search.value.trim().toLowerCase();
     const selectedType = type.value;
     const visibleRobots = diyRobotCatalog
@@ -526,9 +574,16 @@ if (diyTable) {
         (robot) => `
           <tr${robot.pick ? ' class="diy-selected"' : ""}>
             <th scope="row">
-              <a class="diy-name" href="${robot.source}" target="_blank" rel="noreferrer">
+              <a
+                class="diy-name"
+                href="${robot.source}"
+                target="_blank"
+                rel="noreferrer"
+                data-preview="${robot.image}"
+                data-name="${robot.name}"
+              >
                 ${robot.name}
-                <small>Official page ↗</small>
+                <small>Hover for image · Official page ↗</small>
               </a>
               ${robot.pick ? `<span class="diy-pick-tag">${robot.pick}</span>` : ""}
             </th>
@@ -561,6 +616,25 @@ if (diyTable) {
       .join("");
 
     count.textContent = `${visibleRobots.length} / ${diyRobotCatalog.length}`;
+
+    tbody.querySelectorAll(".diy-name[data-preview]").forEach((link) => {
+      link.addEventListener("mouseenter", (event) => {
+        showPreview(link, event.clientX, event.clientY);
+      });
+      link.addEventListener("mousemove", (event) => {
+        positionPreview(event.clientX, event.clientY);
+      });
+      link.addEventListener("mouseleave", () => {
+        if (document.activeElement !== link) hidePreview();
+      });
+      link.addEventListener("focus", () => {
+        const bounds = link.getBoundingClientRect();
+        showPreview(link, bounds.right, bounds.top);
+      });
+      link.addEventListener("blur", () => {
+        if (!link.matches(":hover")) hidePreview();
+      });
+    });
   };
 
   search.addEventListener("input", render);
