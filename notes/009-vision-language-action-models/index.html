@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="../../" />
+    <meta name="description" content="An interactive zoo of the vision-language-action models that turn pixels and a goal into robot actions." />
+    <meta name="theme-color" content="#f1f0e9" />
+    <meta property="og:title" content="The VLA model zoo, 2026 | Robotics Intelligence" />
+    <meta property="og:description" content="An interactive zoo of the vision-language-action models that turn pixels and a goal into robot actions." />
+    <meta property="og:type" content="article" />
+    <link rel="canonical" href="https://robotics.ai-mvp.com/notes/009-vision-language-action-models/" />
+    <title>The VLA model zoo, 2026 | Robotics Intelligence</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css?v=15" />
+    <script src="./main.js?v=11" defer></script>
+    <script src="./vla.js?v=15" defer></script>
+  </head>
+  <body class="note-site">
+    <div class="progress" aria-hidden="true"><span></span></div>
+
+    <header class="site-header note-site-header">
+      <a class="wordmark" href="./" aria-label="Robotics Intelligence, home">
+        <span class="wordmark-mark" aria-hidden="true"></span>
+        <span>ROBOTICS / INTELLIGENCE</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="./#library">Intelligence index</a>
+        <a href="./#about">About</a>
+      </nav>
+    </header>
+
+    <main id="top" class="note-page">
+      <section class="note-context" aria-label="Note context">
+        <a href="./#library"><span aria-hidden="true">←</span> Intelligence index</a>
+        <div>
+          <span>Field note 009 / 009</span>
+          <span>10 models</span>
+          <span>13 Jun 2026</span>
+        </div>
+      </section>
+
+<article id="note-009" class="learning-note standalone-note">
+        <header class="article-header">
+          <div class="article-id">
+            <span>FIELD NOTE</span>
+            <strong>009</strong>
+          </div>
+          <div class="article-title">
+            <p class="eyebrow">Model survey · June 2026</p>
+            <h2>The VLA<br />model zoo, 2026</h2>
+            <p class="dek">
+              Ten vision-language-action models that turn pixels and a language
+              goal into motor actions — the concrete architecture behind the
+              System 1 / System 2 and generalist theses. Filter by weights and
+              action method, sort by size or year.
+            </p>
+          </div>
+        </header>
+
+        <section class="thesis">
+          <p class="section-label">The thesis</p>
+          <blockquote>
+            A VLA takes in pixels and a goal and emits actions. How it produces
+            those actions matters more than its parameter count.
+          </blockquote>
+          <p class="body-copy">
+            This survey maps ten models that defined the field from 2023 to
+            2025. Three choices separate them: how actions are generated
+            (autoregressive tokens, diffusion, or flow matching), whether the
+            weights are open or closed, and whether intelligence is one network
+            or an explicit fast/slow pair. Parameter counts are totals unless a
+            split is noted.
+          </p>
+        </section>
+
+        <section class="vla-explorer" aria-labelledby="vla-table-title">
+          <div class="vla-heading">
+            <p class="section-label">The field</p>
+            <h3 id="vla-table-title">Ten ways to turn seeing into doing.</h3>
+            <p class="vla-hint">
+              Filter by weights and action method, or search developers and
+              embodiments. Sort by model, developer, release, or parameters.
+            </p>
+          </div>
+
+          <div class="vla-controls">
+            <label class="vla-search">
+              <span>Search</span>
+              <input
+                id="vla-search"
+                type="search"
+                placeholder="Model, lab, embodiment…"
+                autocomplete="off"
+              />
+            </label>
+            <label>
+              <span>Weights</span>
+              <select id="vla-weights">
+                <option value="all">All weights</option>
+                <option value="open">Open</option>
+                <option value="closed">Closed</option>
+              </select>
+            </label>
+            <div class="vla-method-filter" aria-label="Filter by action method">
+              <span>Action method</span>
+              <div>
+                <button class="vla-chip active" type="button" data-method="all">All</button>
+                <button class="vla-chip" type="button" data-method="tokens">Tokens</button>
+                <button class="vla-chip" type="button" data-method="diffusion">Diffusion</button>
+                <button class="vla-chip" type="button" data-method="flow">Flow</button>
+                <button class="vla-chip" type="button" data-method="other">Other</button>
+              </div>
+            </div>
+            <span class="vla-count" id="vla-count" aria-live="polite">10 / 10</span>
+          </div>
+
+          <div class="vla-legend">
+            <span><i class="weight-dot open"></i> Open weights you can download and fine-tune</span>
+            <span><i class="weight-dot closed"></i> Closed models shipped inside products</span>
+          </div>
+
+          <div class="vla-table-wrap">
+            <table id="vla-table" class="vla-table">
+              <thead>
+                <tr>
+                  <th scope="col" aria-sort="none">
+                    <button type="button" data-key="name">Model <span class="dir" aria-hidden="true"></span></button>
+                  </th>
+                  <th scope="col" aria-sort="none">
+                    <button type="button" data-key="developer">Developer <span class="dir" aria-hidden="true"></span></button>
+                  </th>
+                  <th scope="col" aria-sort="none">
+                    <button type="button" data-key="year">Release <span class="dir" aria-hidden="true"></span></button>
+                  </th>
+                  <th scope="col" aria-sort="none">
+                    <button type="button" data-key="params">Params <span class="dir" aria-hidden="true"></span></button>
+                  </th>
+                  <th scope="col">Weights</th>
+                  <th scope="col">Action method</th>
+                  <th scope="col">Embodiment</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+            <noscript>
+              <p class="vla-noscript">JavaScript is required for the interactive table.</p>
+            </noscript>
+          </div>
+        </section>
+
+        <section class="synthesis" aria-labelledby="synthesis-009-title">
+          <div class="synthesis-copy">
+            <p class="section-label">My synthesis</p>
+            <h3 id="synthesis-009-title">Three movements, visible when you sort.</h3>
+            <p>
+              Sort by release and the trajectory appears. Action generation
+              moved from text tokens to diffusion and flow matching. Useful
+              size fell from RT-2's 55B to SmolVLA's 450M. And intelligence
+              split into two: a slow VLM planner driving a fast action expert,
+              the System 1 / System 2 design from note 002 made into product.
+            </p>
+          </div>
+
+          <div class="robot-stats" aria-label="VLA field summary">
+            <div>
+              <strong>10</strong>
+              <span>models surveyed</span>
+            </div>
+            <div>
+              <strong>7</strong>
+              <span>with open weights</span>
+            </div>
+            <div>
+              <strong>3</strong>
+              <span>action methods</span>
+            </div>
+            <div>
+              <strong>120×</strong>
+              <span>span from smallest to largest</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="neura-lens">
+          <div>
+            <p class="section-label">The NEURA lens</p>
+            <h3>The base model is shared. The moat is what you feed it.</h3>
+          </div>
+          <div>
+            <p>
+              A VLA is the generalist of note 005 made concrete, and the open
+              ones — π0, GR00T, OpenVLA, SmolVLA — mean a robotics company
+              rarely starts from zero. The differentiator moves up the stack.
+            </p>
+            <p>
+              It becomes the proprietary demonstrations used to post-train the
+              generalist, the embodiment-specific System 1 the open VLM cannot
+              supply, and the data engine that turns each deployment into the
+              next training set.
+            </p>
+          </div>
+        </section>
+
+        <section class="takeaway">
+          <span class="takeaway-label">Keep this</span>
+          <p>
+            A VLA turns <strong>pixels + a goal</strong> into
+            <strong>actions</strong>. The frontier moved from
+            <strong>tokens to flow</strong>, and from
+            <strong>one model to two</strong>.
+          </p>
+        </section>
+
+        <footer class="source">
+          <div>
+            <p class="section-label">Source</p>
+            <p>
+              Model survey compiled from model papers, lab pages, and release
+              notes, 13 June 2026. Parameter counts are vendor-stated; closed
+              models list undisclosed sizes as such.
+            </p>
+          </div>
+          <a href="./notes/009-vision-language-action-models.md" target="_blank" rel="noreferrer">
+            View methodology &amp; sources <span aria-hidden="true">↗</span>
+          </a>
+        </footer>
+      </article>
+
+      <nav class="note-pagination" aria-label="More field notes">
+          <a href="./notes/008-home-robot-learning-kits/">
+            <span>Previous note</span>
+            <strong>008 / Robots for learning at home</strong>
+          </a>
+          <a href="./notes/001-three-fuels-for-embodied-intelligence/">
+            <span>Return to the beginning</span>
+            <strong>001 / Three fuels for embodied intelligence</strong>
+          </a>
+      </nav>
+    </main>
+
+    <footer class="site-footer">
+      <span>robotics.ai-mvp.com</span>
+      <span>Strategic field intelligence · Berlin · 2026</span>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </body>
+</html>
