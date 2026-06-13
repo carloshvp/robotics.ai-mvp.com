@@ -2147,6 +2147,10 @@ tbody th {
     display: none;
   }
 
+  .diy-preview {
+    display: grid;
+  }
+
   .robot-stats > div {
     padding: 32px 22px;
   }
@@ -3065,5 +3069,11 @@ tbody th {
 
   .note-pagination a:first-child {
     border-bottom: 1px solid var(--ink);
+  }
+}
+
+@media (hover: none), (pointer: coarse) {
+  .diy-preview {
+    display: none;
   }
 }
