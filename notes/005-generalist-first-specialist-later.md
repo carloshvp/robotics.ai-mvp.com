@@ -56,14 +56,13 @@ distillation.
 | Generalist | GPT-3 → ChatGPT unified the field | Robot foundation models — in progress (GR00T) |
 | Specialized generalists | Prompted, fine-tuned, distilled per task | Still to come — per task and per embodiment |
 
-## The NEURA lens
+## Strategic implication
 
 (My synthesis.) If the generalist wins, per-customer engineering becomes
 per-customer fine-tuning: the marginal cost of serving a new task collapses,
 and the differentiator shifts to proprietary demonstrations plus the pipeline
-that turns them into specialized models quickly. A training-gym program is
-that pipeline — the machinery for producing specialized generalists on
-demand.
+that turns them into specialized models quickly. A repeatable robot-training
+pipeline is the machinery for producing specialized generalists on demand.
 
 ## Keep this
 

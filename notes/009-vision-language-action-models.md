@@ -72,7 +72,7 @@ split is noted.
   expert acting at 200 Hz. Note 002's open research question became a
   shipping design.
 
-## The NEURA lens
+## Strategic implication
 
 (My synthesis.) A VLA is the generalist of
 [[005-generalist-first-specialist-later|note 005]] made concrete — and the

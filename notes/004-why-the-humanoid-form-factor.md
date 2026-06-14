@@ -61,14 +61,14 @@ surface:
 | Quadruped | Terrain yes, hands no | Minimal | Low | Maturing niches |
 | Aerial | Reach, not contact | Minimal payload | Low | Niche |
 
-## The NEURA lens
+## Strategic implication
 
 (My synthesis.) A robot maker does not have to choose once. Cobot arms and
 mobile platforms win structured environments today and can fund the harder
-humanoid bet; a humanoid program (NEURA's 4NE-1) sits at the general end of
-that same portfolio. A shared model across embodiments lets data collected on
-one platform partially transfer to the others — which makes the portfolio a
-data strategy, not just a product line.
+humanoid bet; a humanoid program sits at the general end of that same
+portfolio. A shared model across embodiments lets data collected on one
+platform partially transfer to the others — which makes the portfolio a data
+strategy, not just a product line.
 
 ## Keep this
 

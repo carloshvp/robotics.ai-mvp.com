@@ -56,7 +56,7 @@ The pattern: **memory, not TOPS, is the gating axis** for running
 foundation-model-class intelligence onboard, and **power** separates
 battery-powered robots from tethered cells.
 
-## The NEURA lens
+## Strategic implication
 
 (My synthesis.) The silicon choice follows the System 1 / System 2 split from
 [[002-thinking-fast-and-slow-for-robots|note 002]]: System 1 must run onboard

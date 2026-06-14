@@ -70,7 +70,7 @@ A productive data flywheel could:
 4. Deploy, identify failures, and turn them into the next simulation scenarios
    or targeted teleoperation tasks.
 
-## The NEURA lens
+## Strategic implication
 
 A hands-on training approach such as teleoperation can produce high-fidelity,
 task-relevant demonstrations without a sim-to-real gap. Its constraint is

@@ -54,7 +54,7 @@ the data and scale up the model size." Mapping the curve — the embodied
 equivalent of Chinchilla — is an explicit research goal of the field, not a
 solved input to planning.
 
-## The NEURA lens
+## Strategic implication
 
 (My synthesis.) Until an embodied scaling law exists, every data-collection
 budget is a hypothesis, and "how much data is enough?" has direct capex
@@ -63,8 +63,8 @@ consequences for a company whose moat includes demonstrations.
 The practical move is to make operations produce the curve: instrument data
 collection so that marginal task success per additional demonstration-hour is
 measured per task family and embodiment. Small pilot runs across a grid of
-model sizes and data volumes de-risk large collection spends. A training-gym
-program is exactly the place where those curves can be measured
+model sizes and data volumes de-risk large collection spends. A controlled
+robot-training program is the place where those curves can be measured
 systematically.
 
 ## Keep this

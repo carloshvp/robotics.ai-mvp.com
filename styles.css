@@ -2115,29 +2115,29 @@ tbody th {
   text-transform: uppercase;
 }
 
-.neura-lens {
+.strategic-lens {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background: var(--orange);
   border-bottom: 1px solid var(--ink);
 }
 
-.neura-lens > div {
+.strategic-lens > div {
   padding: clamp(40px, 6vw, 90px);
 }
 
-.neura-lens > div:first-child {
+.strategic-lens > div:first-child {
   border-right: 1px solid var(--ink);
 }
 
-.neura-lens h3 {
+.strategic-lens h3 {
   margin-top: 60px;
   font-size: clamp(42px, 5vw, 76px);
   letter-spacing: -0.065em;
   line-height: 0.92;
 }
 
-.neura-lens > div:last-child {
+.strategic-lens > div:last-child {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -2284,13 +2284,13 @@ tbody th {
 
   .comparison,
   .synthesis,
-  .neura-lens {
+  .strategic-lens {
     grid-template-columns: 1fr;
   }
 
   .comparison-heading,
   .synthesis-copy,
-  .neura-lens > div:first-child {
+  .strategic-lens > div:first-child {
     border-right: 0;
     border-bottom: 1px solid var(--ink);
   }
@@ -2541,7 +2541,7 @@ tbody th {
 
   .synthesis-copy,
   .flywheel,
-  .neura-lens > div {
+  .strategic-lens > div {
     padding: 48px 24px;
   }
 
@@ -2549,7 +2549,7 @@ tbody th {
     min-height: 520px;
   }
 
-  .neura-lens h3 {
+  .strategic-lens h3 {
     margin-top: 40px;
   }
 

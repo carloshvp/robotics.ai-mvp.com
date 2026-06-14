@@ -56,7 +56,7 @@ model made this concrete — a vision-language module (System 2) paired with a
 diffusion-transformer action module (System 1) — evidence that the dual-system
 framing became an actual architecture.
 
-## The NEURA lens
+## Strategic implication
 
 General-purpose System 2 reasoning is rapidly becoming a commodity available
 from foundation-model providers. The defensible layers for a robot maker are
