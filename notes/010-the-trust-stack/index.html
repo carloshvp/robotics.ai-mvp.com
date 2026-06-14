@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="../../" />
+    <meta name="description" content="The four layers that turn a humanoid demo into a deployment, and the market each one unlocks. Build the trust stack and watch." />
+    <meta name="theme-color" content="#f1f0e9" />
+    <meta property="og:title" content="The trust stack | Robotics Intelligence" />
+    <meta property="og:description" content="Dexterity gets a robot on stage. Trust gets it in the room. Build the trust stack layer by layer and watch the market it can enter change." />
+    <meta property="og:type" content="article" />
+    <link rel="canonical" href="https://robotics.ai-mvp.com/notes/010-the-trust-stack/" />
+    <title>The trust stack | Robotics Intelligence</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css?v=11" />
+    <script src="./main.js?v=11" defer></script>
+  </head>
+  <body class="note-site">
+    <div class="progress" aria-hidden="true"><span></span></div>
+
+    <header class="site-header note-site-header">
+      <a class="wordmark" href="./" aria-label="Robotics Intelligence, home">
+        <span class="wordmark-mark" aria-hidden="true"></span>
+        <span>ROBOTICS / INTELLIGENCE</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="./#library">Intelligence index</a>
+        <a href="./#about">About</a>
+      </nav>
+    </header>
+
+    <main id="top" class="note-page">
+      <section class="note-context" aria-label="Note context">
+        <a href="./#library"><span aria-hidden="true">←</span> Intelligence index</a>
+        <div>
+          <span>Field note 010 / 010</span>
+          <span>4-layer model</span>
+          <span>14 Jun 2026</span>
+        </div>
+      </section>
+
+      <article id="note-010" class="learning-note standalone-note">
+        <header class="article-header">
+          <div class="article-id">
+            <span>FIELD NOTE</span>
+            <strong>010</strong>
+          </div>
+          <div class="article-title">
+            <p class="eyebrow">Trust · Embodied AI</p>
+            <h2>The trust<br />stack</h2>
+            <p class="dek">
+              Dexterity gets a robot on stage. Trust gets it in the room. Build
+              the stack layer by layer and watch the market it can enter change.
+            </p>
+          </div>
+        </header>
+
+        <section class="thesis">
+          <p class="section-label">The thesis</p>
+          <blockquote>
+            Trust is not a compliance tax you pay at the end. It is the unlock you
+            build from the start — and a moat.
+          </blockquote>
+          <p class="body-copy">
+            Every humanoid demo you have seen was selling <strong>capability</strong> —
+            can it fold the laundry, can it walk the warehouse, can it pour the
+            coffee. Capability is necessary. It is also not the thing that decides
+            who wins, because capability does not answer the only question that
+            matters once a robot leaves the stage and enters a room with people:
+            can you prove what it did, to someone who does not take your word for it?
+          </p>
+        </section>
+
+        <section class="note-figure" aria-label="Interactive: build the trust stack">
+          <p class="section-label">Build it</p>
+          <p class="body-copy">
+            Toggle the layers on, bottom to top. What changes is not what the robot
+            can <em>do</em> — it is the market it can <em>enter</em>.
+          </p>
+
+          <style>
+          .ts{--ink:#1f2421;--muted:#6b7280;--line:#e6e6e2;--bg:#fff;--surface:#f7f7f5;--teal:#0f6e56;--tealbg:#e1f5ee;--tealbd:#9fe1cb;--amber:#854f0b;--amberbg:#faeeda;--amberbd:#f0d49a;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.5;max-width:680px;margin:1.5rem 0;}
+          .ts h3{font-size:17px;font-weight:500;margin:0 0 4px;color:var(--ink);}
+          .ts .sub{color:var(--muted);font-size:13px;margin:0 0 16px;}
+          .ts .cols{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start;}
+          @media(max-width:560px){.ts .cols{grid-template-columns:1fr;}}
+          .ts .stack{display:flex;flex-direction:column;gap:7px;}
+          .ts .layer{display:flex;align-items:center;gap:11px;border:1px solid var(--line);border-radius:10px;background:var(--surface);padding:9px 11px;transition:background .12s,border-color .12s;}
+          .ts .layer.lit{background:var(--tealbg);border-color:var(--tealbd);}
+          .ts .layer.blocked{background:var(--amberbg);border-color:var(--amberbd);}
+          .ts .num{width:22px;height:22px;flex:none;border-radius:50%;background:#ddd9cf;color:#5f5e5a;font-size:12px;display:flex;align-items:center;justify-content:center;}
+          .ts .layer.lit .num{background:var(--teal);color:#fff;}
+          .ts .ltx{flex:1;min-width:0;}
+          .ts .ln{font-size:13px;font-weight:500;}
+          .ts .lo{font-size:11px;color:var(--muted);}
+          .ts .hint{font-size:11px;color:var(--amber);}
+          .ts .sw{width:38px;height:22px;border-radius:20px;background:#ddd9cf;border:none;position:relative;cursor:pointer;padding:0;flex:none;}
+          .ts .sw.on{background:var(--teal);}
+          .ts .knob{position:absolute;top:3px;left:3px;width:16px;height:16px;border-radius:50%;background:#fff;transition:left .14s;}
+          .ts .sw.on .knob{left:19px;}
+          .ts .base{margin-top:7px;text-align:center;font-size:11px;color:var(--muted);border-top:1px dashed var(--line);padding-top:7px;}
+          .ts .panel{border:1px solid var(--line);border-radius:12px;background:var(--bg);padding:14px 16px;}
+          .ts .tlbl{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);}
+          .ts .tier{font-size:26px;font-weight:500;margin:2px 0 10px;}
+          .ts .tier.full{color:var(--teal);}
+          .ts .meter{display:flex;gap:5px;margin-bottom:12px;}
+          .ts .seg{flex:1;height:7px;border-radius:4px;background:var(--line);}
+          .ts .seg.on{background:var(--teal);}
+          .ts .line{font-size:13px;color:var(--ink);margin-bottom:12px;min-height:38px;}
+          .ts .ulbl{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-bottom:6px;}
+          .ts .unlock{display:flex;gap:8px;font-size:13px;padding:3px 0;color:var(--teal);}
+          .ts .unlock .b{flex:none;}
+          .ts .none{font-size:13px;color:var(--muted);}
+          </style>
+          <div class="ts">
+            <div class="cols">
+              <div>
+                <div class="stack" id="stack"></div>
+                <div class="base">foundation: the robot, its silicon, its certified safety stack</div>
+              </div>
+              <div class="panel">
+                <div class="tlbl">deployment tier</div>
+                <div class="tier" id="tier">Demo</div>
+                <div class="meter" id="meter"></div>
+                <div class="line" id="line"></div>
+                <div class="ulbl">market access unlocked</div>
+                <div id="unlocks"></div>
+              </div>
+            </div>
+          </div>
+          <script>
+          (function(){
+            var layers=[
+              {n:1,name:'Hardware root of trust',one:'attested cloud reasoning · signed edge actions',post:'Post 5'},
+              {n:2,name:'Proof of outcome',one:'sensor-witnessed, tamper-evident records',post:'Post 6'},
+              {n:3,name:'Fleet trust',one:'identity · revocation · blast-radius containment',post:'Post 7'},
+              {n:4,name:'Skill provenance',one:'signed skills · default-deny · kill switch',post:'Post 8'}
+            ];
+            var tiers=[
+              {label:'Demo',line:'Impressive on stage. Uninsurable in a room with people.'},
+              {label:'Recorded',line:'You can keep records — but you still cannot prove what physically happened.'},
+              {label:'Insurable',line:'Outcomes are provable. Risk becomes a number an underwriter can price.'},
+              {label:'Fleet-grade',line:'One compromised robot or skill is a contained event, not a catastrophe.'},
+              {label:'Platform',line:'A marketplace on a machine that can hurt you — made safe. The platform play.'}
+            ];
+            var unlockText=['Internal pilots — tamper-evident records exist','Supervised deployments — outcomes provable, insurable','Regulated cells at scale — failures contained','Open third-party ecosystem — skills without trusting their authors'];
+            var on=[false,false,false,false];
+            var stack=document.getElementById('stack'),rows=[];
+            function mk(t,c){var e=document.createElement(t);if(c)e.className=c;return e;}
+            function build(){
+              for(var i=layers.length-1;i>=0;i--){(function(i){
+                var L=layers[i];
+                var row=mk('div','layer'),num=mk('div','num');num.textContent=L.n;
+                var tx=mk('div','ltx'),ln=mk('div','ln');ln.textContent=L.name+'  ·  '+L.post;
+                var lo=mk('div','lo');lo.textContent=L.one;var hint=mk('div','hint');
+                tx.appendChild(ln);tx.appendChild(lo);tx.appendChild(hint);
+                var sw=mk('button','sw');sw.setAttribute('aria-label','toggle '+L.name);sw.appendChild(mk('span','knob'));
+                sw.addEventListener('click',function(){on[i]=!on[i];render();});
+                row.appendChild(sw);row.appendChild(num);row.appendChild(tx);
+                stack.appendChild(row);rows[i]={row:row,sw:sw,hint:hint};
+              })(i);}
+            }
+            function tierLevel(){var k=0;while(k<4&&on[k])k++;return k;}
+            function render(){
+              var tier=tierLevel();
+              for(var i=0;i<4;i++){
+                var r=rows[i],lit=on[i]&&i<tier,blocked=on[i]&&i>=tier;
+                r.row.className='layer'+(lit?' lit':blocked?' blocked':'');
+                r.sw.className='sw'+(on[i]?' on':'');
+                r.hint.textContent=blocked?'needs the layer below it':'';
+              }
+              var ti=tiers[tier],tEl=document.getElementById('tier');
+              tEl.textContent=ti.label;tEl.className='tier'+(tier===4?' full':'');
+              document.getElementById('line').textContent=ti.line;
+              var meter=document.getElementById('meter');while(meter.firstChild)meter.removeChild(meter.firstChild);
+              for(var s=0;s<4;s++){var seg=mk('div','seg'+(s<tier?' on':''));meter.appendChild(seg);}
+              var u=document.getElementById('unlocks');while(u.firstChild)u.removeChild(u.firstChild);
+              if(tier===0){var n=mk('div','none');n.textContent='Showcase and lab demos only.';u.appendChild(n);}
+              else{for(var j=0;j<tier;j++){var it=mk('div','unlock'),b=mk('span','b');b.textContent='✓';var t=mk('span');t.textContent=unlockText[j];it.appendChild(b);it.appendChild(t);u.appendChild(it);}}
+            }
+            build();render();
+          })();
+          </script>
+        </section>
+
+        <section>
+          <p class="section-label">Why it's a moat, not a tax</p>
+          <p class="body-copy">
+            Moats are made of capabilities that are hard, boring, and compounding,
+            and a verifiable trust stack is exactly that shape. Anyone can demo
+            dexterity. Almost no one can hand an insurer a tamper-evident account
+            of a motion, contain a poisoned skill before it crosses a fleet, or run
+            a third-party marketplace on a machine that can hurt someone. The first
+            builders to make trust a product feature, not an afterthought, take the
+            regulated, insured, high-revenue deployments first — and compound the
+            operational data that flows from them.
+          </p>
+          <p class="body-copy">
+            And the hardware makes it <em>hard</em>, which is precisely why it's
+            defensible. The robot's own silicon can't do what the datacenter can —
+            the on-board chip has no confidential computing — so trust has to be
+            engineered across an asymmetric cloud-to-edge boundary. That's not a
+            footnote. It's the moat's depth.
+          </p>
+          <p class="body-copy">
+            The race everyone is watching is dexterity. The race that decides who
+            gets to deploy among people, at scale, with an ecosystem behind them, is
+            trust. One of these is almost solved. The other is wide open.
+          </p>
+        </section>
+
+        <footer class="article-footer">
+          <div class="footnote">
+            <p class="section-label">The four layers, in depth</p>
+            <p class="body-copy">
+              The engineering of each layer lives on the governance side:
+              <a href="https://governance.ai-mvp.com/2026/06/13/the-cloud-can-prove-it-the-robot-cant/">hardware root of trust</a>,
+              <a href="https://governance.ai-mvp.com/2026/06/13/proof-of-outcome/">proof of outcome</a>,
+              <a href="https://governance.ai-mvp.com/2026/06/14/trust-at-fleet-scale/">trust at fleet scale</a>, and
+              <a href="https://governance.ai-mvp.com/2026/06/14/trusting-the-skills-you-didnt-write/">trusting the skills you didn't write</a>.
+              We argue all of it — with robotics engineers and the lead of the
+              AgenTrust project — at an upcoming GenAI Gurus session.
+            </p>
+          </div>
+          <a href="./notes/010-the-trust-stack.md" target="_blank" rel="noreferrer">
+            View the data note <span aria-hidden="true">↗</span>
+          </a>
+        </footer>
+      </article>
+
+      <nav class="note-pagination" aria-label="More field notes">
+        <a href="./notes/009-vision-language-action-models/">
+          <span>Previous note</span>
+          <strong>009 / The VLA model zoo, 2026</strong>
+        </a>
+        <a href="./#library">
+          <span>Back to</span>
+          <strong>Intelligence index</strong>
+        </a>
+      </nav>
+    </main>
+
+    <footer class="site-footer">
+      <span>robotics.ai-mvp.com</span>
+      <span>Strategic field intelligence · Berlin · 2026</span>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </body>
+</html>
