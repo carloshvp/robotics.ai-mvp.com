@@ -71,7 +71,7 @@
           </p>
         </section>
 
-        <section class="note-figure" aria-label="Interactive: build the trust stack">
+        <section class="ts-block" aria-label="Interactive: build the trust stack">
           <p class="section-label">Build it</p>
           <p class="body-copy">
             Toggle the layers on, bottom to top. What changes is not what the robot
@@ -111,6 +111,10 @@
           .ts .unlock{display:flex;gap:8px;font-size:13px;padding:3px 0;color:var(--teal);}
           .ts .unlock .b{flex:none;}
           .ts .none{font-size:13px;color:var(--muted);}
+          .ts-block{border-bottom:1px solid var(--ink);padding:clamp(36px,6vw,80px);}
+          .ts-block .section-label{display:block;margin-bottom:16px;}
+          .ts-block .body-copy{max-width:760px;}
+          .ts-block .body-copy + .body-copy{margin-top:18px;}
           </style>
           <div class="ts">
             <div class="cols">
@@ -183,7 +187,7 @@
           </script>
         </section>
 
-        <section>
+        <section class="ts-block">
           <p class="section-label">Why it's a moat, not a tax</p>
           <p class="body-copy">
             Moats are made of capabilities that are hard, boring, and compounding,
@@ -209,9 +213,8 @@
           </p>
         </section>
 
-        <footer class="article-footer">
-          <div class="footnote">
-            <p class="section-label">The four layers, in depth</p>
+        <section class="ts-block">
+          <p class="section-label">The four layers, in depth</p>
             <p class="body-copy">
               The engineering of each layer lives on the governance side:
               <a href="https://governance.ai-mvp.com/2026/06/11/the-cloud-can-prove-it-the-robot-cant/">hardware root of trust</a>,
@@ -220,6 +223,16 @@
               <a href="https://governance.ai-mvp.com/2026/06/19/trusting-the-skills-you-didnt-write/">trusting the skills you didn't write</a>.
               We argue all of it — with robotics engineers and the lead of the
               AgenTrust project — at an upcoming GenAI Gurus session.
+            </p>
+        </section>
+
+        <footer class="source">
+          <div>
+            <p class="section-label">About this note</p>
+            <p>
+              A strategic companion to the four-part trust series on
+              governance.ai-mvp.com — the interactive maps each trust layer to the
+              market access it unlocks.
             </p>
           </div>
           <a href="./notes/010-the-trust-stack.md" target="_blank" rel="noreferrer">
