@@ -81,7 +81,7 @@ from zero. The differentiator moves up the stack: the **proprietary
 demonstrations** used to post-train the generalist, the **embodiment-specific
 System 1** that the open VLM can't supply, and the **data engine** that turns
 deployment into the next training set. The base model is increasingly
-shared; the moat is what you fine-tune it with.
+shared; the advantage is what you fine-tune it with.
 
 ## Keep this
 

@@ -52,7 +52,7 @@ The limitation is cost. Every trajectory consumes operator time and robot time.
 Collection also requires resets, maintenance, safety procedures, quality
 control, and management of physical wear.
 
-## Synthesis: the moat is the mixing strategy
+## Synthesis: the advantage is the mixing strategy
 
 No source wins on every axis:
 

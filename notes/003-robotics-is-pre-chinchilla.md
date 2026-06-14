@@ -58,7 +58,7 @@ solved input to planning.
 
 (My synthesis.) Until an embodied scaling law exists, every data-collection
 budget is a hypothesis, and "how much data is enough?" has direct capex
-consequences for a company whose moat includes demonstrations.
+consequences for a company whose advantage includes demonstrations.
 
 The practical move is to make operations produce the curve: instrument data
 collection so that marginal task success per additional demonstration-hour is
