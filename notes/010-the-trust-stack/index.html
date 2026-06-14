@@ -70,6 +70,96 @@
           </p>
         </section>
 
+        <section class="data-cards duo" aria-label="The four trust layers">
+          <article class="data-card web-card">
+            <header>
+              <span class="card-number">01</span>
+              <span class="card-tag">ANCHOR</span>
+            </header>
+            <h3>Hardware root of trust</h3>
+            <p class="card-lead">Prove what the AI decided.</p>
+            <p>
+              Heavy reasoning runs in the cloud, where the GPU can emit a
+              hardware-signed proof of exactly what ran. The robot signs its edge
+              actions, so the chain is anchored outside the operator's reach.
+            </p>
+            <dl>
+              <div><dt>Unlocks</dt><dd>Tamper-evident records</dd></div>
+              <div><dt>Read</dt><dd><a href="https://governance.ai-mvp.com/2026/06/11/the-cloud-can-prove-it-the-robot-cant/">Post 5</a></dd></div>
+            </dl>
+            <p class="card-footnote">
+              The on-board chip has no confidential computing, so trust crosses an
+              asymmetric cloud-to-edge boundary.
+            </p>
+          </article>
+
+          <article class="data-card sim-card">
+            <header>
+              <span class="card-number">02</span>
+              <span class="card-tag">EVIDENCE</span>
+            </header>
+            <h3>Proof of outcome</h3>
+            <p class="card-lead">Prove what physically happened.</p>
+            <p>
+              An authorization log says the robot was allowed to move, not that it
+              did. Sensors testify instead: force, vision, position, hash-chained
+              into a tamper-evident flight recorder.
+            </p>
+            <dl>
+              <div><dt>Unlocks</dt><dd>Insurability</dd></div>
+              <div><dt>Read</dt><dd><a href="https://governance.ai-mvp.com/2026/06/14/proof-of-outcome/">Post 6</a></dd></div>
+            </dl>
+            <p class="card-footnote">
+              After an incident, nobody asks what the policy permitted. They ask what
+              the arm actually did.
+            </p>
+          </article>
+
+          <article class="data-card real-card">
+            <header>
+              <span class="card-number">03</span>
+              <span class="card-tag">SCALE</span>
+            </header>
+            <h3>Fleet trust</h3>
+            <p class="card-lead">Survive ten thousand robots.</p>
+            <p>
+              Per-unit identity, fast revocation, and a blast-radius bound, so a
+              poisoned skill that spreads through networked learning is contained,
+              not catastrophic.
+            </p>
+            <dl>
+              <div><dt>Unlocks</dt><dd>Regulated scale</dd></div>
+              <div><dt>Read</dt><dd><a href="https://governance.ai-mvp.com/2026/06/17/trust-at-fleet-scale/">Post 7</a></dd></div>
+            </dl>
+            <p class="card-footnote">
+              The same mechanism that makes a fleet smart makes it a propagation
+              channel for a bad skill.
+            </p>
+          </article>
+
+          <article class="data-card web-card">
+            <header>
+              <span class="card-number">04</span>
+              <span class="card-tag">ECOSYSTEM</span>
+            </header>
+            <h3>Skill provenance</h3>
+            <p class="card-lead">Run code you didn't write.</p>
+            <p>
+              Signed provenance on every skill and model, default-deny scoping so a
+              weather skill can never command an actuator, and a fleet-wide kill
+              switch when one turns out unsafe.
+            </p>
+            <dl>
+              <div><dt>Unlocks</dt><dd>An open marketplace</dd></div>
+              <div><dt>Read</dt><dd><a href="https://governance.ai-mvp.com/2026/06/19/trusting-the-skills-you-didnt-write/">Post 8</a></dd></div>
+            </dl>
+            <p class="card-footnote">
+              An app store on a machine that can hurt you needs a different bar than
+              the one on your phone.
+            </p>
+          </article>
+        </section>
+
         <section class="ts-block" aria-label="Interactive: build the trust stack">
           <p class="section-label">Build it</p>
           <p class="body-copy">
@@ -186,42 +276,91 @@
           </script>
         </section>
 
-        <section class="ts-block">
-          <p class="section-label">Why it's a moat, not a tax</p>
-          <p class="body-copy">
-            Moats are made of capabilities that are hard, boring, and compounding,
-            and a verifiable trust stack is exactly that shape. Anyone can demo
-            dexterity. Almost no one can hand an insurer a tamper-evident account
-            of a motion, contain a poisoned skill before it crosses a fleet, or run
-            a third-party marketplace on a machine that can hurt someone. The first
-            builders to make trust a product feature, not an afterthought, take the
-            regulated, insured, high-revenue deployments first, and compound the
-            operational data that flows from them.
-          </p>
-          <p class="body-copy">
-            And the hardware makes it <em>hard</em>, which is precisely why it's
-            defensible. The robot's own silicon can't do what the datacenter can, the on-board chip has no confidential computing, so trust has to be
-            engineered across an asymmetric cloud-to-edge boundary. That's not a
-            footnote. It's the moat's depth.
-          </p>
-          <p class="body-copy">
-            The race everyone is watching is dexterity. The race that decides who
-            gets to deploy among people, at scale, with an ecosystem behind them, is
-            trust. One of these is almost solved. The other is wide open.
-          </p>
+        <section class="comparison" aria-labelledby="comparison-010-title">
+          <div class="comparison-heading">
+            <p class="section-label">The hardware reality</p>
+            <h3 id="comparison-010-title">The action happens where trust is weakest.</h3>
+          </div>
+          <div class="matrix-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Where it runs</th>
+                  <th scope="col">Confidential computing</th>
+                  <th scope="col">Proof you can give</th>
+                  <th scope="col">Trust</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Cloud reasoning</th>
+                  <td><span class="rating high">Yes (H200, Blackwell)</span></td>
+                  <td><span class="rating high">Hardware-attested</span></td>
+                  <td><span class="rating high">Strong</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">On-robot action</th>
+                  <td><span class="rating low">No (Jetson Thor)</span></td>
+                  <td><span class="rating mid">Signed, not confidential</span></td>
+                  <td><span class="rating low">Weaker</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </section>
 
-        <section class="ts-block">
-          <p class="section-label">The four layers, in depth</p>
-            <p class="body-copy">
-              The engineering of each layer lives on the governance side:
-              <a href="https://governance.ai-mvp.com/2026/06/11/the-cloud-can-prove-it-the-robot-cant/">hardware root of trust</a>,
-              <a href="https://governance.ai-mvp.com/2026/06/14/proof-of-outcome/">proof of outcome</a>,
-              <a href="https://governance.ai-mvp.com/2026/06/17/trust-at-fleet-scale/">trust at fleet scale</a>, and
-              <a href="https://governance.ai-mvp.com/2026/06/19/trusting-the-skills-you-didnt-write/">trusting the skills you didn't write</a>.
-              We argue all of it, with robotics engineers and the lead of the
-              AgenTrust project, at an upcoming GenAI Gurus session.
+        <section class="synthesis" aria-labelledby="synthesis-010-title">
+          <div class="synthesis-copy">
+            <p class="section-label">The synthesis</p>
+            <h3 id="synthesis-010-title">Trust is not a tax. It is the unlock, and a moat.</h3>
+            <p>
+              Moats are made of capabilities that are hard, boring, and compounding,
+              and a verifiable trust stack is exactly that shape. Anyone can demo
+              dexterity. Almost no one can hand an insurer a tamper-evident account of
+              a motion, contain a poisoned skill before it crosses a fleet, or run a
+              marketplace on a machine that can hurt someone.
             </p>
+            <p>
+              The builders who make trust a product feature, not an afterthought, take
+              the regulated, insured, high-revenue deployments first, and compound the
+              operational data that flows from them.
+            </p>
+          </div>
+          <div class="flywheel" aria-label="The trust stack, built up">
+            <ol>
+              <li><span>01</span><div><strong>Anchor</strong><small>Hardware root of trust</small></div></li>
+              <li><span>02</span><div><strong>Evidence</strong><small>Proof of outcome</small></div></li>
+              <li><span>03</span><div><strong>Scale</strong><small>Fleet trust</small></div></li>
+              <li><span>04</span><div><strong>Ecosystem</strong><small>Skill provenance</small></div></li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="strategic-lens">
+          <div>
+            <p class="section-label">Strategic implication</p>
+            <h3>The hardware scorecard needs a column it doesn't have.</h3>
+          </div>
+          <div>
+            <p>
+              Two robots with identical dexterity and bill-of-materials are not
+              equivalent if one can produce regulator-grade evidence of its decisions
+              and the other cannot. Trust is the axis the scorecard is missing.
+            </p>
+            <p>
+              So the question to put to a humanoid company is no longer only how well
+              it manipulates. It is: what is your trust architecture across cloud and
+              edge, and which part of the on-robot step can you actually prove?
+            </p>
+          </div>
+        </section>
+
+        <section class="takeaway">
+          <span class="takeaway-label">Keep this</span>
+          <p>
+            Dexterity gets a robot <strong>on stage</strong>. Trust gets it
+            <strong>in the room</strong>.
+          </p>
         </section>
 
         <footer class="source">
