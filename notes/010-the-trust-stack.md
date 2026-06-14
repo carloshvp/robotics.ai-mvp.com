@@ -1,7 +1,7 @@
 ---
 id: 010
 title: The trust stack
-date: 2026-06-14
+date: 2026-03-16
 topics:
   - systems
   - market

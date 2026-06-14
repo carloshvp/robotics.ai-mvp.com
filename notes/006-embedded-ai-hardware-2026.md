@@ -1,7 +1,7 @@
 ---
 id: 006
 title: Embedded AI hardware, 2026
-date: 2026-06-12
+date: 2026-02-26
 topics:
   - hardware
   - edge-compute

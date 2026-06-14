@@ -2933,6 +2933,19 @@ tbody th {
   letter-spacing: -0.05em;
 }
 
+.card-date {
+  margin-left: auto;
+  margin-right: 9px;
+  padding-top: 6px;
+  color: var(--muted);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
 .card-status {
   padding: 5px 7px;
   border: 1px solid var(--ink);
@@ -3019,6 +3032,7 @@ tbody th {
 
 .intelligence-card-featured .eyebrow,
 .intelligence-card-featured > a > div > p:last-child,
+.intelligence-card-featured .card-date,
 .intelligence-card-featured footer > span,
 .intelligence-card-featured footer small {
   color: #e6e9ff;

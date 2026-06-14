@@ -1,7 +1,7 @@
 ---
 id: 001
 title: Three fuels for embodied intelligence
-date: 2026-06-12
+date: 2026-02-06
 topics:
   - embodied-ai
   - training-data

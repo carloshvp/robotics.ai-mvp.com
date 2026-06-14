@@ -1,7 +1,7 @@
 ---
 id: 008
 title: Robots for learning at home
-date: 2026-06-12
+date: 2026-03-08
 topics:
   - learning-kits
   - diy-robotics

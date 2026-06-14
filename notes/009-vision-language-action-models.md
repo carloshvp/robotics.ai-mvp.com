@@ -1,7 +1,7 @@
 ---
 id: 009
 title: The VLA model zoo, 2026
-date: 2026-06-13
+date: 2026-03-11
 topics:
   - models
   - vla

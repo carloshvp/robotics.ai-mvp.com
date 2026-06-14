@@ -1,7 +1,7 @@
 ---
 id: 007
 title: The humanoid robot field, 2026
-date: 2026-06-12
+date: 2026-03-02
 topics:
   - humanoids
   - market-map

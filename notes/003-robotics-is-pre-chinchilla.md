@@ -1,7 +1,7 @@
 ---
 id: 003
 title: Robotics is pre-Chinchilla
-date: 2026-06-12
+date: 2026-02-13
 topics:
   - embodied-ai
   - scaling-laws

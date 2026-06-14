@@ -1,7 +1,7 @@
 ---
 id: 005
 title: Generalist first, specialist later
-date: 2026-06-12
+date: 2026-02-21
 topics:
   - foundation-models
   - generalist-robots

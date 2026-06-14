@@ -1,7 +1,7 @@
 ---
 id: 004
 title: Why the humanoid form factor
-date: 2026-06-12
+date: 2026-02-19
 topics:
   - humanoids
   - embodiment

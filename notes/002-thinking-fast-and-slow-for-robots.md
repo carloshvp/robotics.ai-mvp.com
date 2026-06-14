@@ -1,7 +1,7 @@
 ---
 id: 002
 title: Robots that think fast and slow
-date: 2026-06-12
+date: 2026-02-10
 topics:
   - embodied-ai
   - architectures
