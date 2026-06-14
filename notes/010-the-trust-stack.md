@@ -32,7 +32,7 @@ The race everyone is watching is dexterity. The race that decides who gets to de
 
 The four layers, in depth, on the governance side:
 
-- [Hardware root of trust](https://governance.ai-mvp.com/2026/06/13/the-cloud-can-prove-it-the-robot-cant/) — why the robot can prove less than the cloud, and what to do about it.
-- [Proof of outcome](https://governance.ai-mvp.com/2026/06/13/proof-of-outcome/) — making the robot prove what it physically did.
-- [Trust at fleet scale](https://governance.ai-mvp.com/2026/06/14/trust-at-fleet-scale/) — identity, revocation, and the skill that spreads.
-- [Trusting the skills you didn't write](https://governance.ai-mvp.com/2026/06/14/trusting-the-skills-you-didnt-write/) — a marketplace on a machine that can hurt you.
+- [Hardware root of trust](https://governance.ai-mvp.com/2026/06/11/the-cloud-can-prove-it-the-robot-cant/) — why the robot can prove less than the cloud, and what to do about it.
+- [Proof of outcome](https://governance.ai-mvp.com/2026/06/14/proof-of-outcome/) — making the robot prove what it physically did.
+- [Trust at fleet scale](https://governance.ai-mvp.com/2026/06/17/trust-at-fleet-scale/) — identity, revocation, and the skill that spreads.
+- [Trusting the skills you didn't write](https://governance.ai-mvp.com/2026/06/19/trusting-the-skills-you-didnt-write/) — a marketplace on a machine that can hurt you.
