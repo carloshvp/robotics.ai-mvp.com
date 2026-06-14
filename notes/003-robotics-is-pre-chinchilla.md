@@ -13,7 +13,7 @@ speaker: Jim Fan
 # Robotics is pre-Chinchilla
 
 Language models come with a recipe: for a given compute budget, how much data
-to pair with how many parameters. Embodied AI has no such curve yet — and
+to pair with how many parameters. Embodied AI has no such curve yet, and
 finding it is itself a research frontier.
 
 ## What LLMs know
@@ -21,9 +21,9 @@ finding it is itself a research frontier.
 Scaling laws (Kaplan et al. 2020; Hoffmann et al. 2022, the "Chinchilla"
 paper, [arXiv:2203.15556](https://arxiv.org/abs/2203.15556)) made language
 model training predictable: loss falls smoothly as a function of parameters,
-data, and compute. Chinchilla's headline finding — many models were badly
-undertrained, and for fixed compute you should scale data and parameters
-together, roughly 20 tokens per parameter — reset how every lab sized its
+data, and compute. Chinchilla's headline finding was that many models were
+badly undertrained, and for fixed compute you should scale data and parameters
+together at roughly 20 tokens per parameter. This reset how every lab sized its
 training runs. Capability planning became closer to engineering than
 gambling.
 
@@ -50,8 +50,8 @@ reasons:
 ## What Fan expects
 
 The wager is that the LLM pattern repeats: "emergent property as we scale up
-the data and scale up the model size." Mapping the curve — the embodied
-equivalent of Chinchilla — is an explicit research goal of the field, not a
+the data and scale up the model size." Mapping the curve, the embodied
+equivalent of Chinchilla, is an explicit research goal of the field, not a
 solved input to planning.
 
 ## Strategic implication

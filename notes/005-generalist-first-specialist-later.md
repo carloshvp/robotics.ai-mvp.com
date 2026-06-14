@@ -13,7 +13,7 @@ speaker: Jim Fan
 # Generalist first, specialist later
 
 NLP already ran this experiment: a zoo of task-specific models lost to one
-generalist. Jim Fan expects robotics to repeat the curve — that is the
+generalist. Jim Fan expects robotics to repeat the curve. That is the
 premise of Project GR00T.
 
 ## Before: the specialist zoo
@@ -30,7 +30,7 @@ per machine.
 ## After: the generalist
 
 "ChatGPT came and unified everything into a single model." The generalist's
-emergent properties — capabilities nobody explicitly trained — transfer from
+emergent properties, including capabilities nobody explicitly trained, transfer from
 one task to the next, and a single model is much easier to maintain than a
 fleet of pipelines: "you have a single API."
 
@@ -44,17 +44,17 @@ specialists."
 
 Applied to robots: "Project GR00T aims to build this general purpose
 foundation model... And then once we have that generalist, we'll be able to
-prompt it, fine tune it, distill it down to specific robotics tasks" — the
-same way we trim LLMs to tasks today with prompts, fine-tuning, and
+prompt it, fine tune it, distill it down to specific robotics tasks." This
+follows the same pattern used to adapt LLMs today: prompting, fine-tuning, and
 distillation.
 
 ## The timeline, mapped
 
 | Stage | Language AI | Robotics |
 | --- | --- | --- |
-| Specialists | One model per task (translation, NER, sentiment…) | One policy per cell (pick, weld, polish) — today |
-| Generalist | GPT-3 → ChatGPT unified the field | Robot foundation models — in progress (GR00T) |
-| Specialized generalists | Prompted, fine-tuned, distilled per task | Still to come — per task and per embodiment |
+| Specialists | One model per task (translation, NER, sentiment…) | One policy per cell (pick, weld, polish), today |
+| Generalist | GPT-3 → ChatGPT unified the field | Robot foundation models, in progress (GR00T) |
+| Specialized generalists | Prompted, fine-tuned, distilled per task | Still to come, per task and per embodiment |
 
 ## Strategic implication
 

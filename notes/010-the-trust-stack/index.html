@@ -4,16 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <base href="../../" />
-    <meta name="description" content="The four layers that turn a humanoid demo into a deployment, and the market each one unlocks. Build the trust stack and watch." />
+    <meta
+      name="description"
+      content="A four-layer model for proving robot identity, outcomes, fleet integrity, and skill provenance."
+    />
     <meta name="theme-color" content="#f1f0e9" />
     <meta property="og:title" content="The trust stack | Robotics Intelligence" />
-    <meta property="og:description" content="Dexterity gets a robot on stage. Trust gets it in the room. Build the trust stack layer by layer and watch the market it can enter change." />
+    <meta
+      property="og:description"
+      content="Capability gets a robot into a demo. Evidence and containment get it into deployment."
+    />
     <meta property="og:type" content="article" />
     <link rel="canonical" href="https://robotics.ai-mvp.com/notes/010-the-trust-stack/" />
     <title>The trust stack | Robotics Intelligence</title>
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./styles.css?v=16" />
+    <link rel="stylesheet" href="./styles.css?v=17" />
     <script src="./main.js?v=11" defer></script>
+    <script src="./trust-stack.js?v=1" defer></script>
   </head>
   <body class="note-site">
     <div class="progress" aria-hidden="true"><span></span></div>
@@ -49,8 +56,8 @@
             <p class="eyebrow">Trust · Embodied AI</p>
             <h2>The trust<br />stack</h2>
             <p class="dek">
-              Dexterity gets a robot on stage. Trust gets it in the room. Build
-              the stack layer by layer and watch the market it can enter change.
+              A capable robot can perform the task. A trusted robot can prove
+              what happened, contain failure, and accept external skills safely.
             </p>
           </div>
         </header>
@@ -58,308 +65,165 @@
         <section class="thesis">
           <p class="section-label">The thesis</p>
           <blockquote>
-            Trust is not a compliance tax you pay at the end. It is the unlock you
-            build from the start.
+            Deployment depends on evidence: who acted, what happened, and how
+            failure is contained.
           </blockquote>
           <p class="body-copy">
-            Every humanoid demo you have seen was selling <strong>capability</strong>, can it fold the laundry, can it walk the warehouse, can it pour the
-            coffee. Capability is necessary. It is also not the thing that decides
-            who wins, because capability does not answer the only question that
-            matters once a robot leaves the stage and enters a room with people:
-            can you prove what it did, to someone who does not take your word for it?
+            Capability opens the demo. Trust determines whether an operator,
+            insurer, or regulator can accept the risk. Four technical layers
+            move a robot from lab prototype to operating platform.
           </p>
         </section>
 
-        <section class="data-cards duo" aria-label="The four trust layers">
-          <article class="data-card web-card">
-            <header>
-              <span class="card-number">01</span>
-              <span class="card-tag">ANCHOR</span>
-            </header>
-            <h3>Hardware root of trust</h3>
-            <p class="card-lead">Prove what the AI decided.</p>
-            <p>
-              Heavy reasoning runs in the cloud, where the GPU can emit a
-              hardware-signed proof of exactly what ran. The robot signs its edge
-              actions, so the chain is anchored outside the operator's reach.
+        <section class="trust-explorer" aria-labelledby="trust-explorer-title">
+          <div class="trust-heading">
+            <p class="section-label">Build the model</p>
+            <h3 id="trust-explorer-title">
+              Four layers between a demo and deployment.
+            </h3>
+            <p class="trust-hint">
+              Add layers from the foundation upward. Each one changes the
+              evidence available and the work an organization can approve.
             </p>
-            <dl>
-              <div><dt>Unlocks</dt><dd>Tamper-evident records</dd></div>
-              <div><dt>Read</dt><dd><a href="https://governance.ai-mvp.com/2026/06/11/the-cloud-can-prove-it-the-robot-cant/">Post 5</a></dd></div>
-            </dl>
-            <p class="card-footnote">
-              The on-board chip has no confidential computing, so trust crosses an
-              asymmetric cloud-to-edge boundary.
-            </p>
-          </article>
+          </div>
 
-          <article class="data-card sim-card">
-            <header>
-              <span class="card-number">02</span>
-              <span class="card-tag">EVIDENCE</span>
-            </header>
-            <h3>Proof of outcome</h3>
-            <p class="card-lead">Prove what physically happened.</p>
-            <p>
-              An authorization log says the robot was allowed to move, not that it
-              did. Sensors testify instead: force, vision, position, hash-chained
-              into a tamper-evident flight recorder.
-            </p>
-            <dl>
-              <div><dt>Unlocks</dt><dd>Insurability</dd></div>
-              <div><dt>Read</dt><dd><a href="https://governance.ai-mvp.com/2026/06/14/proof-of-outcome/">Post 6</a></dd></div>
-            </dl>
-            <p class="card-footnote">
-              After an incident, nobody asks what the policy permitted. They ask what
-              the arm actually did.
-            </p>
-          </article>
-
-          <article class="data-card real-card">
-            <header>
-              <span class="card-number">03</span>
-              <span class="card-tag">SCALE</span>
-            </header>
-            <h3>Fleet trust</h3>
-            <p class="card-lead">Survive ten thousand robots.</p>
-            <p>
-              Per-unit identity, fast revocation, and a blast-radius bound, so a
-              poisoned skill that spreads through networked learning is contained,
-              not catastrophic.
-            </p>
-            <dl>
-              <div><dt>Unlocks</dt><dd>Regulated scale</dd></div>
-              <div><dt>Read</dt><dd><a href="https://governance.ai-mvp.com/2026/06/17/trust-at-fleet-scale/">Post 7</a></dd></div>
-            </dl>
-            <p class="card-footnote">
-              The same mechanism that makes a fleet smart makes it a propagation
-              channel for a bad skill.
-            </p>
-          </article>
-
-          <article class="data-card web-card">
-            <header>
-              <span class="card-number">04</span>
-              <span class="card-tag">ECOSYSTEM</span>
-            </header>
-            <h3>Skill provenance</h3>
-            <p class="card-lead">Run code you didn't write.</p>
-            <p>
-              Signed provenance on every skill and model, default-deny scoping so a
-              weather skill can never command an actuator, and a fleet-wide kill
-              switch when one turns out unsafe.
-            </p>
-            <dl>
-              <div><dt>Unlocks</dt><dd>An open marketplace</dd></div>
-              <div><dt>Read</dt><dd><a href="https://governance.ai-mvp.com/2026/06/19/trusting-the-skills-you-didnt-write/">Post 8</a></dd></div>
-            </dl>
-            <p class="card-footnote">
-              An app store on a machine that can hurt you needs a different bar than
-              the one on your phone.
-            </p>
-          </article>
-        </section>
-
-        <section class="ts-block" aria-label="Interactive: build the trust stack">
-          <p class="section-label">Build it</p>
-          <p class="body-copy">
-            Toggle the layers on, bottom to top. What changes is not what the robot
-            can <em>do</em>, it is the market it can <em>enter</em>.
-          </p>
-
-          <style>
-          .ts{--ink:#1f2421;--muted:#6b7280;--line:#e6e6e2;--bg:#fff;--surface:#f7f7f5;--teal:#0f6e56;--tealbg:#e1f5ee;--tealbd:#9fe1cb;--amber:#854f0b;--amberbg:#faeeda;--amberbd:#f0d49a;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.5;max-width:680px;margin:1.5rem 0;}
-          .ts h3{font-size:17px;font-weight:500;margin:0 0 4px;color:var(--ink);}
-          .ts .sub{color:var(--muted);font-size:13px;margin:0 0 16px;}
-          .ts .cols{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start;}
-          @media(max-width:560px){.ts .cols{grid-template-columns:1fr;}}
-          .ts .stack{display:flex;flex-direction:column;gap:7px;}
-          .ts .layer{display:flex;align-items:center;gap:11px;border:1px solid var(--line);border-radius:10px;background:var(--surface);padding:9px 11px;transition:background .12s,border-color .12s;}
-          .ts .layer.lit{background:var(--tealbg);border-color:var(--tealbd);}
-          .ts .layer.blocked{background:var(--amberbg);border-color:var(--amberbd);}
-          .ts .num{width:22px;height:22px;flex:none;border-radius:50%;background:#ddd9cf;color:#5f5e5a;font-size:12px;display:flex;align-items:center;justify-content:center;}
-          .ts .layer.lit .num{background:var(--teal);color:#fff;}
-          .ts .ltx{flex:1;min-width:0;}
-          .ts .ln{font-size:13px;font-weight:500;}
-          .ts .lo{font-size:11px;color:var(--muted);}
-          .ts .hint{font-size:11px;color:var(--amber);}
-          .ts .sw{width:38px;height:22px;border-radius:20px;background:#ddd9cf;border:none;position:relative;cursor:pointer;padding:0;flex:none;}
-          .ts .sw.on{background:var(--teal);}
-          .ts .knob{position:absolute;top:3px;left:3px;width:16px;height:16px;border-radius:50%;background:#fff;transition:left .14s;}
-          .ts .sw.on .knob{left:19px;}
-          .ts .base{margin-top:7px;text-align:center;font-size:11px;color:var(--muted);border-top:1px dashed var(--line);padding-top:7px;}
-          .ts .panel{border:1px solid var(--line);border-radius:12px;background:var(--bg);padding:14px 16px;}
-          .ts .tlbl{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);}
-          .ts .tier{font-size:26px;font-weight:500;margin:2px 0 10px;}
-          .ts .tier.full{color:var(--teal);}
-          .ts .meter{display:flex;gap:5px;margin-bottom:12px;}
-          .ts .seg{flex:1;height:7px;border-radius:4px;background:var(--line);}
-          .ts .seg.on{background:var(--teal);}
-          .ts .line{font-size:13px;color:var(--ink);margin-bottom:12px;min-height:38px;}
-          .ts .ulbl{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-bottom:6px;}
-          .ts .unlock{display:flex;gap:8px;font-size:13px;padding:3px 0;color:var(--teal);}
-          .ts .unlock .b{flex:none;}
-          .ts .none{font-size:13px;color:var(--muted);}
-          .ts-block{border-bottom:1px solid var(--ink);padding:clamp(36px,6vw,80px);}
-          .ts-block .section-label{display:block;margin-bottom:16px;}
-          .ts-block .body-copy{max-width:760px;}
-          .ts-block .body-copy + .body-copy{margin-top:18px;}
-          </style>
-          <div class="ts">
-            <div class="cols">
-              <div>
-                <div class="stack" id="stack"></div>
-                <div class="base">foundation: the robot, its silicon, its certified safety stack</div>
-              </div>
-              <div class="panel">
-                <div class="tlbl">deployment tier</div>
-                <div class="tier" id="tier">Demo</div>
-                <div class="meter" id="meter"></div>
-                <div class="line" id="line"></div>
-                <div class="ulbl">market access unlocked</div>
-                <div id="unlocks"></div>
-              </div>
+          <div class="trust-builder">
+            <div>
+              <div id="trust-layers" class="trust-layers"></div>
+              <p class="trust-foundation">
+                Foundation: certified hardware, safety controls, and a known
+                software state
+              </p>
             </div>
-          </div>
-          <script>
-          (function(){
-            var layers=[
-              {n:1,name:'Hardware root of trust',one:'attested cloud reasoning · signed edge actions',post:'Post 5'},
-              {n:2,name:'Proof of outcome',one:'sensor-witnessed, tamper-evident records',post:'Post 6'},
-              {n:3,name:'Fleet trust',one:'identity · revocation · blast-radius containment',post:'Post 7'},
-              {n:4,name:'Skill provenance',one:'signed skills · default-deny · kill switch',post:'Post 8'}
-            ];
-            var tiers=[
-              {label:'Demo',line:'Impressive on stage. Uninsurable in a room with people.'},
-              {label:'Recorded',line:'You can keep records, but you still cannot prove what physically happened.'},
-              {label:'Insurable',line:'Outcomes are provable. Risk becomes a number an underwriter can price.'},
-              {label:'Fleet-grade',line:'One compromised robot or skill is a contained event, not a catastrophe.'},
-              {label:'Platform',line:'A marketplace on a machine that can hurt you, made safe. The platform play.'}
-            ];
-            var unlockText=['Internal pilots, tamper-evident records exist','Supervised deployments, outcomes provable, insurable','Regulated cells at scale, failures contained','Open third-party ecosystem, skills without trusting their authors'];
-            var on=[false,false,false,false];
-            var stack=document.getElementById('stack'),rows=[];
-            function mk(t,c){var e=document.createElement(t);if(c)e.className=c;return e;}
-            function build(){
-              for(var i=layers.length-1;i>=0;i--){(function(i){
-                var L=layers[i];
-                var row=mk('div','layer'),num=mk('div','num');num.textContent=L.n;
-                var tx=mk('div','ltx'),ln=mk('div','ln');ln.textContent=L.name+'  ·  '+L.post;
-                var lo=mk('div','lo');lo.textContent=L.one;var hint=mk('div','hint');
-                tx.appendChild(ln);tx.appendChild(lo);tx.appendChild(hint);
-                var sw=mk('button','sw');sw.setAttribute('aria-label','toggle '+L.name);sw.appendChild(mk('span','knob'));
-                sw.addEventListener('click',function(){on[i]=!on[i];render();});
-                row.appendChild(sw);row.appendChild(num);row.appendChild(tx);
-                stack.appendChild(row);rows[i]={row:row,sw:sw,hint:hint};
-              })(i);}
-            }
-            function tierLevel(){var k=0;while(k<4&&on[k])k++;return k;}
-            function render(){
-              var tier=tierLevel();
-              for(var i=0;i<4;i++){
-                var r=rows[i],lit=on[i]&&i<tier,blocked=on[i]&&i>=tier;
-                r.row.className='layer'+(lit?' lit':blocked?' blocked':'');
-                r.sw.className='sw'+(on[i]?' on':'');
-                r.hint.textContent=blocked?'needs the layer below it':'';
-              }
-              var ti=tiers[tier],tEl=document.getElementById('tier');
-              tEl.textContent=ti.label;tEl.className='tier'+(tier===4?' full':'');
-              document.getElementById('line').textContent=ti.line;
-              var meter=document.getElementById('meter');while(meter.firstChild)meter.removeChild(meter.firstChild);
-              for(var s=0;s<4;s++){var seg=mk('div','seg'+(s<tier?' on':''));meter.appendChild(seg);}
-              var u=document.getElementById('unlocks');while(u.firstChild)u.removeChild(u.firstChild);
-              if(tier===0){var n=mk('div','none');n.textContent='Showcase and lab demos only.';u.appendChild(n);}
-              else{for(var j=0;j<tier;j++){var it=mk('div','unlock'),b=mk('span','b');b.textContent='✓';var t=mk('span');t.textContent=unlockText[j];it.appendChild(b);it.appendChild(t);u.appendChild(it);}}
-            }
-            build();render();
-          })();
-          </script>
-        </section>
 
-        <section class="comparison" aria-labelledby="comparison-010-title">
-          <div class="comparison-heading">
-            <p class="section-label">The hardware reality</p>
-            <h3 id="comparison-010-title">The action happens where trust is weakest.</h3>
+            <aside class="trust-outcome" aria-live="polite">
+              <p class="section-label">Deployment tier</p>
+              <strong id="trust-tier" class="trust-tier">Demo</strong>
+              <div id="trust-meter" class="trust-meter" aria-hidden="true"></div>
+              <p id="trust-description" class="trust-description"></p>
+              <div class="trust-access">
+                <span>What becomes possible</span>
+                <strong id="trust-access"></strong>
+              </div>
+            </aside>
           </div>
-          <div class="matrix-wrap">
-            <table>
-              <thead>
-                <tr>
-                  <th scope="col">Where it runs</th>
-                  <th scope="col">Confidential computing</th>
-                  <th scope="col">Proof you can give</th>
-                  <th scope="col">Trust</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Cloud reasoning</th>
-                  <td><span class="rating high">Yes (H200, Blackwell)</span></td>
-                  <td><span class="rating high">Hardware-attested</span></td>
-                  <td><span class="rating high">Strong</span></td>
-                </tr>
-                <tr>
-                  <th scope="row">On-robot action</th>
-                  <td><span class="rating low">No (Jetson Thor)</span></td>
-                  <td><span class="rating mid">Signed, not confidential</span></td>
-                  <td><span class="rating low">Weaker</span></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+
+          <noscript>
+            <p class="trust-noscript">
+              JavaScript is required for the interactive trust model.
+            </p>
+          </noscript>
         </section>
 
         <section class="synthesis" aria-labelledby="synthesis-010-title">
           <div class="synthesis-copy">
-            <p class="section-label">The synthesis</p>
-            <h3 id="synthesis-010-title">Trust is not a tax. It is the unlock, and it compounds.</h3>
+            <p class="section-label">My synthesis</p>
+            <h3 id="synthesis-010-title">
+              Each layer answers a different objection.
+            </h3>
             <p>
-              Lasting advantages come from capabilities that are hard, boring, and compounding,
-              and a verifiable trust stack is exactly that shape. Anyone can demo
-              dexterity. Almost no one can hand an insurer a tamper-evident account of
-              a motion, contain a poisoned skill before it crosses a fleet, or run a
-              marketplace on a machine that can hurt someone.
-            </p>
-            <p>
-              The builders who make trust a product feature, not an afterthought, take
-              the regulated, insured, high-revenue deployments first, and compound the
-              operational data that flows from them.
+              Trust is not one certificate. It is a chain of evidence from the
+              device, through the physical outcome, across the fleet, and into
+              every skill the robot is allowed to run.
             </p>
           </div>
-          <div class="flywheel" aria-label="The trust stack, built up">
-            <ol>
-              <li><span>01</span><div><strong>Anchor</strong><small>Hardware root of trust</small></div></li>
-              <li><span>02</span><div><strong>Evidence</strong><small>Proof of outcome</small></div></li>
-              <li><span>03</span><div><strong>Scale</strong><small>Fleet trust</small></div></li>
-              <li><span>04</span><div><strong>Ecosystem</strong><small>Skill provenance</small></div></li>
-            </ol>
+
+          <div class="robot-stats trust-stats" aria-label="Trust stack summary">
+            <div>
+              <strong>ID</strong>
+              <span>Which robot and software acted?</span>
+            </div>
+            <div>
+              <strong>LOG</strong>
+              <span>What physically happened?</span>
+            </div>
+            <div>
+              <strong>STOP</strong>
+              <span>How far can one failure spread?</span>
+            </div>
+            <div>
+              <strong>SIGN</strong>
+              <span>Who approved this skill?</span>
+            </div>
           </div>
         </section>
 
         <section class="strategic-lens">
           <div>
             <p class="section-label">Strategic implication</p>
-            <h3>The hardware scorecard needs a column it doesn't have.</h3>
+            <h3>Trust changes who can say yes.</h3>
           </div>
           <div>
             <p>
-              Two robots with identical dexterity and bill-of-materials are not
-              equivalent if one can produce regulator-grade evidence of its decisions
-              and the other cannot. Trust is the axis the scorecard is missing.
+              Operators need attributable actions. Insurers need evidence of
+              outcomes. Fleet owners need revocation and containment.
+              Ecosystem partners need explicit permissions.
             </p>
             <p>
-              So the question to put to a humanoid company is no longer only how well
-              it manipulates. It is: what is your trust architecture across cloud and
-              edge, and which part of the on-robot step can you actually prove?
+              Built early, these controls support regulated work and external
+              skills. Added late, they require changes across hardware,
+              firmware, cloud services, and operations.
             </p>
+          </div>
+        </section>
+
+        <section class="governance-bridge" aria-labelledby="governance-title">
+          <div class="governance-intro">
+            <p class="section-label">Companion research</p>
+            <h3 id="governance-title">Where the engineering goes deeper.</h3>
+            <p>
+              Governance Intelligence is the sister publication to Robotics
+              Intelligence. This note gives the robotics strategy in one view.
+              The four linked essays examine the security and governance
+              design behind each layer.
+            </p>
+          </div>
+
+          <div class="governance-links">
+            <a
+              href="https://governance.ai-mvp.com/2026/06/11/the-cloud-can-prove-it-the-robot-cant/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>01 / Device identity</span>
+              <strong>The cloud can prove it. The robot cannot.</strong>
+              <p>Attestation across an asymmetric cloud-to-edge system.</p>
+            </a>
+            <a
+              href="https://governance.ai-mvp.com/2026/06/14/proof-of-outcome/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>02 / Outcome evidence</span>
+              <strong>Proof of outcome</strong>
+              <p>Sensor evidence for what the robot physically did.</p>
+            </a>
+            <a
+              href="https://governance.ai-mvp.com/2026/06/17/trust-at-fleet-scale/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>03 / Fleet containment</span>
+              <strong>Trust at fleet scale</strong>
+              <p>Identity, revocation, and limits on failure propagation.</p>
+            </a>
+            <a
+              href="https://governance.ai-mvp.com/2026/06/19/trusting-the-skills-you-didnt-write/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>04 / Skill provenance</span>
+              <strong>Trusting the skills you did not write</strong>
+              <p>Signed skills, explicit permissions, and emergency control.</p>
+            </a>
           </div>
         </section>
 
         <section class="takeaway">
           <span class="takeaway-label">Keep this</span>
           <p>
-            Dexterity gets a robot <strong>on stage</strong>. Trust gets it
-            <strong>in the room</strong>.
+            Capability proves a robot <strong>can act</strong>. Trust proves it
+            <strong>can be allowed to act</strong>.
           </p>
         </section>
 
@@ -367,13 +231,12 @@
           <div>
             <p class="section-label">About this note</p>
             <p>
-              A strategic companion to the four-part trust series on
-              governance.ai-mvp.com, the interactive maps each trust layer to the
-              market access it unlocks.
+              A standalone robotics synthesis of device identity, outcome
+              evidence, fleet containment, and skill provenance.
             </p>
           </div>
           <a href="./notes/010-the-trust-stack.md" target="_blank" rel="noreferrer">
-            View the data note <span aria-hidden="true">↗</span>
+            View the source note <span aria-hidden="true">↗</span>
           </a>
         </footer>
       </article>

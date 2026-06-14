@@ -6,33 +6,48 @@ topics:
   - systems
   - market
   - embodied-ai
-source: Strategic companion to the four-part trust series on governance.ai-mvp.com
+source: Strategic companion to the trust series on governance.ai-mvp.com
 ---
 
 # The trust stack
 
-Dexterity gets a robot on stage. Trust gets it in the room.
+A capable robot can perform the task. A trusted robot can prove what happened,
+contain failure, and accept external skills safely.
 
-Every humanoid demo you have seen was selling **capability**, can it fold the laundry, can it walk the warehouse, can it pour the coffee. Capability is necessary. It is also not the thing that decides who wins, because capability does not answer the only question that matters once a robot leaves the stage and enters a room with people: **can you prove what it did, to someone who does not take your word for it?**
+Deployment depends on four layers:
 
-That is trust, and trust is not one feature. It is a stack, built from the silicon up, and each layer opens a door that capability alone never will:
+1. **Hardware identity:** attested cloud reasoning and signed edge actions.
+2. **Outcome evidence:** sensor-witnessed, tamper-evident records.
+3. **Fleet containment:** identity, revocation, and limits on failure propagation.
+4. **Skill provenance:** signed skills, explicit permissions, and emergency control.
 
-1. **Hardware root of trust**, attested cloud reasoning, signed edge actions.
-2. **Proof of outcome**, sensor-witnessed, tamper-evident records.
-3. **Fleet trust**, identity, revocation, and bounding the blast radius of a poisoned skill.
-4. **Skill provenance**, signed marketplace skills, default-deny, a fleet-wide kill switch.
+Capability opens the demo. Trust determines whether an operator, insurer, or
+regulator can accept the risk. Each layer changes the evidence available and
+the work an organization can approve.
 
-Toggle them on, bottom to top, and what changes is not what the robot can *do*, it is the market it can *enter*: from showcase-only, to internal pilots, to insurable supervised work, to regulated cells at scale, to an open third-party ecosystem.
+## Strategic implication
 
-Here is the strategic inversion most of the field hasn't made yet: **trust is not a compliance tax you pay at the end. It is the unlock you build from the start.** Lasting advantages come from capabilities that are hard, boring, and compounding, and a verifiable trust stack is exactly that shape. Anyone can demo dexterity. Almost no one can hand an insurer a tamper-evident account of a motion, contain a poisoned skill before it crosses a fleet, or run a third-party marketplace on a machine that can hurt someone. The first builders to make trust a product feature, not an afterthought, take the regulated, insured, high-revenue deployments first, and compound the operational data that flows from them.
+Trust is not one certificate. It is a chain of evidence from the device,
+through the physical outcome, across the fleet, and into every skill the robot
+is allowed to run.
 
-And the hardware makes it *hard*, which is precisely why it's defensible. The robot's own silicon can't do what the datacenter can, the on-board chip has no confidential computing, so the trust has to be engineered across an asymmetric cloud-to-edge boundary. That's not a footnote. It's what makes the advantage durable.
+Built early, these controls support regulated work and external skills. Added
+late, they require changes across hardware, firmware, cloud services, and
+operations.
 
-The race everyone is watching is dexterity. The race that decides who gets to deploy among people, at scale, with an ecosystem behind them, is trust. One of these is almost solved. The other is wide open.
+## Companion research
 
-The four layers, in depth, on the governance side:
+Governance Intelligence is the sister publication to Robotics Intelligence.
+This note gives the robotics strategy in one view. The companion series
+examines the security and governance design behind each layer:
 
-- [Hardware root of trust](https://governance.ai-mvp.com/2026/06/11/the-cloud-can-prove-it-the-robot-cant/), why the robot can prove less than the cloud, and what to do about it.
-- [Proof of outcome](https://governance.ai-mvp.com/2026/06/14/proof-of-outcome/), making the robot prove what it physically did.
-- [Trust at fleet scale](https://governance.ai-mvp.com/2026/06/17/trust-at-fleet-scale/), identity, revocation, and the skill that spreads.
-- [Trusting the skills you didn't write](https://governance.ai-mvp.com/2026/06/19/trusting-the-skills-you-didnt-write/), a marketplace on a machine that can hurt you.
+- [The cloud can prove it. The robot cannot.](https://governance.ai-mvp.com/2026/06/11/the-cloud-can-prove-it-the-robot-cant/):
+  attestation across an asymmetric cloud-to-edge system.
+- [Proof of outcome](https://governance.ai-mvp.com/2026/06/14/proof-of-outcome/):
+  sensor evidence for what the robot physically did.
+- [Trust at fleet scale](https://governance.ai-mvp.com/2026/06/17/trust-at-fleet-scale/):
+  identity, revocation, and limits on failure propagation.
+- [Trusting the skills you did not write](https://governance.ai-mvp.com/2026/06/19/trusting-the-skills-you-didnt-write/):
+  signed skills, explicit permissions, and emergency control.
+
+Capability proves a robot **can act**. Trust proves it **can be allowed to act**.

@@ -32,7 +32,7 @@ control loop that physics demands in milliseconds.
 Low-level motor control that never reaches conscious thought. Fan's example:
 "when I'm grasping this cup of water, I don't really think about how I move
 the fingertip at every millisecond." A robot's System 1 must make decisions
-at something like 1,000 Hz — reflex speed — which points to compact,
+at something like 1,000 Hz, or reflex speed. This points to compact,
 fast sensorimotor policies rather than giant models.
 
 The limitation is horizon. A reflex cannot plan a multi-step task or reason
@@ -42,9 +42,9 @@ about a novel situation.
 
 Fan describes two candidate architectures:
 
-1. **Monolithic** — a single end-to-end model spanning both systems. Cleaner,
+1. **Monolithic:** a single end-to-end model spanning both systems. Cleaner,
    but harder to control and to make fast enough.
-2. **Cascaded** — separate models for each system, wired together.
+2. **Cascaded:** separate models for each system, wired together.
 
 And an unresolved interface question: do the systems communicate "through
 text or through some latent variables?" Text is interpretable but lossy and
@@ -52,15 +52,15 @@ slow; latent vectors are rich but opaque. Bridging the 1 Hz / 1,000 Hz
 frequency mismatch is part of the same problem.
 
 Postscript: NVIDIA's later [GR00T N1](https://arxiv.org/abs/2503.14734)
-model made this concrete — a vision-language module (System 2) paired with a
-diffusion-transformer action module (System 1) — evidence that the dual-system
+model made this concrete: a vision-language module (System 2) paired with a
+diffusion-transformer action module (System 1). This showed that the dual-system
 framing became an actual architecture.
 
 ## Strategic implication
 
 General-purpose System 2 reasoning is rapidly becoming a commodity available
 from foundation-model providers. The defensible layers for a robot maker are
-System 1 — embodiment-specific, safety-critical, kHz-rate control — and the
+System 1, with embodiment-specific, safety-critical, kHz-rate control, and the
 interface contract between the two systems.
 
 That contract is also a safety boundary: while System 2 deliberates for

@@ -13,7 +13,7 @@ speaker: Jim Fan
 # Why the humanoid form factor
 
 Not romance, not sci-fi. The humanoid form factor is an interface decision:
-a body compatible with a world we already built for ourselves — and with the
+a body compatible with a world we already built for ourselves and with the
 video we already filmed of it.
 
 ## 1. The world is pre-fitted for humans
@@ -32,8 +32,8 @@ ships with an implicit demand to change the environment instead.
   large or awkward objects that need bimanual coordination.
 - **Two legs with enough degrees of freedom** allow the robot to balance in
   different ways, traverse complex terrain, and brace or reposition its whole
-  body to move objects in various ways — capabilities a wheeled base cannot
-  replicate.
+  body to move objects in various ways. These are capabilities a wheeled base
+  cannot replicate.
 
 The same degrees of freedom that make the control problem hard are what make
 the body general.
@@ -44,14 +44,14 @@ Most video on the internet shows human bodies and, in Fan's words, "people
 using their five finger hands to work with objects." That footage can be
 (partially) used for robot training only when the embodiment matches. The
 closer the robot's body is to human, the more of the internet becomes usable
-pretraining signal — and per Fan, "once we have that, we'll be able to
+pretraining signal. Per Fan, "once we have that, we'll be able to
 specialize them to the robot arms."
 
 This is why Project GR00T focuses on humanoid robots.
 
 ## The trade space
 
-Other form factors are not wrong — they sit elsewhere on the trade-off
+Other form factors are not wrong. They sit elsewhere on the trade-off
 surface:
 
 | Form factor | Built-world fit | Manipulation | Human-video transfer | Economics today |
@@ -67,7 +67,7 @@ surface:
 mobile platforms win structured environments today and can fund the harder
 humanoid bet; a humanoid program sits at the general end of that same
 portfolio. A shared model across embodiments lets data collected on one
-platform partially transfer to the others — which makes the portfolio a data
+platform partially transfer to the others, making the portfolio a data
 strategy, not just a product line.
 
 ## Keep this

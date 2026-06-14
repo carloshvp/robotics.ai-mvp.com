@@ -6,14 +6,14 @@ topics:
   - hardware
   - edge-compute
   - embodied-ai
-source: Field survey — vendor specs and street prices, June 2026
+source: Field survey of vendor specs and street prices, June 2026
 ---
 
 # Embedded AI hardware, 2026
 
 Twelve current platforms that can be a robot's onboard brain, scored on the
 four axes that matter: AI compute, memory, power, and price. Star ratings are
-normalized within this set — five stars is best in class on that axis
+normalized within this set. Five stars is best in class on that axis
 (fastest, biggest, most frugal, cheapest).
 
 ## The table
@@ -41,7 +41,7 @@ filterable by platform family and free text.
 (My synthesis.) Four tiers emerge:
 
 1. **Flagship Jetson (Thor, AGX Orin).** The only tier with the memory to
-   host VLA / foundation-model-class workloads onboard — Thor's 128 GB is
+   host VLA / foundation-model-class workloads onboard. Thor's 128 GB is
    sized for exactly that. You pay in watts and euros.
 2. **Mid Jetson (Orin NX, Orin Nano Super).** The System 1 sweet spot for
    many robots: enough TOPS for perception plus compact policies at a power
@@ -60,7 +60,7 @@ battery-powered robots from tethered cells.
 
 (My synthesis.) The silicon choice follows the System 1 / System 2 split from
 [[002-thinking-fast-and-slow-for-robots|note 002]]: System 1 must run onboard
-in real time — pick the silicon for the reflexes — while System 2 can burst
+in real time. Pick the silicon for the reflexes, while System 2 can burst
 to off-board or cloud compute. Fleet economics push the same way: onboard
 compute multiplies with every unit shipped, while shared System 2 amortizes
 across the fleet.

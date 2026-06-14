@@ -66,8 +66,8 @@
           <p class="body-copy">
             Borrowing from Daniel Kahneman's <em>Thinking, Fast and Slow</em>,
             Jim Fan splits embodied intelligence in two. System 2 deliberates:
-            reasoning, planning, writing code — work that large models already
-            do well. System 1 executes: fast, intuitive motor control that
+            reasoning, planning, and writing code. Large models already do this
+            well. System 1 executes: fast, intuitive motor control that
             never reaches conscious thought. Grasping a cup, you do not decide
             where each fingertip goes at every millisecond.
           </p>
@@ -87,7 +87,7 @@
             <p>
               The slow mind runs on big models. Vision-language models and
               LLMs in a loop can already reason about a scene, decompose a
-              task, and even generate code to orchestrate behavior — deciding
+              task, and even generate code to orchestrate behavior, deciding
               what to do next at roughly one decision per second.
             </p>
             <dl>
@@ -119,7 +119,7 @@
             <p>
               The fast mind is reflex. Whole-body balance, grasping, and
               contact-rich manipulation need decisions at something like a
-              thousand hertz — which points to compact, fast sensorimotor
+              thousand hertz. This points to compact, fast sensorimotor
               policies rather than giant models.
             </p>
             <dl>
@@ -181,7 +181,7 @@
             <h3 id="synthesis-002-title">The interface is the research.</h3>
             <p>
               Fan frames the unsolved part as architecture: one monolithic
-              model or a cascade of specialized ones — and if a cascade, do
+              model or a cascade of specialized ones. If it is a cascade, do
               the systems communicate through text or through latent
               variables? Text is interpretable but slow and lossy; latents
               are rich but opaque. NVIDIA's later GR00T N1 made the framing
@@ -194,7 +194,7 @@
             <ol>
               <li>
                 <span>01</span>
-                <div><strong>Monolithic</strong><small>One end-to-end model — cleaner, harder to control</small></div>
+                <div><strong>Monolithic</strong><small>One end-to-end model: cleaner, harder to control</small></div>
               </li>
               <li>
                 <span>02</span>
@@ -221,15 +221,15 @@
             <p>
               General-purpose System 2 reasoning is fast becoming a commodity
               available from foundation-model providers. The defensible layers
-              for a robot maker are System 1 — embodiment-specific,
-              safety-critical, kilohertz-rate control — and the interface
+              for a robot maker are System 1, with embodiment-specific,
+              safety-critical, kilohertz-rate control, and the interface
               contract between the two systems.
             </p>
             <p>
               That contract is also a safety boundary: while System 2
               deliberates for seconds, System 1 must stay competent and safe
-              on its own. Designing the handshake — skill APIs, latent
-              commands, interruption semantics — is product work, not just
+              on its own. Designing the handshake, including skill APIs, latent
+              commands, and interruption semantics, is product work, not just
               research.
             </p>
           </div>

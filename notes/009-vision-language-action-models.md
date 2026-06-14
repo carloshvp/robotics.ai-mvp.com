@@ -7,7 +7,7 @@ topics:
   - vla
   - foundation-models
   - architectures
-source: Field survey — model papers, lab pages, and release notes, June 2026
+source: Field survey of model papers, lab pages, and release notes, June 2026
 ---
 
 # The VLA model zoo, 2026
@@ -34,8 +34,8 @@ parameter count:
    SmolVLA, RDT-1B) are what most learners and labs actually build on. The
    frontier closed models (Gemini Robotics, Helix) ship inside products.
 3. **One model or two.** Some are a single network; others are an explicit
-   dual system — a slow VLM planner driving a fast action decoder (Helix,
-   GR00T) — exactly the architecture note 002 described.
+   dual system: a slow VLM planner driving a fast action decoder (Helix,
+   GR00T), exactly the architecture note 002 described.
 
 ## The table
 
@@ -64,7 +64,7 @@ split is noted.
   which generate an action chunk in one shot and hit real-time control rates.
 - **Big → right-sized.** RT-2 was 55B. Two years later SmolVLA does useful
   work at 450M on consumer hardware, and Octo runs at 93M. Capability stopped
-  requiring giant models once the data and action representation improved —
+  requiring giant models once the data and action representation improved,
   echoing the memory-not-TOPS point in
   [[006-embedded-ai-hardware-2026|note 006]].
 - **One brain → two.** GR00T and Helix ship the System 1 / System 2 split as
@@ -75,13 +75,13 @@ split is noted.
 ## Strategic implication
 
 (My synthesis.) A VLA is the generalist of
-[[005-generalist-first-specialist-later|note 005]] made concrete — and the
+[[005-generalist-first-specialist-later|note 005]] made concrete. The
 open ones (π0, GR00T, OpenVLA, SmolVLA) mean a robotics company rarely starts
 from zero. The differentiator moves up the stack: the **proprietary
 demonstrations** used to post-train the generalist, the **embodiment-specific
 System 1** that the open VLM can't supply, and the **data engine** that turns
 deployment into the next training set. The base model is increasingly
-shared; the advantage is what you fine-tune it with.
+shared; the advantage comes from what you fine-tune it with.
 
 ## Keep this
 
